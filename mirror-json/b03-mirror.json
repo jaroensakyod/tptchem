@@ -1,0 +1,181 @@
+{
+  "title": "Acids & Bases: Polyprotic Acids & Mixed-Solution Calculations — Complete Lesson Pack",
+  "meta": {
+    "subject": "Chemistry",
+    "grade": "11-12",
+    "duration": "2-3 class periods",
+    "file_stem": "b03-mirror"
+  },
+  "sections": [
+    {
+      "kind": "header",
+      "title": "Acids & Bases: Polyprotic Acids & Mixed Solutions",
+      "subtitle": "Complete Lesson Pack · Stepwise Ionization · Ka1 & Ka2 · Excess Moles",
+      "badge": "CurioNest"
+    },
+    {
+      "kind": "learning_objectives",
+      "title": "Learning Objectives",
+      "items": [
+        "Explain why polyprotic acids ionize stepwise and why each successive Ka is smaller",
+        "Perform equilibrium calculations for diprotic acids such as H2CO3 and H2S",
+        "Apply the 'moles first, react to completion, divide by total volume' method to mixed-solution problems",
+        "Predict which species dominate at each stage of a polyprotic titration",
+        "Combine acid-base equilibria with stoichiometry in multi-step calculations"
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 1 — Polyprotic Acids and Stepwise Ionization",
+      "body": [
+        "A polyprotic acid has more than one ionizable proton. It ionizes in steps, one proton at a time: H2CO3(aq) + H2O(l) ⇌ H3O+(aq) + HCO3−(aq) (Ka1 = 4.3 × 10−7), then HCO3−(aq) + H2O(l) ⇌ H3O+(aq) + CO32−(aq) (Ka2 = 4.7 × 10−11).",
+        "Each successive ionization constant is smaller than the previous one — typically by a factor of 10^4–10^5 — because it is harder to remove a proton from a negatively charged ion.",
+        "Because Ka1 >> Ka2, the hydronium concentration in a solution of a diprotic acid is essentially determined by the first step alone. The second step contributes negligibly to [H3O+].",
+        "The intermediate ion (e.g., HCO3−, HSO4−) is amphiprotic: it can act as an acid (Ka2) or a base (Kb = Kw/Ka1)."
+      ],
+      "worked_example": {
+        "question": "Calculate the concentration of H3O+ and the pH of a 0.050 M solution of H2S. Ka1 = 1.0 × 10−7, Ka2 = 1.0 × 10−19.",
+        "solution": "Use only Ka1: H2S + H2O ⇌ H3O+ + HS−. Ka1 = x²/(0.050 − x) ≈ x²/0.050 = 1.0 × 10−7 → x = √(5.0 × 10−9) = 7.1 × 10−5 M. pH = −log(7.1×10−5) = 4.15. (Ka2 is so small that the second step adds a negligible amount of H3O+.)"
+      },
+      "common_mistakes": [
+        "Writing both ionization steps in one equation — polyprotic acids ionize one proton at a time.",
+        "Adding the H3O+ from the second step to the first step's result (negligible for typical problems)."
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 2 — Mixed-Solution Stoichiometry (the 'Moles First' Method)",
+      "body": [
+        "When two solutions are mixed, the acid-base reaction is fast and goes to completion for strong acids/bases. Always: (1) convert to moles, (2) react to completion (find the limiting reactant and leftover), (3) divide by the TOTAL volume to get new concentrations, then (4) calculate pH from whatever remains.",
+        "If excess strong acid remains → pH from leftover [H3O+]. If excess strong base remains → pH from leftover [OH−]. If exactly neutralized with a weak partner → solve the hydrolysis (Kb or Ka) of the salt formed.",
+        "The total volume is the sum of both solution volumes — forgetting this is the most common error."
+      ],
+      "worked_example": {
+        "question": "50.0 mL of 0.100 M HCl is mixed with 50.0 mL of 0.060 M NaOH. Find the pH of the resulting solution.",
+        "solution": "Moles HCl = 0.00500; moles NaOH = 0.00300. HCl is in excess by 0.00200 mol. Total volume = 0.100 L. [H3O+] = 0.00200/0.100 = 0.020 M. pH = −log(0.020) = 1.70."
+      },
+      "common_mistakes": [
+        "Using the original volumes instead of the total volume after mixing.",
+        "Neutralizing mole-for-mole without checking which reactant is in excess."
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 3 — Polyprotic Titrations and Species Distribution",
+      "body": [
+        "The titration curve of a diprotic acid (e.g., H3PO4, H2CO3) shows two equivalence points and two buffer regions. Between equivalence points, the intermediate species (H2PO4−, HPO42−) buffers the solution.",
+        "At the first half-equivalence point, [H3PO4] = [H2PO4−] and pH = pKa1. At the second half-equivalence point, [H2PO4−] = [HPO42−] and pH = pKa2.",
+        "Which species dominates depends on pH: H3PO4 dominates below pKa1, H2PO4− dominates between pKa1 and pKa2, and HPO42− dominates above pKa2."
+      ],
+      "worked_example": {
+        "question": "For phosphoric acid (pKa1 = 2.15, pKa2 = 7.20, pKa3 = 12.35), which species dominates at (a) pH 1.0 (b) pH 5.0 (c) pH 9.0?",
+        "solution": "(a) H3PO4 (below pKa1) (b) H2PO4− (between pKa1 and pKa2) (c) HPO42− (between pKa2 and pKa3)."
+      },
+      "common_mistakes": [
+        "Expecting a single equivalence point for a polyprotic acid.",
+        "Choosing an indicator that changes color at the wrong equivalence point."
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part A — Polyprotic Acid Calculations (Questions 1–5)",
+      "items": [
+        {
+          "q": "Explain why Ka2 is always smaller than Ka1 for a polyprotic acid such as H2CO3.",
+          "type": "short",
+          "answer": "Removing a proton from a negatively charged ion (e.g., HCO3− → CO32−) requires more energy than removing one from a neutral molecule. Electrostatic attraction makes the remaining proton harder to remove."
+        },
+        {
+          "q": "Write the two stepwise ionization equations for H2CO3, labeling Ka1 and Ka2.",
+          "type": "short",
+          "answer": "H2CO3(aq) + H2O(l) ⇌ H3O+(aq) + HCO3−(aq) (Ka1); HCO3−(aq) + H2O(l) ⇌ H3O+(aq) + CO32−(aq) (Ka2)"
+        },
+        {
+          "q": "Which species are present in appreciable concentration in a solution of H2CO3? Explain why CO32− is present in only trace amounts.",
+          "type": "short",
+          "answer": "H2CO3, HCO3−, H3O+, and OH−. CO32− is present only in trace amounts because Ka2 (4.7 × 10−11) is tiny — very little HCO3− ionizes further."
+        },
+        {
+          "q": "Calculate the H3O+ concentration and pH of a 0.010 M solution of H2S. Ka1 = 1.0 × 10−7, Ka2 = 1.0 × 10−19.",
+          "type": "calc",
+          "answer": "x²/0.010 = 1.0 × 10−7 → x = 3.2 × 10−5 M; pH = 4.50. (Second step negligible.)"
+        },
+        {
+          "q": "For phosphoric acid (pKa1 = 2.15, pKa2 = 7.20, pKa3 = 12.35), identify the dominant species at pH 1.0, pH 5.0, pH 9.0, and pH 13.0.",
+          "type": "short",
+          "answer": "pH 1.0: H3PO4 · pH 5.0: H2PO4− · pH 9.0: HPO42− · pH 13.0: PO43−"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part B — Mixed-Solution Stoichiometry (Questions 6–10)",
+      "items": [
+        {
+          "q": "25.0 mL of 0.200 M HCl is mixed with 75.0 mL of 0.050 M NaOH. Calculate the pH of the mixture.",
+          "type": "calc",
+          "answer": "Moles HCl = 0.00500; moles NaOH = 0.00375. Excess HCl = 0.00125 mol in 0.100 L → [H3O+] = 0.0125 M; pH = 1.90."
+        },
+        {
+          "q": "40.0 mL of 0.150 M KOH is mixed with 60.0 mL of 0.080 M HCl. Calculate the pH of the mixture.",
+          "type": "calc",
+          "answer": "Moles KOH = 0.00600; moles HCl = 0.00480. Excess KOH = 0.00120 mol in 0.100 L → [OH−] = 0.0120 M; pOH = 1.92; pH = 12.08."
+        },
+        {
+          "q": "30.0 mL of 0.100 M H2SO4 (diprotic, both protons strong) is mixed with 70.0 mL of 0.050 M NaOH. Calculate the pH.",
+          "type": "calc",
+          "answer": "H+ from H2SO4 = 0.0300 L × 0.100 M × 2 = 0.00600 mol. OH− = 0.0700 × 0.050 = 0.00350 mol. Excess H+ = 0.00250 mol in 0.100 L → [H3O+] = 0.0250 M; pH = 1.60."
+        },
+        {
+          "q": "50.0 mL of 0.100 M CH3COOH is mixed with 25.0 mL of 0.100 M NaOH. Ka = 1.8 × 10−5. Is the mixture a buffer? Calculate its pH.",
+          "type": "calc",
+          "answer": "Yes — a buffer forms. Moles acid = 0.00500, moles NaOH = 0.00250 → [CH3COOH] = 0.00250/0.0750 = 0.0333 M, [CH3COO−] = 0.00250/0.0750 = 0.0333 M. pH = pKa + log(1) = 4.74."
+        },
+        {
+          "q": "100.0 mL of 0.050 M HCN (Ka = 6.2 × 10−10) is mixed with 50.0 mL of 0.100 M NaOH. Calculate the pH of the resulting solution.",
+          "type": "calc",
+          "answer": "Exactly neutralized: moles HCN = 0.00500, moles NaOH = 0.00500 → all HCN → CN−. [CN−] = 0.00500/0.150 = 0.0333 M. Kb = Kw/Ka = 1.6 × 10−5. [OH−] = √(1.6×10−5 × 0.0333) = 7.3 × 10−4 M; pOH = 3.14; pH = 10.86."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part C — Weak-Acid Equilibrium (ICE Table Review) (Questions 11–13)",
+      "items": [
+        {
+          "q": "Propionic acid, C2H5CO2H (Ka = 1.34 × 10−5), is used to make the food preservative calcium propionate. What is the pH of a 0.698 M solution of C2H5CO2H?",
+          "type": "calc",
+          "answer": "x²/0.698 = 1.34 × 10−5 → x = √(9.35 × 10−6) = 3.06 × 10−3 M. pH = −log(3.06×10−3) = 2.51."
+        },
+        {
+          "q": "White vinegar is about 5.0% acetic acid by mass (density 1.007 g/mL). Estimate its pH. (CH3COOH: Ka = 1.8 × 10−5, molar mass 60.05 g/mol.)",
+          "type": "calc",
+          "answer": "5.0% by mass ≈ 50 g/L → [CH3COOH] = 50/60.05 = 0.83 M. x = √(1.8×10−5 × 0.83) = 3.9 × 10−3 M; pH = 2.41."
+        },
+        {
+          "q": "The pH of a 0.10 M solution of caffeine is 11.70. Determine Kb for caffeine.",
+          "type": "calc",
+          "answer": "pOH = 14.00 − 11.70 = 2.30 → [OH−] = 5.0 × 10−3 M. Kb = (5.0×10−3)²/(0.10 − 5.0×10−3) = 2.6 × 10−4."
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Key Terms",
+      "items": [
+        ["polyprotic acid", "An acid with more than one ionizable proton (e.g., H2CO3, H3PO4)"],
+        ["stepwise ionization", "Ionization of a polyprotic acid one proton at a time, with separate Ka values"],
+        ["amphiprotic intermediate", "The ion between ionization steps (e.g., HCO3−) that can act as acid or base"],
+        ["mixed-solution stoichiometry", "The moles-first method for acid-base reactions of mixed solutions"],
+        ["limiting reactant", "The reactant that is used up first, determining how much product forms"],
+        ["species distribution", "Which protonated form of a polyprotic acid dominates at a given pH"]
+      ]
+    },
+    {
+      "kind": "answer_key",
+      "title": "Answer Key",
+      "note": "Worked solutions for every question — see answers embedded in Parts A–C above. The full key with step-by-step work is included in the teacher edition.",
+      "items": []
+    }
+  ]
+}

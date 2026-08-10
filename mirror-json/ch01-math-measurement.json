@@ -1,0 +1,553 @@
+{
+  "title": "Chapter 1 — Math & Measurement Unit Pack",
+  "subtitle": "Measurement · Sig Figs · Density · Scientific Notation · Dimensional Analysis",
+  "meta": {
+    "subject": "Chemistry",
+    "grade": "9-12",
+    "duration": "2-3 weeks (first unit of the year)",
+    "file_stem": "ch01-math-measurement"
+  },
+  "sections": [
+    {
+      "kind": "header",
+      "title": "Chapter 1 — Math & Measurement",
+      "subtitle": "Unit Pack · Measurement · Sig Figs · Density · Scientific Notation · Dimensional Analysis",
+      "badge": "CurioNest"
+    },
+    {
+      "kind": "learning_objectives",
+      "title": "In this unit, you will learn to:",
+      "items": [
+        "Distinguish qualitative and quantitative observations",
+        "Identify SI base units and metric prefixes",
+        "Count significant figures and round calculations correctly",
+        "Calculate density using numerical set-ups",
+        "Convert between standard and scientific notation",
+        "Convert units using dimensional analysis"
+      ]
+    },
+    {
+      "kind": "data_table",
+      "title": "Unit Vocabulary — Write each definition in your own words",
+      "headers": [
+        "Word",
+        "Definition (your own words)"
+      ],
+      "rows": [
+        [
+          "accuracy",
+          ""
+        ],
+        [
+          "precision",
+          ""
+        ],
+        [
+          "conversion factor",
+          ""
+        ],
+        [
+          "density",
+          ""
+        ],
+        [
+          "mass",
+          ""
+        ],
+        [
+          "qualitative observation",
+          ""
+        ],
+        [
+          "quantitative observation",
+          ""
+        ],
+        [
+          "scientific notation",
+          ""
+        ],
+        [
+          "significant figures",
+          ""
+        ],
+        [
+          "unit",
+          ""
+        ]
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 1: Measurement",
+      "objective": [
+        "Distinguish qualitative from quantitative observations",
+        "Identify SI base units and metric prefixes"
+      ],
+      "concept": [
+        "Chemistry is the study of matter and its changes. Matter can be described through its properties using two kinds of observations. Qualitative observations are descriptive and non-numerical (color, odor, texture). Quantitative observations are in the form of numbers and units (mass 5 g, temperature 371 K).",
+        "Every measurement has three parts: a number (magnitude), a unit (standard of comparison), and an indication of uncertainty. The SI system uses base units: meter (length), kilogram (mass), second (time), kelvin (temperature). Metric prefixes change the size of a unit by powers of ten: kilo (k, 1000×), centi (c, 1/100), milli (m, 1/1000), micro (µ, 1/1,000,000)."
+      ],
+      "example": {
+        "problem": "Classify each observation as qualitative or quantitative: (a) the metal is silver-colored; (b) it melts at 371 K; (c) its density is 0.97 g/cm³.",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Silver-colored describes appearance without numbers → qualitative."
+          },
+          {
+            "label": "Step 2",
+            "text": "371 K is a number with a unit → quantitative."
+          },
+          {
+            "label": "Step 3",
+            "text": "0.97 g/cm³ is a number with units → quantitative."
+          }
+        ],
+        "answer": "(a) qualitative, (b) quantitative, (c) quantitative."
+      },
+      "practice": [
+        {
+          "q": "Which is a QUALITATIVE observation?",
+          "type": "mc",
+          "choices": [
+            "The liquid is clear",
+            "The mass is 45.8 g",
+            "The temperature is 298 K",
+            "The volume is 25.0 mL"
+          ],
+          "answer": "The liquid is clear"
+        },
+        {
+          "q": "Which SI base unit measures temperature?",
+          "type": "mc",
+          "choices": [
+            "Celsius",
+            "Kelvin",
+            "Fahrenheit",
+            "Joule"
+          ],
+          "answer": "Kelvin"
+        },
+        {
+          "q": "The prefix 'kilo' means:",
+          "type": "mc",
+          "choices": [
+            "1/100",
+            "1/1000",
+            "1000×",
+            "1/1,000,000"
+          ],
+          "answer": "1000×"
+        },
+        {
+          "q": "1 centimeter is what fraction of a meter?",
+          "type": "mc",
+          "choices": [
+            "1/10",
+            "1/100",
+            "1/1000",
+            "1/1,000,000"
+          ],
+          "answer": "1/100"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 2: Significant Figures",
+      "objective": [
+        "Count significant figures in measurements",
+        "Round calculations to the correct number of sig figs"
+      ],
+      "concept": [
+        "Significant figures (sig figs) are the digits actually recorded by a measuring device. RULES FOR COUNTING SIG FIGS: (1) non-zero digits are always significant; (2) leading zeros are NOT significant — 0.003080 has 4 sig figs; (3) captive zeros between non-zeros ARE significant — 1005 has 4; (4) trailing zeros are significant only if a decimal point is present — 2500 has 2, 2500. has 4.",
+        "RULES FOR CALCULATIONS: For addition and subtraction, round to the fewest decimal places. For multiplication and division, round to the fewest significant figures. NEVER be more precise than the least precise measurement."
+      ],
+      "example": {
+        "problem": "How many sig figs are in 0.003080? Then compute 12.55 × 0.25 and report correctly.",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Count sig figs in 0.003080: leading zeros do NOT count; 3080 are significant (trailing zero counts, decimal present).",
+            "eq": "$0.003080 \\rightarrow 4\\,\\text{sig figs}$"
+          },
+          {
+            "label": "Step 2",
+            "text": "For multiplication, round to the fewest sig figs of any factor. 0.25 has 2 sig figs:",
+            "eq": "$12.55 \\times 0.25 = 3.1375 \\rightarrow 3.1\\,\\text{(2 sig figs)}$"
+          }
+        ],
+        "answer": "0.003080 has 4 sig figs; the product is 3.1."
+      },
+      "practice": [
+        {
+          "q": "How many sig figs are in 0.003080?",
+          "type": "mc",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "4"
+        },
+        {
+          "q": "How many sig figs are in 2500 (no decimal)?",
+          "type": "mc",
+          "choices": [
+            "2",
+            "3",
+            "4",
+            "Cannot determine"
+          ],
+          "answer": "2"
+        },
+        {
+          "q": "Compute 2.5 × 3.1416 with correct sig figs:",
+          "type": "mc",
+          "choices": [
+            "7.854",
+            "7.85",
+            "7.9",
+            "8"
+          ],
+          "answer": "7.9"
+        },
+        {
+          "q": "For addition/subtraction, round to the fewest:",
+          "type": "mc",
+          "choices": [
+            "Sig figs",
+            "Decimal places",
+            "Digits",
+            "Non-zero digits"
+          ],
+          "answer": "Decimal places"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 3: Density",
+      "objective": [
+        "Calculate density using a numerical set-up",
+        "Solve for mass or volume given density"
+      ],
+      "concept": [
+        "Density is the amount of matter in a given amount of space — the ratio of mass to volume: density = mass ÷ volume. Density is an intensive property: a small piece and a large block of the same substance have the same density. Units are g/mL or g/cm³.",
+        "NUMERICAL SET-UP RULE: Always write the formula, substitute the numbers WITH units, and give the answer with units. Example: d = 74.6 g ÷ 27.6 cm³ = 2.70 g/cm³."
+      ],
+      "example": {
+        "problem": "A sample of aluminum has a mass of 74.6 g and a volume of 27.6 cm³. Calculate its density.",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Write the formula:",
+            "eq": "$d = \\dfrac{m}{V}$"
+          },
+          {
+            "label": "Step 2",
+            "text": "Substitute with units:",
+            "eq": "$d = \\dfrac{74.6\\,\\text{g}}{27.6\\,\\text{cm}^3}$"
+          },
+          {
+            "label": "Step 3",
+            "text": "Divide and give units:",
+            "eq": "$d = 2.70\\,\\text{g/cm}^3$"
+          }
+        ],
+        "answer": "2.70 g/cm³"
+      },
+      "practice": [
+        {
+          "q": "Density is calculated as:",
+          "type": "mc",
+          "choices": [
+            "mass × volume",
+            "mass ÷ volume",
+            "volume ÷ mass",
+            "mass + volume"
+          ],
+          "answer": "mass ÷ volume"
+        },
+        {
+          "q": "Calculate density if 12.50 g has a volume of 4.6 mL (correct sig figs):",
+          "type": "mc",
+          "choices": [
+            "2.717 g/mL",
+            "2.72 g/mL",
+            "2.7 g/mL",
+            "3 g/mL"
+          ],
+          "answer": "2.7 g/mL"
+        },
+        {
+          "q": "Is density extensive or intensive?",
+          "type": "mc",
+          "choices": [
+            "Extensive",
+            "Intensive",
+            "Chemical",
+            "Neither"
+          ],
+          "answer": "Intensive"
+        },
+        {
+          "q": "What are the units of density?",
+          "type": "mc",
+          "choices": [
+            "g/mL or g/cm³",
+            "mL only",
+            "g only",
+            "cm³ only"
+          ],
+          "answer": "g/mL or g/cm³"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 4: Scientific Notation",
+      "objective": [
+        "Convert standard notation to scientific notation",
+        "Convert scientific notation to standard notation"
+      ],
+      "concept": [
+        "Scientific notation writes numbers as a decimal between 1 and 10 multiplied by a power of ten: N × 10^n. Converting from standard to scientific: move the decimal point so one non-zero digit is to the left; count the moves — left moves are positive exponents, right moves are negative.",
+        "Examples: 1,902,300,000 → 1.9023 × 10⁹ (decimal moved 9 places left). 0.0000025 → 2.5 × 10⁻⁶ (moved 6 places right)."
+      ],
+      "example": {
+        "problem": "Write 0.003080 in scientific notation.",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Move the decimal so one non-zero digit (3) is to the left — moved 3 places right."
+          },
+          {
+            "label": "Step 2",
+            "text": "Right moves = negative exponent:",
+            "eq": "$0.003080 = 3.080 \\times 10^{-3}$"
+          }
+        ],
+        "answer": "3.080 × 10⁻³"
+      },
+      "practice": [
+        {
+          "q": "Write 1,902,300,000 in scientific notation:",
+          "type": "mc",
+          "choices": [
+            "1.9023 × 10⁹",
+            "19.023 × 10⁸",
+            "1.9023 × 10⁻⁹",
+            "1.9 × 10⁹"
+          ],
+          "answer": "1.9023 × 10⁹"
+        },
+        {
+          "q": "Write 0.0000025 in scientific notation:",
+          "type": "mc",
+          "choices": [
+            "2.5 × 10⁻⁶",
+            "2.5 × 10⁶",
+            "25 × 10⁻⁷",
+            "2.5 × 10⁻⁵"
+          ],
+          "answer": "2.5 × 10⁻⁶"
+        },
+        {
+          "q": "The exponent in scientific notation is positive when the decimal moves:",
+          "type": "mc",
+          "choices": [
+            "Right (number < 1)",
+            "Left (number > 10)",
+            "Never",
+            "Only for zeros"
+          ],
+          "answer": "Left (number > 10)"
+        },
+        {
+          "q": "Write 4.5 × 10⁻³ in standard notation:",
+          "type": "mc",
+          "choices": [
+            "4500",
+            "0.0045",
+            "0.045",
+            "450"
+          ],
+          "answer": "0.0045"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 5: Dimensional Analysis",
+      "objective": [
+        "Write conversion factors as ratios",
+        "Convert units by canceling units"
+      ],
+      "concept": [
+        "Dimensional analysis (unit conversion) uses conversion factors written as ratios to cancel unwanted units. A conversion factor is a number or ratio (in fraction form) used to convert from one unit to another. The given units cancel out, leaving the desired target units.",
+        "Example: 12.0 oz × (29.57 mL / 1 oz) = 355 mL — the oz units cancel, leaving mL. Always set up so the unit you want to get rid of is in the denominator."
+      ],
+      "example": {
+        "problem": "A 197-lb weight lifter wants to compete in a class limited to 90 kg. Is he light enough? (1 kg = 2.205 lb)",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Write the conversion factor with the desired unit (kg) on top:",
+            "eq": "$\\dfrac{1\\,\\text{kg}}{2.205\\,\\text{lb}}$"
+          },
+          {
+            "label": "Step 2",
+            "text": "Multiply — the lb units cancel:",
+            "eq": "$197\\,\\text{lb} \\times \\dfrac{1\\,\\text{kg}}{2.205\\,\\text{lb}} = 89.3\\,\\text{kg}$"
+          },
+          {
+            "label": "Step 3",
+            "text": "Compare: 89.3 kg < 90 kg — he qualifies."
+          }
+        ],
+        "answer": "Yes — 89.3 kg, under the 90 kg limit."
+      },
+      "practice": [
+        {
+          "q": "How many mL are in a 12.0-oz can? (1 oz = 29.57 mL)",
+          "type": "mc",
+          "choices": [
+            "355 mL",
+            "405 mL",
+            "295 mL",
+            "0.406 mL"
+          ],
+          "answer": "355 mL"
+        },
+        {
+          "q": "Convert 2.0 L to milliliters:",
+          "type": "mc",
+          "choices": [
+            "20 mL",
+            "200 mL",
+            "2000 mL",
+            "0.002 mL"
+          ],
+          "answer": "2000 mL"
+        },
+        {
+          "q": "A conversion factor is best written as:",
+          "type": "mc",
+          "choices": [
+            "A ratio in fraction form",
+            "A single number",
+            "A word",
+            "A graph"
+          ],
+          "answer": "A ratio in fraction form"
+        },
+        {
+          "q": "Convert 250 mL to liters:",
+          "type": "mc",
+          "choices": [
+            "2.5 L",
+            "0.25 L",
+            "25 L",
+            "0.025 L"
+          ],
+          "answer": "0.25 L"
+        }
+      ]
+    },
+    {
+      "kind": "regents_practice",
+      "title": "Regents Practice — Chapter 1",
+      "note": "Answer in the style of the NY State Regents exam.",
+      "items": [
+        {
+          "q": "Which mass measurement contains four significant figures?",
+          "choices": [
+            "3200 g",
+            "0.0032 g",
+            "320.0 g",
+            "0.0320 g"
+          ],
+          "answer": "320.0 g"
+        },
+        {
+          "q": "During a laboratory experiment, a sample of aluminum is found to have a mass of 12.50 grams and a volume of 4.6 milliliters. What is the density, expressed to the correct number of significant figures?",
+          "choices": [
+            "2.717 g/mL",
+            "2.72 g/mL",
+            "3 g/mL",
+            "2.7 g/mL"
+          ],
+          "answer": "2.7 g/mL"
+        },
+        {
+          "q": "Which quantity of heat is equal to 200. joules in kilojoules?",
+          "choices": [
+            "20.0 kJ",
+            "2.00 kJ",
+            "0.200 kJ",
+            "0.0200 kJ"
+          ],
+          "answer": "0.200 kJ"
+        },
+        {
+          "q": "A student measures the mass of a sample as 24.56 g. The accepted value is 24.60 g. The student's measurement is best described as:",
+          "choices": [
+            "Accurate only",
+            "Precise only",
+            "Both accurate and precise",
+            "Neither"
+          ],
+          "answer": "Both accurate and precise"
+        },
+        {
+          "q": "Express 1,902,300,000 in scientific notation:",
+          "choices": [
+            "1.9023 × 10⁹",
+            "19.023 × 10⁸",
+            "1.9023 × 10⁻⁹",
+            "1.9023 × 10⁶"
+          ],
+          "answer": "1.9023 × 10⁹"
+        },
+        {
+          "q": "The diagram shows a 100-milliliter graduated cylinder with the meniscus between the 35.0 and 36.0 mL marks. What is the correct reading?",
+          "choices": [
+            "35.0 mL",
+            "35.5 mL",
+            "44.0 mL",
+            "45.0 mL"
+          ],
+          "answer": "35.5 mL"
+        },
+        {
+          "q": "Expressed to the correct number of significant figures, what is the sum of 210.10 g + 235.100 g?",
+          "choices": [
+            "445.2 g",
+            "445.20 g",
+            "445.200 g",
+            "445 g"
+          ],
+          "answer": "445.20 g"
+        },
+        {
+          "q": "Which measurement is a QUALITATIVE observation?",
+          "choices": [
+            "The mass is 5.0 g",
+            "The solution turned blue",
+            "The temperature is 298 K",
+            "The volume is 25.0 mL"
+          ],
+          "answer": "The solution turned blue"
+        }
+      ]
+    },
+    {
+      "kind": "answer_key",
+      "title": "Answer Key",
+      "note": "Answers to all lesson practice and Regents practice questions.",
+      "items": []
+    }
+  ]
+}

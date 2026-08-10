@@ -1,0 +1,54 @@
+{
+  "title": "Builder Test — Regents Elements",
+  "subtitle": "Test all new kinds",
+  "meta": {"file_stem": "regents-builder-test", "duration": "test"},
+  "sections": [
+    {"kind": "header", "title": "Builder Test", "subtitle": "Regents elements test", "badge": "CurioNest"},
+    {"kind": "assess_yourself", "items": ["Vocab", "Lesson 1", "Lesson 2", "Lesson 3", "Lesson 4"]},
+    {
+      "kind": "lesson",
+      "title": "Lesson 1: Atomic Structure",
+      "objective": ["Identify protons, neutrons, electrons", "Count subatomic particles in neutral atoms"],
+      "concept": ["The nucleus contains protons (positive) and neutrons (neutral). Electrons orbit outside the nucleus."],
+      "example": {
+        "problem": "How many protons, neutrons, and electrons are in a neutral atom of $^{27}\\text{Al}$ (Z=13)?",
+        "steps": [
+          {"label": "Step 1", "text": "Protons = Z = 13"},
+          {"label": "Step 2", "text": "Neutrons = A − Z = 27 − 13 = 14"},
+          {"label": "Step 3", "text": "Electrons = protons (neutral) = 13"}
+        ],
+        "answer": "13 p⁺, 14 n⁰, 13 e⁻"
+      },
+      "practice": [
+        {"q": "What is the charge of a neutron?", "type": "mc", "choices": ["Positive", "Negative", "Neutral", "Variable"], "answer": "Neutral"},
+        {"q": "How many electrons in neutral Na (Z=11)?", "type": "mc", "choices": ["10", "11", "12", "23"], "answer": "11"}
+      ]
+    },
+    {"kind": "fill_blank", "title": "Complete the Statements", "items": [
+      "Protons are ______________ charged and neutrons are ______________ charged.",
+      "The nucleus is always ______________ charged."
+    ]},
+    {
+      "kind": "data_table",
+      "title": "Complete the Table (all atoms are neutral)",
+      "headers": ["Atom", "Protons", "Electrons", "Neutrons", "Mass #", "Atomic #"],
+      "rows": [
+        ["A", "44", "", "", "102", ""],
+        ["B", "", "84", "125", "", "", ""],
+        ["C", "", "", "", "56", "", ""],
+        ["D", "", "", "", "", "89", ""]
+      ]
+    },
+    {
+      "kind": "regents_practice",
+      "title": "Regents Practice",
+      "note": "Answer in the style of the NY State Regents exam.",
+      "items": [
+        {"q": "The number of protons in the nucleus of $^{32}\\text{P}$ (Z=15) is:", "choices": ["15", "17", "32", "47"], "answer": "15"},
+        {"q": "What is the total number of electrons in an atom with atomic number 13 and mass number 27?", "choices": ["13", "14", "27", "40"], "answer": "13"},
+        {"q": "Explain why atoms are electrically neutral.", "answer": "Atoms have equal numbers of protons and electrons, so the positive and negative charges cancel."}
+      ]
+    },
+    {"kind": "answer_key", "title": "Answer Key", "note": "Test", "items": []}
+  ]
+}

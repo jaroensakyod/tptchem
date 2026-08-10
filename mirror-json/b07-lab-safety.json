@@ -1,0 +1,328 @@
+{
+  "title": "Lab Safety & Chemical Hazards Worksheet Pack",
+  "subtitle": "NFPA Hazard Diamond · Physical vs Chemical Properties · GHS Symbols · Equipment ID",
+  "meta": {
+    "subject": "Chemistry",
+    "grade": "9-12",
+    "duration": "2 class periods",
+    "file_stem": "b07-lab-safety"
+  },
+  "sections": [
+    {
+      "kind": "header",
+      "title": "Lab Safety & Chemical Hazards",
+      "subtitle": "Worksheet Pack · NFPA Hazard Diamond · Properties of Matter · GHS Symbols · Equipment ID",
+      "badge": "CurioNest"
+    },
+    {
+      "kind": "learning_objectives",
+      "title": "What This Pack Covers",
+      "items": [
+        "Reading the NFPA 704 hazard diamond (fire, health, reactivity, special hazards)",
+        "Distinguishing physical properties from chemical properties",
+        "Classifying changes in matter as physical or chemical",
+        "Identifying GHS hazard pictograms and their meanings",
+        "Recognizing common lab equipment and safety gear"
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Reading Passage — The NFPA 704 Hazard Diamond",
+      "body": [
+        "Before you touch any chemical in the lab, you should be able to read its hazard information. One of the most important tools is the NFPA 704 hazard diamond — sometimes called a 'fire diamond' — developed by the National Fire Protection Agency. It summarizes the major hazards of a chemical substance in a single symbol.",
+        "The diamond is divided into four colored sections. The top (red) diamond specifies the level of fire hazard, based on the temperature range for the substance's flash point. The blue (left) diamond indicates the level of health hazard. The yellow (right) diamond describes reactivity hazards — how readily the substance will undergo detonation or a violent chemical change. The white (bottom) diamond points out special hazards, such as whether the substance is an oxidizer, reacts dangerously with water, is corrosive, or is radioactive.",
+        "Each hazard is rated on a scale from 0 to 4: 0 means no hazard and 4 means extremely hazardous. A chemical rated 4 for health, for example, is deadly even with brief exposure — while a rating of 1 means only mild irritation. Reading these numbers tells you exactly how careful you need to be.",
+        "The hazards the diamond describes are chemical properties — characteristics of a substance that describe its ability to change into different matter. Flammability, toxicity, and reactivity are all chemical properties. Physical properties like density, color, and melting point describe a substance without changing its composition. Knowing the difference helps you predict how a chemical will behave before you use it."
+      ],
+      "common_mistakes": [
+        "Memorizing the diamond colors without the meaning — red is fire, blue is health, yellow is reactivity, white is special.",
+        "Confusing 'physical property' with 'chemical property' — flammability is chemical (it involves burning, a chemical change); melting point is physical."
+      ]
+    },
+    {
+      "kind": "figure",
+      "title": "The NFPA 704 Hazard Diamond",
+      "image": "figures/nfpa-diamond.png",
+      "caption": "Figure 1. The NFPA 704 hazard diamond: red (top) = fire hazard, blue (left) = health hazard, yellow (right) = reactivity, white (bottom) = special hazards. Each is rated 0 (no hazard) to 4 (extreme hazard)."
+    },
+    {
+      "kind": "practice",
+      "title": "Part A — The Hazard Diamond (Questions 1–8)",
+      "items": [
+        {
+          "q": "Which section of the NFPA 704 diamond indicates the level of fire hazard?",
+          "type": "mc",
+          "choices": ["Top (red)", "Left (blue)", "Right (yellow)", "Bottom (white)"],
+          "answer": "Top (red)",
+          "explain": "The top, red diamond specifies fire hazard based on the flash point temperature range."
+        },
+        {
+          "q": "The blue (left) section of the hazard diamond indicates:",
+          "type": "mc",
+          "choices": ["Fire hazard", "Health hazard", "Reactivity hazard", "Special hazards"],
+          "answer": "Health hazard",
+          "explain": "The blue diamond on the left indicates the level of health hazard of the substance."
+        },
+        {
+          "q": "The yellow (right) section of the hazard diamond describes:",
+          "type": "mc",
+          "choices": ["How readily the substance detonates or undergoes violent chemical change", "The substance's color", "The boiling point", "Whether it conducts electricity"],
+          "answer": "How readily the substance detonates or undergoes violent chemical change",
+          "explain": "Yellow (right) = reactivity hazards, such as detonation or violent chemical change."
+        },
+        {
+          "q": "A rating of 4 in any section of the hazard diamond means the hazard level is:",
+          "type": "mc",
+          "choices": ["No hazard", "Slight hazard", "Serious hazard", "Extremely hazardous"],
+          "answer": "Extremely hazardous",
+          "explain": "Each hazard is rated 0 (no hazard) to 4 (extremely hazardous)."
+        },
+        {
+          "q": "Which special hazard would appear in the white (bottom) section of the diamond?",
+          "type": "mc",
+          "choices": ["Substance is an oxidizer", "Substance is a good conductor", "Substance has high density", "Substance is colorless"],
+          "answer": "Substance is an oxidizer",
+          "explain": "The white (bottom) diamond points out special hazards: oxidizer, reacts dangerously with water, corrosive, radioactive, etc."
+        },
+        {
+          "q": "A chemical is rated 0 for fire hazard. This means it:",
+          "type": "mc",
+          "choices": ["Will not burn", "Burns easily", "Explodes on contact with air", "Has a very low flash point"],
+          "answer": "Will not burn",
+          "explain": "0 = no hazard: a fire rating of 0 means the substance will not burn."
+        },
+        {
+          "q": "Flammability is described by the diamond as a:",
+          "type": "mc",
+          "choices": ["Chemical property involving fire hazard", "Physical property involving density", "Special hazard only", "Health effect"],
+          "answer": "Chemical property involving fire hazard",
+          "explain": "Flammability is a chemical property (burning changes the substance's composition) and is rated in the red fire-hazard section."
+        },
+        {
+          "q": "Which two hazards would you MOST expect to see rated high for nitroglycerin?",
+          "type": "mc",
+          "choices": ["Fire and reactivity", "Health and color", "Density and melting point", "Conductivity and toxicity"],
+          "answer": "Fire and reactivity",
+          "explain": "The textbook notes nitroglycerin is very dangerous because it explodes easily — high fire AND reactivity ratings."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part B — Physical vs Chemical Properties (Questions 9–14)",
+      "items": [
+        {
+          "q": "Classify: 'Iron combines with oxygen in the presence of water to form rust.'",
+          "type": "mc",
+          "choices": ["Physical property", "Chemical property", "Intensive property", "Physical change"],
+          "answer": "Chemical property",
+          "explain": "Rusting changes iron into a different substance (iron oxide) — a chemical property of iron."
+        },
+        {
+          "q": "Classify: 'The melting point of iron is 1538 °C.'",
+          "type": "mc",
+          "choices": ["Chemical property", "Physical property", "Chemical change", "Reactivity"],
+          "answer": "Physical property",
+          "explain": "Melting point is observed without changing the chemical composition — a physical property."
+        },
+        {
+          "q": "Classify: 'Neon poses almost no hazard because it is very unreactive.'",
+          "type": "mc",
+          "choices": ["Physical property", "Chemical property", "Extensive property", "Phase change"],
+          "answer": "Chemical property",
+          "explain": "Reactivity describes the ability to undergo chemical change — a chemical property. Neon's unreactivity is why it is safe."
+        },
+        {
+          "q": "Which of the following is a CHEMICAL change?",
+          "type": "mc",
+          "choices": ["Wax melting", "Sugar dissolving in coffee", "Iron rusting", "Steam condensing to water"],
+          "answer": "Iron rusting",
+          "explain": "Rusting produces a new substance (iron oxide). Melting, dissolving, and condensing change state/form without changing composition."
+        },
+        {
+          "q": "Which of the following is a PHYSICAL change?",
+          "type": "mc",
+          "choices": ["Burning a match", "Copper reacting with nitric acid", "Grinding solids into powder", "Food rotting"],
+          "answer": "Grinding solids into powder",
+          "explain": "Grinding changes the form of the substance but not its chemical composition — a physical change."
+        },
+        {
+          "q": "Classify: 'A drop of hot cooking oil causes brief discomfort, but a pot of hot oil yields severe burns.' The temperature is the same — this is because temperature is:",
+          "type": "mc",
+          "choices": ["Extensive (depends on amount)", "Intensive (does not depend on amount)", "A chemical property", "A special hazard"],
+          "answer": "Intensive (does not depend on amount)",
+          "explain": "Temperature is intensive — the same in a drop or a pot. The pot has more HEAT, which is extensive (depends on amount)."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part C — Extensive vs Intensive (Questions 15–17)",
+      "items": [
+        {
+          "q": "Classify: 'The mass of the sample is 45.8 kg.'",
+          "type": "mc",
+          "choices": ["Extensive property", "Intensive property", "Chemical property", "Reactivity hazard"],
+          "answer": "Extensive property",
+          "explain": "Mass depends on the amount of matter — an extensive property."
+        },
+        {
+          "q": "Classify: 'The density of aluminum is 2.70 g/cm³.'",
+          "type": "mc",
+          "choices": ["Extensive property", "Intensive property", "Physical change", "Chemical change"],
+          "answer": "Intensive property",
+          "explain": "Density does not depend on the amount of the sample — a small piece and a large block have the same density."
+        },
+        {
+          "q": "Classify: 'The volume of the solution is 250 mL.'",
+          "type": "mc",
+          "choices": ["Extensive property", "Intensive property", "Chemical property", "Special hazard"],
+          "answer": "Extensive property",
+          "explain": "Volume depends on the amount of matter — an extensive property."
+        }
+      ]
+    },
+    {
+      "kind": "figure",
+      "title": "GHS Hazard Symbols",
+      "image": "figures/ghs-symbols-grid.png",
+      "caption": "Figure 2. GHS hazard pictograms used on chemical labels. While the NFPA diamond rates hazards 0-4 in the lab, GHS pictograms communicate hazards on labels with standardized symbols."
+    },
+    {
+      "kind": "practice",
+      "title": "Part D — GHS Pictograms & The Diamond (Questions 18–22)",
+      "items": [
+        {
+          "q": "A container's label shows the GHS flame pictogram. This warns that the substance is:",
+          "type": "mc",
+          "choices": ["Corrosive", "Flammable", "Radioactive", "An oxidizer only"],
+          "answer": "Flammable",
+          "explain": "The flame pictogram warns the substance catches fire easily."
+        },
+        {
+          "q": "The GHS skull-and-crossbones pictogram means the substance is:",
+          "type": "mc",
+          "choices": ["Harmless", "Acutely toxic — can be fatal if swallowed, inhaled, or absorbed", "Only an irritant", "Under pressure"],
+          "answer": "Acutely toxic — can be fatal if swallowed, inhaled, or absorbed",
+          "explain": "The skull and crossbones is the GHS acute toxicity pictogram."
+        },
+        {
+          "q": "Which GHS pictogram appears on a container of a substance that intensifies fires?",
+          "type": "mc",
+          "choices": ["Flame over circle (oxidizing)", "Plain flame (flammable)", "Corrosion", "Exploding bomb"],
+          "answer": "Flame over circle (oxidizing)",
+          "explain": "The flame-over-circle pictogram means the substance is an oxidizer — it intensifies fires."
+        },
+        {
+          "q": "The NFPA diamond is MOST commonly found:",
+          "type": "mc",
+          "choices": ["On containers in the laboratory", "On road signs", "Inside textbooks only", "On food packaging"],
+          "answer": "On containers in the laboratory",
+          "explain": "The hazard diamond appears on chemical containers in labs and workplaces to summarize hazards at a glance."
+        },
+        {
+          "q": "A substance is rated 4 for reactivity in its hazard diamond. Before using it you should:",
+          "type": "mc",
+          "choices": ["Handle it normally — ratings are just suggestions", "Follow special precautions; it may detonate or react violently", "Assume it is safe because it has a label", "Only avoid touching it with bare hands"],
+          "answer": "Follow special precautions; it may detonate or react violently",
+          "explain": "4 = extremely hazardous reactivity: the substance may detonate or undergo violent chemical change — special precautions required."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part E — Equipment & Safety Gear (Questions 23–28)",
+      "items": [
+        {
+          "q": "Which glassware is BEST for measuring an exact liquid volume?",
+          "type": "mc",
+          "choices": ["Beaker", "Graduated cylinder", "Erlenmeyer flask", "Test tube"],
+          "answer": "Graduated cylinder",
+          "explain": "Graduated cylinders have precise volume markings; beakers and flasks are for holding and mixing."
+        },
+        {
+          "q": "Which piece of equipment provides controlled flame heat?",
+          "type": "mc",
+          "choices": ["Hot plate", "Bunsen burner", "Graduated cylinder", "Volumetric flask"],
+          "answer": "Bunsen burner",
+          "explain": "The Bunsen burner mixes gas with air to produce a controllable flame."
+        },
+        {
+          "q": "Which item protects your eyes from chemical splashes?",
+          "type": "mc",
+          "choices": ["Safety glasses", "Safety goggles", "Lab coat", "Gloves"],
+          "answer": "Safety goggles",
+          "explain": "Goggles form a seal around the eyes; safety glasses do not. Goggles are required for chemical work."
+        },
+        {
+          "q": "A pipette is used to:",
+          "type": "mc",
+          "choices": ["Measure and transfer small volumes of liquid precisely", "Heat liquids", "Store large volumes", "Weigh solids"],
+          "answer": "Measure and transfer small volumes of liquid precisely",
+          "explain": "Pipettes transfer small, precise liquid volumes — essential for accurate lab work."
+        },
+        {
+          "q": "The Erlenmeyer flask's narrow neck and wide base are useful because they:",
+          "type": "mc",
+          "choices": ["Measure exact volumes", "Allow swirling without splashing", "Resist all chemicals", "Insulate hot liquids"],
+          "answer": "Allow swirling without splashing",
+          "explain": "The narrow neck keeps liquid inside while swirling — ideal for mixing and titrations."
+        },
+        {
+          "q": "What should you do FIRST if a chemical splashes into your eye?",
+          "type": "mc",
+          "choices": ["Rub the eye to remove the chemical", "Flush the eye with water for at least 15 minutes and tell the teacher", "Wait to see if it hurts", "Put on goggles after the fact"],
+          "answer": "Flush the eye with water for at least 15 minutes and tell the teacher",
+          "explain": "Immediate, prolonged flushing dilutes and removes the chemical. Rubbing spreads it and causes more damage."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part F — Think & Write (Questions 29–31)",
+      "items": [
+        {
+          "q": "Explain how the four sections of the NFPA 704 hazard diamond work together to keep you safe.",
+          "type": "short",
+          "answer": "The diamond summarizes four hazards in one symbol: fire (top red, from flash point), health (left blue), reactivity (right yellow, detonation/violent change), and special hazards (bottom white, e.g. oxidizer, reacts with water). Each is rated 0-4. Reading it before handling a chemical tells you the level of each hazard so you can take appropriate precautions.",
+          "explain": "One glance at the diamond communicates four independent hazard ratings."
+        },
+        {
+          "q": "Why is flammability classified as a chemical property rather than a physical property?",
+          "type": "short",
+          "answer": "Flammability describes the ability of a substance to undergo combustion — a chemical change that produces new substances (carbon dioxide and water). Physical properties are observed without changing the chemical composition. Since burning always changes the substance into new matter, flammability is a chemical property.",
+          "explain": "Chemical properties describe how a substance changes into different matter; flammability, toxicity, and reactivity all fit this definition."
+        },
+        {
+          "q": "A lab container shows a hazard diamond rated 2-3-1 with an oxidizer symbol in the white section. Describe what each number means and how you would handle the substance.",
+          "type": "short",
+          "answer": "The ratings are fire (top) 2, health (left) 3, reactivity (right) 1: moderate fire hazard, high health hazard, low reactivity, plus special hazard = oxidizer (intensifies fires). Handling: wear full PPE (goggles, gloves, lab coat), avoid skin contact and inhalation (health 3), keep away from flammable materials (oxidizer + fire 2), and follow the teacher's specific precautions.",
+          "explain": "Reading each quadrant independently and acting on the highest ratings is the point of the diamond."
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Key Terms",
+      "items": [
+        ["NFPA 704", "Hazard identification system using a diamond with fire, health, reactivity, and special hazard ratings"],
+        ["hazard diamond", "Symbol that summarizes the major hazards of a chemical substance (0 = no hazard, 4 = extremely hazardous)"],
+        ["flash point", "Lowest temperature at which vapors ignite — basis of the fire hazard rating"],
+        ["physical property", "Characteristic observed without changing chemical composition (density, color, melting point)"],
+        ["chemical property", "Characteristic describing ability to change into different matter (flammability, toxicity, reactivity)"],
+        ["physical change", "Change in state or form without changing chemical composition (melting, dissolving, grinding)"],
+        ["chemical change", "Change that produces new substances (rusting, burning, rotting)"],
+        ["extensive property", "Depends on the amount of matter (mass, volume, heat)"],
+        ["intensive property", "Does not depend on the amount of matter (density, temperature, color)"],
+        ["GHS", "Globally Harmonized System — standardized hazard pictograms on chemical labels"],
+        ["oxidizer", "Substance that intensifies fires (special hazard symbol)"]
+      ]
+    },
+    {
+      "kind": "answer_key",
+      "title": "Answer Key",
+      "note": "All answers with explanations are embedded in the questions above — use the practice sections for the complete key.",
+      "items": []
+    }
+  ]
+}

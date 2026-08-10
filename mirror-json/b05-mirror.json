@@ -1,0 +1,185 @@
+{
+  "title": "Buffers, Titration & Salt Hydrolysis Practice Pack",
+  "meta": {
+    "subject": "Chemistry",
+    "grade": "10-12",
+    "duration": "2 class periods",
+    "file_stem": "b05-mirror"
+  },
+  "sections": [
+    {
+      "kind": "header",
+      "title": "Buffers, Titration & Salt Hydrolysis",
+      "subtitle": "Practice Pack · Henderson–Hasselbalch · Equivalence Points · Salt Ions · Full Answer Key",
+      "badge": "CurioNest"
+    },
+    {
+      "kind": "learning_objectives",
+      "title": "What This Pack Covers",
+      "items": [
+        "Calculating buffer pH with the Henderson–Hasselbalch equation",
+        "Predicting how buffers respond to added acid or base",
+        "Classifying salt solutions as acidic, basic, or neutral",
+        "Reading titration curves and locating equivalence points",
+        "Choosing appropriate indicators for titrations"
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Reading Passage — Buffers, Salts, and Titrations",
+      "body": [
+        "A buffer contains a weak conjugate acid–base pair, such as CH3COOH and CH3COO−. It resists pH change because added H+ is consumed by the base partner and added OH− is consumed by the acid partner. The Henderson–Hasselbalch equation, pH = pKa + log([A−]/[HA]), gives the buffer's pH; when [A−] = [HA], pH = pKa.",
+        "Buffer capacity is the amount of acid or base a buffer can absorb before pH changes sharply. Capacity is largest when both partners are concentrated and roughly equal.",
+        "Salt ions can hydrolyze water: the conjugate base of a weak acid (e.g., CN−) makes a solution basic; the conjugate acid of a weak base (e.g., NH4+) makes it acidic; ions from strong acids and bases (Cl−, Na+) are neutral.",
+        "In a titration, pH changes slowly in buffer regions and jumps sharply at the equivalence point. For a weak acid titrated with strong base, the equivalence-point pH is above 7, and the half-equivalence pH equals pKa. An indicator must change color near the equivalence-point pH."
+      ],
+      "common_mistakes": [
+        "Using the Henderson–Hasselbalch equation for strong acids or strong bases — it only applies to weak conjugate buffers.",
+        "Assuming equivalence-point pH is always 7."
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Quick Check — Multiple Choice (Questions 1–8)",
+      "items": [
+        {
+          "q": "A buffer is made from which pair?",
+          "type": "mc",
+          "choices": ["HCl and NaCl", "CH3COOH and CH3COONa", "HNO3 and NaNO3", "NaOH and KOH"],
+          "answer": "CH3COOH and CH3COONa (a weak acid with its conjugate base)",
+          "explain": "Buffers need a weak conjugate acid–base pair, not a strong acid with its salt."
+        },
+        {
+          "q": "The pH of a buffer equals pKa when:",
+          "type": "mc",
+          "choices": ["[HA] = 2[A−]", "[A−] = [HA]", "[A−] = 2[HA]", "the buffer is diluted"],
+          "answer": "[A−] = [HA] (log(1) = 0)",
+          "explain": "pH = pKa + log([A−]/[HA]); when the ratio is 1, log = 0."
+        },
+        {
+          "q": "Which salt solution is BASIC?",
+          "type": "mc",
+          "choices": ["NH4Cl", "KCN", "NaCl", "Al(NO3)3"],
+          "answer": "KCN (CN− is the conjugate base of weak acid HCN)",
+          "explain": "CN− hydrolyzes to produce OH−. NH4+ and Al3+ make acidic solutions; NaCl is neutral."
+        },
+        {
+          "q": "Which salt solution is ACIDIC?",
+          "type": "mc",
+          "choices": ["KCl", "NaCH3COO", "NH4Br", "RbI"],
+          "answer": "NH4Br (NH4+ is the conjugate acid of weak base NH3)",
+          "explain": "NH4+ donates a proton to water, producing H3O+."
+        },
+        {
+          "q": "In the titration of a weak acid with a strong base, the equivalence-point pH is:",
+          "type": "mc",
+          "choices": ["Exactly 7.00", "Below 7", "Above 7", "Equal to pKa"],
+          "answer": "Above 7 (the conjugate base hydrolyzes to give OH−)",
+          "explain": "At equivalence, the solution contains the salt of a weak acid + strong base, which is basic."
+        },
+        {
+          "q": "At the half-equivalence point of a weak-acid titration, pH = pKa because:",
+          "type": "mc",
+          "choices": ["All acid is neutralized", "[HA] = [A−]", "[H3O+] = [OH−]", "The acid is strong"],
+          "answer": "[HA] = [A−] (half the acid converted to conjugate base)",
+          "explain": "With equal concentrations of both partners, the Henderson–Hasselbalch log term is zero."
+        },
+        {
+          "q": "Adding 0.01 mol HCl to 1.0 L of a buffer with [CH3COOH] = [CH3COO−] = 0.50 M changes pH by approximately:",
+          "type": "mc",
+          "choices": ["4 pH units", "0.02 pH units", "7 pH units", "14 pH units"],
+          "answer": "0.02 pH units (pH goes from 4.74 to about 4.72)",
+          "explain": "The buffer absorbs the H+: [A−] = 0.49, [HA] = 0.51 → pH = 4.74 + log(0.49/0.51) ≈ 4.72."
+        },
+        {
+          "q": "Which indicator suits a titration whose equivalence-point pH is about 8.7?",
+          "type": "mc",
+          "choices": ["Methyl red (4.4–6.2)", "Phenolphthalein (8.2–10.0)", "Bromothymol blue (6.0–7.6)", "Methyl orange (3.1–4.4)"],
+          "answer": "Phenolphthalein (8.2–10.0 brackets 8.7)",
+          "explain": "The indicator's color-change range must include the equivalence-point pH."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Calculate — Show Your Work (Questions 9–14)",
+      "items": [
+        {
+          "q": "Calculate the pH of a buffer with 0.40 M CH3COOH and 0.40 M CH3COONa (Ka = 1.8 × 10−5).",
+          "type": "calc",
+          "answer": "pKa = 4.74; pH = 4.74 + log(0.40/0.40) = 4.74"
+        },
+        {
+          "q": "Calculate the pH of a buffer with 0.25 M NH3 and 0.35 M NH4Cl (Kb = 1.8 × 10−5).",
+          "type": "calc",
+          "answer": "pKa(NH4+) = 9.26; pH = 9.26 + log(0.25/0.35) = 9.11"
+        },
+        {
+          "q": "A buffer contains 0.30 M HF and 0.30 M NaF (Ka = 6.8 × 10−4). What is the pH after 0.010 mol of HCl is added to 1.0 L of the buffer?",
+          "type": "calc",
+          "answer": "Initial pH = 3.17. After HCl: [HF] = 0.31, [F−] = 0.29. pH = 3.17 + log(0.29/0.31) = 3.14."
+        },
+        {
+          "q": "Calculate the pH at the half-equivalence point of the titration of 40 mL of 0.100 M CH3COOH (Ka = 1.8 × 10−5) with 0.100 M NaOH.",
+          "type": "calc",
+          "answer": "pH = pKa = 4.74 (half the acid converted to acetate; [HA] = [A−])"
+        },
+        {
+          "q": "Calculate the pH at the equivalence point of the same titration (40 mL 0.100 M CH3COOH + 40 mL 0.100 M NaOH).",
+          "type": "calc",
+          "answer": "[CH3COO−] = 0.0040/0.080 = 0.050 M; Kb = 5.6×10−10; [OH−] = 5.3×10−6 M; pOH = 5.28; pH = 8.72"
+        },
+        {
+          "q": "Calculate the pH after 41 mL of 0.100 M NaOH is added to 40 mL of 0.100 M HCl.",
+          "type": "calc",
+          "answer": "Excess OH− = 0.001 × 0.100 = 1.0 × 10−4 mol in 0.081 L → [OH−] = 1.2 × 10−3 M; pOH = 2.91; pH = 11.09"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Short Answer & Think (Questions 15–18)",
+      "items": [
+        {
+          "q": "Explain why a buffer made of equal concentrations of a weak acid and its conjugate base has its maximum buffer capacity at that point.",
+          "type": "short",
+          "answer": "With [HA] = [A−], the buffer has equal amounts of both partners, so it can neutralize added acid and added base equally well — capacity is maximized and pH = pKa."
+        },
+        {
+          "q": "Determine whether aqueous solutions of FeCl3, K2CO3, NH4Br, and KClO4 are acidic, basic, or neutral, and explain each.",
+          "type": "short",
+          "answer": "FeCl3: acidic (Fe3+ hydrolyzes). K2CO3: basic (CO32− is a weak base). NH4Br: acidic (NH4+). KClO4: neutral (both ions neutral)."
+        },
+        {
+          "q": "Explain why the equivalence-point pH of a weak-base + strong-acid titration is below 7.",
+          "type": "short",
+          "answer": "The salt formed contains the conjugate acid of the weak base (e.g., NH4+), which hydrolyzes to produce H3O+, making the solution acidic."
+        },
+        {
+          "q": "Why does an indicator change color over a range of pH rather than at a single pH value?",
+          "type": "short",
+          "answer": "An indicator is a weak acid HIn whose color depends on the ratio [In−]/[HIn]; that ratio changes gradually with pH (over roughly pKa ± 1), so the visible color shifts across a range."
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Key Terms",
+      "items": [
+        ["buffer", "Solution of a weak conjugate acid–base pair that resists pH change"],
+        ["Henderson–Hasselbalch equation", "pH = pKa + log([A−]/[HA])"],
+        ["buffer capacity", "Amount of acid or base a buffer can neutralize before pH changes sharply"],
+        ["hydrolysis", "Reaction of a salt ion with water producing H3O+ or OH−"],
+        ["equivalence point", "Titrant added exactly neutralizes the analyte"],
+        ["half-equivalence point", "Half the analyte neutralized; pH = pKa"],
+        ["indicator", "Weak acid whose color changes across a pH range"]
+      ]
+    },
+    {
+      "kind": "answer_key",
+      "title": "Answer Key",
+      "note": "All answers with explanations are embedded in the questions above — use the practice sections for the complete key.",
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+{
+  "title": "Chapter 1 — Essential Ideas Unit Pack",
+  "subtitle": "Lab Safety · Properties of Matter · Measurement · Sig Figs · Dimensional Analysis",
+  "meta": {
+    "subject": "Chemistry",
+    "grade": "9-12",
+    "duration": "2-3 weeks (first unit of the year)",
+    "file_stem": "ch01-essential-ideas"
+  },
+  "sections": [
+    {
+      "kind": "header",
+      "title": "Chapter 1 — Essential Ideas",
+      "subtitle": "Unit Pack · Lab Safety · Properties of Matter · Measurement · Sig Figs · Dimensional Analysis",
+      "badge": "CurioNest"
+    },
+    {
+      "kind": "learning_objectives",
+      "title": "In this unit, you will learn to:",
+      "items": [
+        "Read the NFPA 704 hazard diamond and identify chemical hazards",
+        "Distinguish physical properties from chemical properties",
+        "Use SI units and metric prefixes correctly",
+        "Count significant figures and report calculations correctly",
+        "Convert units using dimensional analysis"
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Unit Vocabulary — Write each term in your own words",
+      "items": [
+        "hazard diamond (NFPA 704)",
+        "physical property",
+        "chemical property",
+        "extensive property",
+        "intensive property",
+        "SI unit",
+        "metric prefix",
+        "significant figure",
+        "accuracy",
+        "precision",
+        "dimensional analysis",
+        "density"
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 1 — Lab Safety: The NFPA 704 Hazard Diamond",
+      "objective": "Read the four sections of the NFPA hazard diamond and explain what each rating means.",
+      "concept": [
+        "Before you touch any chemical, read its hazard information. The NFPA 704 hazard diamond — sometimes called a 'fire diamond' — summarizes the major hazards of a chemical in one symbol. It has four colored sections: the top (red) diamond specifies the level of fire hazard, based on the flash point temperature. The blue (left) diamond indicates the health hazard. The yellow (right) diamond describes reactivity — how readily the substance will detonate or undergo violent chemical change. The white (bottom) diamond points out special hazards, such as oxidizers or substances that react with water.",
+        "Each hazard is rated from 0 to 4: 0 means no hazard, 4 means extremely hazardous. A chemical rated 4 for health is deadly even with brief exposure; a rating of 1 means mild irritation. Reading these numbers tells you how careful you need to be."
+      ],
+      "example": {
+        "title": "Worked Example — Reading a Hazard Diamond",
+        "problem": "A container shows a hazard diamond rated 2-3-1 with a W in the white section. What do the ratings tell you?",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Fire hazard (top, red) = 2: the substance must be moderately heated before it will ignite."
+          },
+          {
+            "label": "Step 2",
+            "text": "Health hazard (left, blue) = 3: even short exposure can cause serious injury or permanent damage."
+          },
+          {
+            "label": "Step 3",
+            "text": "Reactivity (right, yellow) = 1: stable normally, but can become unstable under high heat or pressure."
+          },
+          {
+            "label": "Step 4",
+            "text": "Special (bottom, white) = W: the substance reacts violently with water."
+          }
+        ],
+        "answer": "Handle with full PPE, away from water and flames."
+      },
+      "practice": [
+        {
+          "q": "Which section of the NFPA diamond indicates fire hazard?",
+          "type": "mc",
+          "choices": [
+            "Top (red)",
+            "Left (blue)",
+            "Right (yellow)",
+            "Bottom (white)"
+          ],
+          "answer": "Top (red)"
+        },
+        {
+          "q": "A rating of 4 in any section means the hazard is:",
+          "type": "mc",
+          "choices": [
+            "No hazard",
+            "Slight",
+            "Serious",
+            "Extremely hazardous"
+          ],
+          "answer": "Extremely hazardous"
+        },
+        {
+          "q": "What does the W in the white section of the diamond mean?",
+          "type": "mc",
+          "choices": [
+            "Wet-able substance",
+            "Reacts violently with water",
+            "Water-soluble",
+            "Weigh carefully"
+          ],
+          "answer": "Reacts violently with water"
+        },
+        {
+          "q": "A chemical is rated 0 for fire hazard. What does this mean?",
+          "type": "mc",
+          "choices": [
+            "It will not burn",
+            "It burns easily",
+            "It explodes in air",
+            "It has a low flash point"
+          ],
+          "answer": "It will not burn"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 2 — Physical vs Chemical Properties",
+      "objective": "Classify properties and changes of matter as physical or chemical.",
+      "concept": [
+        "A physical property is a characteristic observed without changing the chemical composition — density, color, hardness, melting point, and boiling point are physical properties. A physical change alters the state or form but not the identity: wax melting, sugar dissolving, steam condensing, and grinding solids are physical changes.",
+        "A chemical property describes the ability of a substance to change into different matter — flammability, toxicity, acidity, and reactivity are chemical properties. Iron rusts (combines with oxygen); nitroglycerin explodes easily; neon is very unreactive. A chemical change always produces new substances: rusting, burning, food rotting, copper reacting with nitric acid."
+      ],
+      "example": {
+        "title": "Worked Example — Classifying Properties",
+        "problem": "Classify each as a physical or chemical property: (a) the melting point of iron is 1538 °C; (b) chromium does not oxidize; (c) the density of aluminum is 2.70 g/cm³.",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Melting point is observed without changing the chemical composition — physical property."
+          },
+          {
+            "label": "Step 2",
+            "text": "Resistance to oxidation describes how the substance behaves in a chemical reaction — chemical property."
+          },
+          {
+            "label": "Step 3",
+            "text": "Density describes the substance itself, not a reaction — physical property."
+          }
+        ],
+        "answer": "(a) physical, (b) chemical, (c) physical."
+      },
+      "practice": [
+        {
+          "q": "Classify: 'Iron combines with oxygen to form rust.'",
+          "type": "mc",
+          "choices": [
+            "Physical property",
+            "Chemical property",
+            "Physical change",
+            "Intensive property"
+          ],
+          "answer": "Chemical property"
+        },
+        {
+          "q": "Which is a PHYSICAL change?",
+          "type": "mc",
+          "choices": [
+            "Burning a match",
+            "Iron rusting",
+            "Sugar dissolving in coffee",
+            "Food rotting"
+          ],
+          "answer": "Sugar dissolving in coffee"
+        },
+        {
+          "q": "Which is a CHEMICAL change?",
+          "type": "mc",
+          "choices": [
+            "Wax melting",
+            "Steam condensing",
+            "Grinding powder",
+            "Copper reacting with nitric acid"
+          ],
+          "answer": "Copper reacting with nitric acid"
+        },
+        {
+          "q": "Why is flammability a chemical property?",
+          "type": "short",
+          "answer": "Burning changes the substance into new products (CO₂ and water) — a chemical change, so flammability is a chemical property."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 3 — Measurements and SI Units",
+      "objective": "Identify SI base units, metric prefixes, and the three parts of every measurement.",
+      "concept": [
+        "Every measurement provides three kinds of information: a number (magnitude), a unit (standard of comparison), and an indication of uncertainty. The SI system uses base units: meter (length), kilogram (mass), second (time), and kelvin (temperature).",
+        "Metric prefixes change the size of a unit by powers of ten. Common prefixes: kilo (k, 1000×), centi (c, 1/100), milli (m, 1/1000), micro (µ, 1/1,000,000), nano (n, 1/1,000,000,000). Derived units include volume (liter = dm³) and density (g/mL or g/cm³)."
+      ],
+      "example": {
+        "title": "Worked Example — Prefixes",
+        "problem": "How many milliliters are in 1.5 liters?",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "The prefix milli (m) means 1/1000, so 1 L = 1000 mL.",
+            "eq": "$1\\,\\text{L} = 1000\\,\\text{mL}$"
+          },
+          {
+            "label": "Step 2",
+            "text": "Multiply by the conversion factor — the L units cancel:",
+            "eq": "$1.5\\,\\text{L} \\times \\frac{1000\\,\\text{mL}}{1\\,\\text{L}} = 1500\\,\\text{mL}$"
+          }
+        ],
+        "answer": "1500 mL"
+      },
+      "practice": [
+        {
+          "q": "Which SI base unit measures length?",
+          "type": "mc",
+          "choices": [
+            "Kilogram",
+            "Meter",
+            "Second",
+            "Kelvin"
+          ],
+          "answer": "Meter"
+        },
+        {
+          "q": "The prefix 'kilo' means:",
+          "type": "mc",
+          "choices": [
+            "1/100",
+            "1/1000",
+            "1000×",
+            "1/1,000,000"
+          ],
+          "answer": "1000×"
+        },
+        {
+          "q": "Which SI base unit measures temperature?",
+          "type": "mc",
+          "choices": [
+            "Celsius",
+            "Kelvin",
+            "Fahrenheit",
+            "Joule"
+          ],
+          "answer": "Kelvin"
+        },
+        {
+          "q": "1 centimeter is what fraction of a meter?",
+          "type": "mc",
+          "choices": [
+            "1/10",
+            "1/100",
+            "1/1000",
+            "1/1,000,000"
+          ],
+          "answer": "1/100"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 4 — Significant Figures",
+      "objective": "Count significant figures and report calculations with the correct number of sig figs.",
+      "concept": [
+        "Significant figures (sig figs) are the digits in a measurement that are known with certainty plus one estimated digit. Rules: non-zero digits are always significant; leading zeros are NOT significant (0.003080 has 4 sig figs — the 3080); captive zeros between non-zeros ARE significant; trailing zeros are significant only if a decimal point is present.",
+        "Calculations: for multiplication and division, round the answer to the fewest significant figures of any factor. For addition and subtraction, round to the fewest decimal places. Exact numbers (counted or defined) have unlimited sig figs."
+      ],
+      "example": {
+        "title": "Worked Example — Sig Figs",
+        "problem": "How many sig figs are in 0.003080? Then compute 12.55 × 0.25 and report with the correct sig figs.",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Count sig figs in 0.003080: leading zeros do NOT count; the 3, 0, 8, 0 are significant (trailing zero counts because a decimal point is present).",
+            "eq": "$0.003080 \\rightarrow 4\\,\\text{sig figs}$"
+          },
+          {
+            "label": "Step 2",
+            "text": "For multiplication, round to the fewest sig figs of any factor. 0.25 has 2 sig figs:",
+            "eq": "$12.55 \\times 0.25 = 3.1375 \\rightarrow 3.1\\,\\text{(2 sig figs)}$"
+          }
+        ],
+        "answer": "0.003080 has 4 sig figs; the product is 3.1."
+      },
+      "practice": [
+        {
+          "q": "How many significant figures are in 0.003080?",
+          "type": "mc",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "4"
+        },
+        {
+          "q": "How many significant figures are in 2500 (no decimal point)?",
+          "type": "mc",
+          "choices": [
+            "2",
+            "3",
+            "4",
+            "Cannot determine"
+          ],
+          "answer": "2"
+        },
+        {
+          "q": "Compute 2.5 × 3.1416 and report with correct sig figs:",
+          "type": "mc",
+          "choices": [
+            "7.854",
+            "7.85",
+            "7.9",
+            "8"
+          ],
+          "answer": "7.9"
+        },
+        {
+          "q": "For multiplication/division, round to the fewest:",
+          "type": "mc",
+          "choices": [
+            "Decimal places",
+            "Significant figures",
+            "Digits total",
+            "Non-zero digits"
+          ],
+          "answer": "Significant figures"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "title": "Lesson 5 — Dimensional Analysis and Density",
+      "objective": "Convert units using conversion factors and calculate density.",
+      "concept": [
+        "Dimensional analysis (unit conversion) uses conversion factors written as ratios to cancel unwanted units. Example: 12.0 oz × (29.57 mL / 1 oz) = 355 mL — the oz units cancel, leaving mL.",
+        "Density is the ratio of mass to volume: density = mass / volume. The density of aluminum is 2.70 g/cm³ — a small piece and a large block have the same density (it is intensive)."
+      ],
+      "example": {
+        "title": "Worked Example — Conversion + Density",
+        "problem": "A 197-lb weight lifter wants to compete in a class limited to 90 kg. Is he light enough? (1 kg = 2.205 lb)",
+        "steps": [
+          {
+            "label": "Step 1",
+            "text": "Write the conversion factor with the desired unit (kg) on top:",
+            "eq": "$\\frac{1\\,\\text{kg}}{2.205\\,\\text{lb}}$"
+          },
+          {
+            "label": "Step 2",
+            "text": "Multiply — the lb units cancel:",
+            "eq": "$197\\,\\text{lb} \\times \\frac{1\\,\\text{kg}}{2.205\\,\\text{lb}} = 89.3\\,\\text{kg}$"
+          },
+          {
+            "label": "Step 3",
+            "text": "Compare: 89.3 kg < 90 kg — he qualifies."
+          }
+        ],
+        "answer": "Yes — 89.3 kg, under the 90 kg limit."
+      },
+      "practice": [
+        {
+          "q": "How many milliliters are in a 12.0-oz can? (1 oz = 29.57 mL)",
+          "type": "mc",
+          "choices": [
+            "355 mL",
+            "405 mL",
+            "295 mL",
+            "0.406 mL"
+          ],
+          "answer": "355 mL"
+        },
+        {
+          "q": "Calculate the density of aluminum if 27.6 cm³ has a mass of 74.6 g.",
+          "type": "mc",
+          "choices": [
+            "0.370 g/cm³",
+            "2.70 g/cm³",
+            "27.0 g/cm³",
+            "3.70 g/cm³"
+          ],
+          "answer": "2.70 g/cm³"
+        },
+        {
+          "q": "Is density an extensive or intensive property?",
+          "type": "mc",
+          "choices": [
+            "Extensive — depends on amount",
+            "Intensive — does not depend on amount",
+            "Chemical",
+            "Neither"
+          ],
+          "answer": "Intensive — does not depend on amount"
+        },
+        {
+          "q": "Convert 2.0 L to milliliters:",
+          "type": "mc",
+          "choices": [
+            "20 mL",
+            "200 mL",
+            "2000 mL",
+            "0.002 mL"
+          ],
+          "answer": "2000 mL"
+        }
+      ]
+    },
+    {
+      "kind": "review",
+      "title": "Unit Review — Chapter 1 (Multiple Choice)",
+      "items": [
+        {
+          "q": "Which section of the NFPA hazard diamond indicates reactivity?",
+          "choices": [
+            "Top (red)",
+            "Left (blue)",
+            "Right (yellow)",
+            "Bottom (white)"
+          ],
+          "answer": "Right (yellow)"
+        },
+        {
+          "q": "Classify: 'The density of aluminum is 2.70 g/cm³.'",
+          "choices": [
+            "Chemical property",
+            "Extensive property",
+            "Intensive property",
+            "Chemical change"
+          ],
+          "answer": "Intensive property"
+        },
+        {
+          "q": "Which is a chemical property?",
+          "choices": [
+            "Melting point",
+            "Color",
+            "Flammability",
+            "Density"
+          ],
+          "answer": "Flammability"
+        },
+        {
+          "q": "The SI base unit for mass is the:",
+          "choices": [
+            "Gram",
+            "Kilogram",
+            "Pound",
+            "Newton"
+          ],
+          "answer": "Kilogram"
+        },
+        {
+          "q": "How many significant figures in 0.05020?",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "4"
+        },
+        {
+          "q": "Report 4.52 × 2.0 with correct sig figs:",
+          "choices": [
+            "9.04",
+            "9.0",
+            "9",
+            "9.040"
+          ],
+          "answer": "9.0"
+        },
+        {
+          "q": "A chemical rated 3 for health hazard means:",
+          "choices": [
+            "No hazard",
+            "Mild irritation",
+            "Even short exposure can cause serious injury",
+            "Deadly instantly"
+          ],
+          "answer": "Even short exposure can cause serious injury"
+        },
+        {
+          "q": "Convert 250 mL to liters:",
+          "choices": [
+            "2.5 L",
+            "0.25 L",
+            "25 L",
+            "0.025 L"
+          ],
+          "answer": "0.25 L"
+        },
+        {
+          "q": "Which is a physical change?",
+          "choices": [
+            "Burning gasoline",
+            "Iron rusting",
+            "Ice melting",
+            "Food digesting"
+          ],
+          "answer": "Ice melting"
+        },
+        {
+          "q": "For addition/subtraction, round to the fewest:",
+          "choices": [
+            "Significant figures",
+            "Decimal places",
+            "Digits",
+            "Non-zero digits"
+          ],
+          "answer": "Decimal places"
+        },
+        {
+          "q": "The W in the NFPA diamond white section means the substance:",
+          "choices": [
+            "Is water-soluble",
+            "Reacts violently with water",
+            "Is wet",
+            "Washes off easily"
+          ],
+          "answer": "Reacts violently with water"
+        },
+        {
+          "q": "Density is calculated as:",
+          "choices": [
+            "mass × volume",
+            "mass ÷ volume",
+            "volume ÷ mass",
+            "mass + volume"
+          ],
+          "answer": "mass ÷ volume"
+        },
+        {
+          "q": "How many cm in 1 m?",
+          "choices": [
+            "10",
+            "100",
+            "1000",
+            "1,000,000"
+          ],
+          "answer": "100"
+        },
+        {
+          "q": "A substance rated 0 for reactivity is:",
+          "choices": [
+            "Extremely reactive",
+            "Stable under normal conditions",
+            "Explosive",
+            "An oxidizer"
+          ],
+          "answer": "Stable under normal conditions"
+        },
+        {
+          "q": "Which GHS pictogram warns of a flammable substance?",
+          "choices": [
+            "Skull and crossbones",
+            "Flame",
+            "Corrosion",
+            "Gas cylinder"
+          ],
+          "answer": "Flame"
+        }
+      ]
+    },
+    {
+      "kind": "answer_key",
+      "title": "Answer Key",
+      "note": "Answers to all lesson practice and unit review questions are in the answer key.",
+      "items": []
+    }
+  ]
+}

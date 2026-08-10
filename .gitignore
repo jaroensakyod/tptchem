@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+package-lock.json
+
+# Temp / logs
+*.log
+kpi_log.json
+
+# Large research PDFs (เกิน Git เหมาะสม — เก็บในเครื่อง)
+research-inrs-acids-bases.pdf
+cp-unit1-notes.pdf
+cp-unit1-practice.pdf
+cp-unit1-regents.pdf
+cp-unit1-regents-key.pdf
+research-regents-atomic.pdf
+
+# Credentials
+.env
+*.pem

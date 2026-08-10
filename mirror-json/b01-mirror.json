@@ -1,0 +1,251 @@
+{
+  "title": "Acids & Bases: Theories and Strength — Complete Lesson Pack",
+  "meta": {
+    "subject": "Chemistry",
+    "grade": "9-12",
+    "duration": "3 class periods",
+    "file_stem": "b01-mirror"
+  },
+  "sections": [
+    {
+      "kind": "header",
+      "title": "Acids & Bases: Theories and Strength",
+      "subtitle": "Complete Lesson Pack · Brønsted–Lowry · pH & pOH · Acid Strength",
+      "badge": "CurioNest"
+    },
+    {
+      "kind": "learning_objectives",
+      "title": "Learning Objectives",
+      "items": [
+        "Identify Brønsted–Lowry acids, bases, and conjugate acid–base pairs",
+        "Write equations for acid and base ionization reactions",
+        "Use the ion-product constant for water (Kw) to find [H3O+] and [OH−]",
+        "Convert between pH, pOH, [H3O+], and [OH−] at 25 °C",
+        "Compare acid strength using Ka and percent ionization",
+        "Describe the acid–base behavior of amphiprotic species"
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 1 — Defining Acids & Bases (Brønsted–Lowry)",
+      "body": [
+        "An acid is any species that donates a proton (H+) to another species; a base is any species that accepts a proton. This is the Brønsted–Lowry definition, and it is more general than the Arrhenius definition (which requires the production of H3O+ or OH− in water).",
+        "In any Brønsted–Lowry reaction, two conjugate pairs are present: when an acid donates a proton, the remaining species is its conjugate base; when a base accepts a proton, the product is its conjugate acid.",
+        "Example: In the reaction NH3(aq) + H2O(l) ⇌ NH4+(aq) + OH−(aq), water donates a proton to ammonia. Water is the acid and its conjugate base is OH−; ammonia is the base and its conjugate acid is NH4+.",
+        "Amphiprotic species (such as H2O, HCO3−, and HSO4−) can either donate or accept a proton depending on the other reactant."
+      ],
+      "worked_example": {
+        "question": "Label the acid, base, conjugate acid, and conjugate base in the reaction: HCN(aq) + H2O(l) ⇌ CN−(aq) + H3O+(aq)",
+        "solution": "HCN donates a proton to water: HCN is the acid and CN− is its conjugate base. H2O accepts the proton: water is the base and H3O+ is its conjugate acid."
+      },
+      "common_mistakes": [
+        "Confusing 'conjugate' with 'concentration' — a conjugate pair differs by exactly one proton (H+).",
+        "Forgetting that H3O+ (hydronium) is the form H+ takes in water."
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 2 — Water Autoionization and the Ion-Product Constant (Kw)",
+      "body": [
+        "Water autoionizes to a tiny extent: H2O(l) + H2O(l) ⇌ H3O+(aq) + OH−(aq).",
+        "At 25 °C, the ion-product constant is Kw = [H3O+][OH−] = 1.0 × 10−14.",
+        "In pure water, [H3O+] = [OH−] = 1.0 × 10−7 M. Kw increases with temperature because autoionization is endothermic (Kw ≈ 5.6 × 10−13 at 100 °C)."
+      ],
+      "worked_example": {
+        "question": "At 25 °C, a solution has [OH−] = 2.5 × 10−4 M. Find [H3O+] and decide if the solution is acidic, basic, or neutral.",
+        "solution": "[H3O+] = Kw / [OH−] = (1.0 × 10−14) / (2.5 × 10−4) = 4.0 × 10−11 M. Since [H3O+] < [OH−], the solution is basic."
+      },
+      "common_mistakes": [
+        "Using Kw = 1.0 × 10−14 at temperatures other than 25 °C.",
+        "Multiplying instead of dividing when solving for a missing ion concentration."
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 3 — pH, pOH, and the pH Scale",
+      "body": [
+        "pH = −log[H3O+] and pOH = −log[OH−]. At 25 °C, pH + pOH = 14.00 for any aqueous solution.",
+        "Acidic solutions: [H3O+] > 1.0 × 10−7 M and pH < 7. Basic: [H3O+] < 1.0 × 10−7 M and pH > 7. Neutral: pH = 7 at 25 °C.",
+        "A one-unit pH change corresponds to a tenfold change in [H3O+]."
+      ],
+      "worked_example": {
+        "question": "What are the pH and pOH of a 0.010 M solution of HCl (a strong acid that ionizes completely)?",
+        "solution": "[H3O+] = 0.010 M, so pH = −log(0.010) = 2.00. pOH = 14.00 − 2.00 = 12.00."
+      },
+      "common_mistakes": [
+        "Forgetting the minus sign: pH = −log[H3O+], not log[H3O+].",
+        "Assuming pH = 7 is neutral at all temperatures (it is only true at 25 °C)."
+      ]
+    },
+    {
+      "kind": "concept",
+      "title": "Concept 4 — Relative Strengths of Acids and Bases",
+      "body": [
+        "Strong acids (HCl, HBr, HI, HNO3, H2SO4, HClO4) ionize completely in water. Weak acids (HF, CH3COOH, HCN, HNO2) ionize only partially.",
+        "The strength of a weak acid is quantified by its ionization constant Ka: the larger Ka, the stronger the acid. For a conjugate pair, Ka × Kb = Kw.",
+        "Water has a leveling effect: in water, the strongest acid possible is H3O+ and the strongest base possible is OH−. The stronger the acid, the weaker its conjugate base.",
+        "Binary acid strength increases left to right across a period (CH4 < NH3 < H2O < HF) and down a group (HF < HCl < HBr < HI)."
+      ],
+      "worked_example": {
+        "question": "For HF (Ka = 6.8 × 10−4) and HCN (Ka = 6.2 × 10−10), which is the stronger acid, and which is the stronger conjugate base?",
+        "solution": "HF has the larger Ka, so HF is the stronger acid and CN− is the stronger conjugate base (the weaker acid has the stronger conjugate base)."
+      },
+      "common_mistakes": [
+        "Thinking 'strong' means 'concentrated' — strength depends on Ka (extent of ionization), not concentration.",
+        "Assuming all acids with H in the formula are strong."
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part A — Brønsted–Lowry Concepts (Questions 1–8)",
+      "items": [
+        {
+          "q": "Write an equation showing water acting as a Brønsted–Lowry acid when it reacts with ammonia, NH3.",
+          "type": "short",
+          "answer": "H2O(l) + NH3(aq) ⇌ OH−(aq) + NH4+(aq)"
+        },
+        {
+          "q": "Write an equation showing water acting as a Brønsted–Lowry base when it reacts with hydrogen cyanide, HCN.",
+          "type": "short",
+          "answer": "HCN(aq) + H2O(l) ⇌ CN−(aq) + H3O+(aq)"
+        },
+        {
+          "q": "For each species, write the formula of its conjugate base: (a) H2O (b) NH4+ (c) HSO4− (d) H2CO3",
+          "type": "short",
+          "answer": "(a) OH− (b) NH3 (c) SO42− (d) HCO3−"
+        },
+        {
+          "q": "For each species, write the formula of its conjugate acid: (a) OH− (b) NH3 (c) CO32− (d) H2PO4−",
+          "type": "short",
+          "answer": "(a) H2O (b) NH4+ (c) HCO3− (d) H3PO4"
+        },
+        {
+          "q": "In the reaction HSO4−(aq) + H2O(l) ⇌ SO42−(aq) + H3O+(aq), identify the acid, base, conjugate acid, and conjugate base.",
+          "type": "short",
+          "answer": "Acid: HSO4− · Base: H2O · Conjugate acid: H3O+ · Conjugate base: SO42−"
+        },
+        {
+          "q": "Which of the following species are amphiprotic? H2O, OH−, HCO3−, NH4+, HSO4−",
+          "type": "mc",
+          "choices": ["H2O and HSO4− only", "H2O, HCO3−, and HSO4−", "OH− and NH4+", "All five species"],
+          "answer": "H2O, HCO3−, and HSO4− (each can donate OR accept a proton; OH− can only accept and NH4+ can only donate)",
+          "explain": "Amphiprotic species must have at least one H to donate and be able to accept another H+. OH− has no H to donate; NH4+ has no lone pair to accept a proton easily in water."
+        },
+        {
+          "q": "Write the two possible reactions of the amphiprotic ion HCO3−: (a) as an acid with water (b) as a base with water.",
+          "type": "short",
+          "answer": "(a) HCO3−(aq) + H2O(l) ⇌ CO32−(aq) + H3O+(aq) (b) HCO3−(aq) + H2O(l) ⇌ H2CO3(aq) + OH−(aq)"
+        },
+        {
+          "q": "Is the autoionization of water endothermic or exothermic? Explain using the values Kw = 2.9 × 10−14 at 40 °C and Kw = 9.3 × 10−14 at 60 °C.",
+          "type": "short",
+          "answer": "Endothermic — Kw increases with temperature, so heat is absorbed (an endothermic process shifts toward products when temperature rises)."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part B — Kw, pH, and pOH Calculations (Questions 9–16)",
+      "items": [
+        {
+          "q": "Calculate [H3O+] and [OH−] in pure water at 25 °C.",
+          "type": "calc",
+          "answer": "[H3O+] = [OH−] = 1.0 × 10−7 M (Kw = 1.0 × 10−14; x² = Kw → x = 1.0 × 10−7)"
+        },
+        {
+          "q": "A solution at 25 °C has [H3O+] = 3.2 × 10−5 M. Calculate [OH−]. Is the solution acidic, basic, or neutral?",
+          "type": "calc",
+          "answer": "[OH−] = Kw/[H3O+] = 1.0×10−14 / 3.2×10−5 = 3.1 × 10−10 M. [H3O+] > [OH−], so acidic."
+        },
+        {
+          "q": "Calculate the pH and pOH of a 0.035 M solution of HNO3, which ionizes completely.",
+          "type": "calc",
+          "answer": "pH = −log(0.035) = 1.46; pOH = 14.00 − 1.46 = 12.54"
+        },
+        {
+          "q": "Calculate the pH and pOH of a 0.0042 M solution of KOH, which ionizes completely.",
+          "type": "calc",
+          "answer": "pOH = −log(0.0042) = 2.38; pH = 14.00 − 2.38 = 11.62"
+        },
+        {
+          "q": "What are [H3O+] and [OH−] in a solution whose pH is 4.20?",
+          "type": "calc",
+          "answer": "[H3O+] = 10−4.20 = 6.3 × 10−5 M; [OH−] = Kw/[H3O+] = 1.0×10−14 / 6.3×10−5 = 1.6 × 10−10 M"
+        },
+        {
+          "q": "The [H3O+] in a sample of rainwater is 1.7 × 10−6 M at 25 °C. What is the concentration of hydroxide ions?",
+          "type": "calc",
+          "answer": "[OH−] = 1.0×10−14 / 1.7×10−6 = 5.9 × 10−9 M"
+        },
+        {
+          "q": "The [OH−] in household ammonia is 3.2 × 10−3 M at 25 °C. What is [H3O+] and the pH?",
+          "type": "calc",
+          "answer": "[H3O+] = 1.0×10−14 / 3.2×10−3 = 3.1 × 10−12 M; pH = −log(3.1×10−12) = 11.51"
+        },
+        {
+          "q": "A solution has pH = 9.35. Calculate pOH, [H3O+], and [OH−]. Classify the solution.",
+          "type": "calc",
+          "answer": "pOH = 4.65; [H3O+] = 10−9.35 = 4.5 × 10−10 M; [OH−] = 1.0×10−14/4.5×10−10 = 2.2 × 10−5 M. pH > 7 → basic."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Part C — Acid Strength (Questions 17–22)",
+      "items": [
+        {
+          "q": "Arrange the following in order of increasing acid strength: HF, HCl, HBr, HI. Explain the trend.",
+          "type": "short",
+          "answer": "HF < HCl < HBr < HI. Down group 17, the H–X bond weakens (bond enthalpy decreases), so ionization is easier."
+        },
+        {
+          "q": "Given Ka values: CH3COOH (1.8 × 10−5), HF (6.8 × 10−4), HCN (6.2 × 10−10). Rank the acids from weakest to strongest.",
+          "type": "short",
+          "answer": "HCN < CH3COOH < HF (smaller Ka = weaker acid)"
+        },
+        {
+          "q": "For the conjugate pair HCN/CN−, Ka(HCN) = 6.2 × 10−10. Calculate Kb for CN−.",
+          "type": "calc",
+          "answer": "Kb = Kw/Ka = 1.0×10−14 / 6.2×10−10 = 1.6 × 10−5"
+        },
+        {
+          "q": "A 0.10 M solution of a weak acid HA is 2.4% ionized. Calculate [H3O+] and Ka.",
+          "type": "calc",
+          "answer": "[H3O+] = 0.10 × 0.024 = 2.4 × 10−3 M. Ka ≈ (2.4×10−3)² / 0.10 = 5.8 × 10−5 (using [HA] ≈ 0.10 M, valid because % ionization < 5%)."
+        },
+        {
+          "q": "The pH of a 0.23 M solution of HF is 1.92. Determine Ka for HF.",
+          "type": "calc",
+          "answer": "[H3O+] = 10−1.92 = 1.2 × 10−2 M. Ka = (1.2×10−2)²/(0.23 − 1.2×10−2) = 6.6 × 10−4"
+        },
+        {
+          "q": "Explain why 'strong acid' does not mean 'concentrated acid.' Give an example of a dilute solution of a strong acid and a concentrated solution of a weak acid.",
+          "type": "short",
+          "answer": "Strength = extent of ionization (Ka); concentration = amount of solute per liter. A 0.0001 M HCl (strong, dilute) has lower [H3O+] than 6 M CH3COOH (weak, concentrated) even though HCl ionizes completely."
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Key Terms",
+      "items": [
+        ["acid", "A species that donates a proton (H+) in a Brønsted–Lowry reaction"],
+        ["base", "A species that accepts a proton (H+) in a Brønsted–Lowry reaction"],
+        ["conjugate acid", "The species formed when a base accepts a proton"],
+        ["conjugate base", "The species remaining after an acid donates a proton"],
+        ["amphiprotic", "Able to act as either a proton donor or a proton acceptor"],
+        ["autoionization", "Reaction of identical molecules to produce ions (e.g., water producing H3O+ and OH−)"],
+        ["ion-product constant (Kw)", "Kw = [H3O+][OH−] = 1.0 × 10−14 at 25 °C"],
+        ["pH", "−log[H3O+], a measure of hydronium ion concentration"],
+        ["pOH", "−log[OH−], a measure of hydroxide ion concentration"],
+        ["ionization constant (Ka)", "Equilibrium constant for the ionization of a weak acid; larger Ka = stronger acid"]
+      ]
+    },
+    {
+      "kind": "answer_key",
+      "title": "Answer Key",
+      "note": "Worked solutions for every question — see answers embedded in Parts A–C above. The full key with step-by-step work is included in the teacher edition.",
+      "items": []
+    }
+  ]
+}
