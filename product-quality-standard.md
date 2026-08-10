@@ -1,7 +1,7 @@
-# ChemNest Product Quality Standard v1.0
+# ChemNest Product Quality Standard v1.1
 
 > มาตรฐานบังคับก่อนขึ้นร้าน TPT ทุกชิ้น — แก้ไขได้โดย owner เท่านั้น (version bump)
-> อนุมัติ: 2026-08-09 · ใช้กับ pilot ชิ้นแรกเป็น Certified Product #CN-AB-001
+> v1.0 อนุมัติ 2026-08-09 · v1.1 เพิ่ม Visual Asset Gate 2026-08-10 · owner approval required for future version bumps
 
 ## หลักการ
 
@@ -46,6 +46,24 @@ draft → translated → lang_qa (G2) → packaged (G3) → certified (G4) → p
 - ตรวจด้วย pipeline: build ผ่าน + pypdf ตรวจหน้า/แท็ก + vision/มนุษย์ดู layout
 - **Roadmap ตามคู่แข่ง (EazyScience):** reading passage ต่อสินค้า (รูปแบบที่ครูซื้อจริง — "independent reading activity") · เวอร์ชัน B&W (ประหยัดหมึก) · real-world connections ในเนื้อหา (ครูชมในรีวิว)
 
+### G3-V — Visual Asset Gate (บังคับ)
+
+จัดประเภทภาพก่อนสร้างหรือค้นหา ห้ามเลือกเครื่องมือจากความสะดวก:
+
+1. **สัญลักษณ์และอุปกรณ์วิทยาศาสตร์มาตรฐาน** — ใช้ SVG/ภาพจากแหล่งที่ตรวจสอบได้ เช่น UNECE GHS, Bioicons, Servier หรือ OpenClipart พร้อม URL ผู้สร้าง และ license รายไฟล์ ห้ามวาดเลียนแบบเองเมื่อมีมาตรฐานอยู่แล้ว
+2. **แผนภาพที่ค่าทางวิทยาศาสตร์เป็นสาระ** — ใช้ `chem_figures.py`, matplotlib, RDKit, OMML หรือโค้ด deterministic สำหรับกราฟ สเกล meniscus โครงสร้างโมเลกุล ตาราง และการคำนวณ พร้อมตรวจตัวเลข/หน่วย
+3. **ภาพบริบทสมจริงหรือภาพประกอบเชิงเรื่องราว** — ใช้ ImageGen ได้เมื่อช่วยการเรียนจริงและไม่มีแหล่งมาตรฐานที่เหมาะสม ห้ามให้ AI สร้าง GHS อุปกรณ์ที่ต้องระบุชื่อ สูตรเคมี ฉลาก ข้อความ หรือขั้นตอนความปลอดภัย
+4. **องค์ประกอบเลย์เอาต์** — การ์ด เส้น กล่อง หมายเลข และพื้นที่ตอบ ใช้ shape ของเอกสารหรือโค้ดได้ แต่ต้องไม่ปลอมเป็น clipart อุปกรณ์
+
+ข้อห้ามและการตรวจ:
+
+- ห้ามใช้ภาพวาดหยาบ ตัวการ์ตูน หรืออุปกรณ์จาก shape เมื่องานต้องการการจำแนกอุปกรณ์จริง
+- ห้ามผสมหลายสไตล์โดยไม่มีระบบ และห้ามใช้ภาพที่ย้อนกลับไปหาแหล่ง/สิทธิ์ไม่ได้
+- ลงทะเบียน asset ใน `assets-manifest.json` **ก่อน** แทรกลงสินค้า; ภาพผสมต้องบันทึก provenance ของทุกองค์ประกอบ
+- Cover และ listing ต้องใช้ภาพจากหน้าจริงหรือ asset ชุดเดียวกับสินค้า ห้ามทำ mockup ที่สัญญาเกินไฟล์ขาย
+- Render ตรวจทุกหน้าและภาพ listing ที่ขนาด thumbnail; ตรวจชื่ออุปกรณ์ สัญลักษณ์ ความคม การครอป และความสม่ำเสมอ
+- หลัง QA ให้ลบภาพทดลอง ไฟล์ render ชั่วคราว และ derivative ที่ไม่มีผู้ใช้งาน แต่เก็บ source SVG + derivative สุดท้ายที่ builder เรียกใช้
+
 ### G4 — Compliance Gate (ใหม่)
 - **AI disclosure:** ตอบตามจริงในขั้นตอนอัปโหลด TPT (AI-assisted) + description กล่าวถึง QA ไม่ใช่โฆษณา AI
 - **ลิขสิทธิ์:** ฟอนต์ OFL เท่านั้น (Google Fonts ✓) · รูป/ไอคอนสร้างเองหรือ CC · ห้ามคลิปอาร์ต/ตัวการ์ตูนติดลิขสิทธิ์
@@ -68,6 +86,7 @@ draft → translated → lang_qa (G2) → packaged (G3) → certified (G4) → p
 [ ] G1: source batch + chemistry_status=approved
 [ ] G2: แปลครบ ไม่มี AI-ism · glossary ตรง · tier ตามชนิดข้อ
 [ ] G3: PDF ครบ structure · key ครบ · preview ครบ · ฟอนต์ฝัง
+[ ] G3-V: route ภาพถูกประเภท · provenance ครบ · ไม่มีภาพวาดแทนอุปกรณ์/GHS · visual QA ผ่าน
 [ ] G4: disclosure · ลิขสิทธิ์ · TOU · หมวด/แท็ก/ราคา
 [ ] build + verify: ALL PASS (script)
 [ ] (ครั้งแรกของร้าน) เจ้าของภาษาอ่านทวน 1 รอบ

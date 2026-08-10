@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-10",
+  "assets": [
+    {
+      "path_glob": "fonts/Poppins-*.woff2",
+      "name": "Poppins",
+      "license": "OFL-1.1",
+      "source_url": "https://fonts.google.com/specimen/Poppins",
+      "verification_status": "needs_local_license_copy"
+    },
+    {
+      "path_glob": "fonts/Nunito-*.woff2",
+      "name": "Nunito",
+      "license": "OFL-1.1",
+      "source_url": "https://fonts.google.com/specimen/Nunito",
+      "verification_status": "needs_local_license_copy"
+    },
+    {
+      "path_glob": "fonts/Caveat-*.woff2",
+      "name": "Caveat",
+      "license": "OFL-1.1",
+      "source_url": "https://fonts.google.com/specimen/Caveat",
+      "verification_status": "needs_local_license_copy"
+    },
+    {
+      "path_glob": "figures/bioicons/verified-ghs/*.svg",
+      "name": "GHS hazard pictograms",
+      "creator": "United Nations Economic Commission for Europe (UNECE)",
+      "license": "CC0-1.0",
+      "source_url": "https://github.com/duerrsimon/bioicons/tree/main/static/icons/cc-0/Safety_symbols/UNECE",
+      "license_copy": "licenses/CC0-1.0.txt",
+      "verification_status": "verified",
+      "source_files": [
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/acute-toxicity.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/corrosive.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/explosive.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/flammable.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/gas-under-pressure.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/hazardous-environment.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/health-hazard.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/oxidizing.svg",
+        "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Safety_symbols/UNECE/serious-health-hazard.svg"
+      ]
+    },
+    {
+      "path_glob": "figures/bioicons/verified-ghs/*.png",
+      "name": "Worksheet-ready GHS PNG derivatives",
+      "creator": "CurioNest composition from UNECE SVGs",
+      "license": "CC0-1.0",
+      "source_url": "assets-manifest.json#GHS-hazard-pictograms",
+      "license_copy": "licenses/CC0-1.0.txt",
+      "verification_status": "verified"
+    },
+    {
+      "path_glob": "figures/bioicons/verified-equipment/*",
+      "name": "Chemistry Foundations equipment icon set",
+      "license": "CC BY 3.0 and CC0-1.0; see source_files",
+      "source_url": "https://github.com/duerrsimon/bioicons",
+      "license_copies": ["licenses/CC-BY-3.0.txt", "licenses/CC0-1.0.txt"],
+      "verification_status": "verified",
+      "source_files": [
+        {"local": "beaker.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/beaker-empty.svg"},
+        {"local": "erlenmeyer-flask.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/erlenmeyer-glass.svg"},
+        {"local": "graduated-cylinder.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/measuringcylinder-empty.svg"},
+        {"local": "test-tube.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/testtube-glass.svg"},
+        {"local": "buret.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/burette-glass.svg"},
+        {"local": "pipette.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/pipette-glass.svg"},
+        {"local": "funnel.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/funnel-glass.svg"},
+        {"local": "electronic-balance.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Lab_apparatus/Servier/scale.svg"},
+        {"local": "hot-plate.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Lab_apparatus/Servier/magnet-stirringplate.svg"},
+        {"local": "wash-bottle.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/spraybottle.svg"},
+        {"local": "ring-stand-servier.svg", "creator": "Servier", "license": "CC BY 3.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/burette-stand.svg"},
+        {"local": "lab-tongs.svg", "creator": "OpenClipart", "license": "CC0-1.0", "url": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-0/Lab_apparatus/OpenClipart/lab-tong.svg"}
+      ]
+    },
+    {
+      "path_glob": "figures/*.png",
+      "name": "Generated chemistry figures and composed grids",
+      "license": "Project-generated or derived from entries above",
+      "source_url": null,
+      "verification_status": "review_derivation_per_file"
+    }
+  ]
+}

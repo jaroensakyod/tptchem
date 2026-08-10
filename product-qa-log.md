@@ -1,5 +1,32 @@
 # Product QA Log — ChemNest
 
+## Catalog reconciliation — 2026-08-10
+
+| Product ID | Package | Status | Blocking evidence |
+|---|---|---|---|
+| `CN-CH01-MATH` | `products/ch01-math-measurement/` | `packaged_pending_qa` | rebuild DOCX/PDF, full-page visual QA, native-English review, attribution verification |
+| `CN-CH01-ESSENTIAL` | `products/ch01-essential-ideas/` | `packaged_pending_qa` | rebuild DOCX/PDF, full-page visual QA, native-English review, attribution verification |
+
+สองรายการนี้เป็นสินค้าปัจจุบันตาม `catalog.json` และยังไม่ certified ส่วน
+`CN-AB-001` ด้านล่างเป็น historical QA record ซึ่งไม่มี package/source path ตาม
+โครงสร้าง catalog ปัจจุบัน จึงใช้เป็นหลักฐานสำหรับสองสินค้าข้างบนไม่ได้
+
+- 2026-08-10: regenerate cover ทั้งสองชุดด้วย `build_listing_assets.py` แล้ว
+- 2026-08-10: ตรวจ cover PNG 1200×1200 ด้วยภาพจริง ไม่พบข้อความล้นหรือถูกตัด
+
+## Chemistry Foundations pilot — Visual Asset Audit — 2026-08-10
+
+> Package สำหรับพัฒนา/ทดสอบ ยังไม่ใช่หลักฐานว่า `catalog.json` มีสถานะ certified
+
+- เพิ่มและผ่านกฎ `G3-V`: GHS ใช้ UNECE; อุปกรณ์ใช้ Servier/OpenClipart ผ่าน Bioicons พร้อม provenance รายไฟล์
+- เปลี่ยน GHS บน sample chemical label จากภาพวาดด้วยโค้ดเป็น verified UNECE pictograms
+- เก็บ deterministic drawing เฉพาะ measurement schematic/meniscus ที่ค่าทางวิทยาศาสตร์เป็นสาระ
+- ลบ drawing functions ของอุปกรณ์/GHS แบบเก่า, orphan GHS derivative, ภาพ ImageGen ทดลอง และ temp QA files หลังตรวจเสร็จ
+- Word export + visual review ครบ 20/20 หน้า; student packet 14/14 หน้า; preview 8/8 หน้า; cover/listing 3/3 ภาพ
+- Structural check: page counts ตรง, ไม่มี blank page ใน student/preview, source compile ผ่าน
+- ลบ legacy `lab*.svg`/NFPA SVG ที่ไม่มีการอ้างอิง; ย้าย GHS source SVG ที่ใช้จริงเข้า `verified-ghs/`
+- Attribution QA ของ asset ชุด pilot ผ่าน; repository รวมยังมี warning ของ font licenses/legacy figure derivatives จึงยังห้ามยกสถานะทั้ง catalog เป็น certified
+
 ## CN-AB-001 · "Acids & Bases: Theories and Strength" — ✅ CERTIFIED (v1.0)
 
 - **สินค้า:** 20 MC questions + Quick Review Card + Answer Key (คำอธิบาย + misconception)
