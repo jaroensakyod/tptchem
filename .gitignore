@@ -23,3 +23,6 @@ research-regents-atomic.pdf
 # Credentials
 .env
 *.pem
+
+# Hermes temp
+.hermes-tmp.*/
