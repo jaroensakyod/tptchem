@@ -339,7 +339,7 @@ def render_practice(doc, s):
                 para(doc, "   _________________________________________________________________",
                      size=9.5, color=SLATE, after=3)
 
-def render_vocabulary(doc, s):
+def _render_vocabulary_with_definitions(doc, s):
     heading(doc, s.get("title", "Key Terms"), size=11.5, before=12)
     tbl = doc.add_table(rows=len(s.get("items", [])) + 1, cols=2)
     tbl.autofit = False
@@ -378,75 +378,11 @@ def render_figure(doc, s):
              align=WD_ALIGN_PARAGRAPH.CENTER)
 
 
-def render_lesson(doc, s):
-    """Regents-style lesson: objective → short concept → worked example → embedded practice."""
-    doc.add_page_break()
-    heading(doc, s.get("title", "Lesson"), size=13, before=0, color=INDIGO)
-    obj = s.get("objective", "")
-    if obj:
-        para(doc, "Objective: " + obj, size=9.5, bold=True, color=SLATE, after=6)
-    for para_text in s.get("concept", []):
-        para(doc, para_text, size=9.5, after=4)
-    ex = s.get("example")
-    if ex:
-        # worked example box — step-by-step with OMML equations
-        p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(8)
-        p.paragraph_format.space_after = Pt(2)
-        r = p.add_run("Worked Example")
-        r.font.bold = True; r.font.size = Pt(10); r.font.color.rgb = ORANGE
-        # problem (may contain inline $...$ math)
-        ppr = doc.add_paragraph()
-        ppr.paragraph_format.space_after = Pt(2)
-        add_chem_text(ppr, ex.get("problem", ""), size=9.5)
-        # steps
-        for step in ex.get("steps", []):
-            if isinstance(step, str):
-                step = {"text": step}
-            p = doc.add_paragraph()
-            p.paragraph_format.space_after = Pt(1)
-            p.paragraph_format.left_indent = Inches(0.15)
-            r = p.add_run(step.get("label", "Step") + ": ")
-            r.font.bold = True; r.font.size = Pt(9.5); r.font.color.rgb = INDIGO
-            add_chem_text(p, step.get("text", ""), size=9.5)
-            eq = step.get("eq")
-            if eq:
-                peq = doc.add_paragraph()
-                peq.paragraph_format.left_indent = Inches(0.35)
-                peq.paragraph_format.space_after = Pt(3)
-                add_chem_text(peq, eq, size=10)  # $...$ renders as OMML display
-        if ex.get("answer"):
-            pa = doc.add_paragraph()
-            pa.paragraph_format.space_before = Pt(4)
-            pa.paragraph_format.space_after = Pt(8)
-            r = pa.add_run("Answer: ")
-            r.font.bold = True; r.font.size = Pt(9.5); r.font.color.rgb = ORANGE
-            add_chem_text(pa, ex.get("answer", ""), size=9.5)
-    # embedded practice
-    items = s.get("practice", [])
-    if items:
-        para(doc, "Check Your Understanding", size=10.5, bold=True, color=INDIGO, before=6, after=4)
-        for i, item in enumerate(items):
-            qnum = i + 1
-            p = doc.add_paragraph()
-            p.paragraph_format.space_after = Pt(1)
-            p.paragraph_format.keep_with_next = True
-            add_chem_text(p, f"{qnum}.  ", size=9.8, bold=True, color=INDIGO)
-            add_chem_text(p, item.get("q", ""), size=9.8)
-            if item.get("type") == "mc":
-                for j, ch in enumerate(item.get("choices", [])):
-                    para(doc, f"   ({LETTERS[j]})  {ch}", size=9.5, color=SLATE, after=0)
-                para(doc, "   Answer: ______", size=9, color=GRAY, after=5)
-            else:
-                for _ in range(2):
-                    para(doc, "   _________________________________________________________________",
-                         size=9.5, color=SLATE, after=3)
-
 def render_review(doc, s):
     """Unit Review: end-of-unit multiple choice (Regents style)."""
     doc.add_page_break()
     heading(doc, s.get("title", "Unit Review"), size=13, before=0, color=INDIGO)
-    para(doc, "Circle the letter of the best answer for each question.",
+    para(doc, "Circle the number of the best answer for each question.",
          size=9.5, color=GRAY, italic=True, after=6)
     items = s.get("items", [])
     for i, item in enumerate(items):
@@ -457,13 +393,23 @@ def render_review(doc, s):
         add_chem_text(p, f"{qnum}.  ", size=9.8, bold=True, color=INDIGO)
         add_chem_text(p, item.get("q", ""), size=9.8)
         for j, ch in enumerate(item.get("choices", [])):
-            para(doc, f"   ({LETTERS[j]})  {ch}", size=9.5, color=SLATE, after=0)
+            para(doc, f"   ({j+1})  {ch}", size=9.5, color=SLATE, after=0)
         para(doc, "", size=5, after=3)
 
 def render_vocabulary(doc, s):
-    """Vocabulary with writing lines (Regents style: define in your own words)."""
+    """Render either a term/definition table or Regents-style writing prompts.
+
+    Older product JSON stores vocabulary as ``[term, definition]`` pairs, while
+    the Chapter 1 schema stores plain terms for students to define.  Supporting
+    both shapes here keeps every committed product reproducible.
+    """
+    items = s.get("items", [])
+    if items and all(isinstance(item, (list, tuple)) and len(item) >= 2
+                     for item in items):
+        return _render_vocabulary_with_definitions(doc, s)
+
     heading(doc, s.get("title", "Vocabulary"), size=11.5, before=12)
-    for i, term in enumerate(s.get("items", [])):
+    for i, term in enumerate(items):
         if isinstance(term, list):
             term = term[0]
         para(doc, term, size=9.8, bold=True, color=INDIGO, after=1)
@@ -499,6 +445,8 @@ def render_assess_yourself(doc, s):
 
 def render_lesson(doc, s):
     """Regents-style lesson: ALL-CAPS header + objective box + concept + example + practice."""
+    if s.get("page_break", True):
+        doc.add_page_break()
     # ALL CAPS lesson header + divider line
     title = s.get("title", "Lesson").upper()
     heading(doc, title, size=14, before=0, color=INDIGO)

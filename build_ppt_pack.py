@@ -21,6 +21,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 JS_TEMPLATE = r"""
 const pptxgen = require("pptxgenjs");
 const fs = require("fs");
+const path = require("path");
 
 const data = JSON.parse(fs.readFileSync(process.argv[2], "utf-8"));
 const out = process.argv[3];
@@ -33,7 +34,7 @@ pptx.layout = "LAYOUT_WIDE"; // 13.3 x 7.5
 pptx.author = "CurioNest";
 pptx.title = data.title || "CurioNest Lesson";
 
-function stripTags(s) { return (s || "").replace(/<[^>]+>/g, ""); }
+function stripTags(s) { return String(s || "").replace(/<[^>]+>/g, ""); }
 
 // ---------- helpers ----------
 function titleSlide(s) {
@@ -82,37 +83,75 @@ function conceptSlide(s) {
 }
 
 function practiceSlide(s, numStart) {
-  const slide = pptx.addSlide();
-  slide.background = { color: WHITE };
-  slide.addText(stripTags(s.title || "Practice"), { x: 0.6, y: 0.4, w: 12, h: 0.7, fontSize: 26, color: INDIGO, bold: true });
   const items = s.items || [];
   const maxRows = 5;
-  items.slice(0, maxRows).forEach((item, i) => {
-    const n = numStart + i;
-    const y = 1.3 + i * 1.1;
-    slide.addText(n + ".", { x: 0.7, y: y, w: 0.6, h: 0.5, fontSize: 16, color: INDIGO, bold: true });
-    slide.addText(stripTags(item.q || ""), { x: 1.4, y: y, w: 11.2, h: 0.9, fontSize: 14, color: SLATE, valign: "top" });
-  });
-  if (items.length > maxRows) {
-    slide.addText("(continued on next slide…)", { x: 1.4, y: 6.8, w: 10, h: 0.4, fontSize: 11, color: GRAY, italic: true });
+  const pageCount = Math.max(1, Math.ceil(items.length / maxRows));
+  for (let page = 0; page < pageCount; page++) {
+    const slide = pptx.addSlide();
+    slide.background = { color: WHITE };
+    const suffix = pageCount > 1 ? ` (${page + 1}/${pageCount})` : "";
+    slide.addText(stripTags(s.title || "Practice") + suffix, { x: 0.6, y: 0.4, w: 12, h: 0.7, fontSize: 26, color: INDIGO, bold: true });
+    items.slice(page * maxRows, (page + 1) * maxRows).forEach((item, i) => {
+      const n = numStart + page * maxRows + i;
+      const y = 1.3 + i * 1.1;
+      slide.addText(n + ".", { x: 0.7, y: y, w: 0.6, h: 0.5, fontSize: 16, color: INDIGO, bold: true });
+      slide.addText(stripTags(item.q || item.prompt || ""), { x: 1.4, y: y, w: 11.2, h: 0.9, fontSize: 14, color: SLATE, valign: "top" });
+    });
   }
 }
 
 function vocabSlide(s) {
+  const items = s.items || [];
+  const perSlide = 8;
+  const colW = 6.0;
+  const pageCount = Math.max(1, Math.ceil(items.length / perSlide));
+  for (let page = 0; page < pageCount; page++) {
+    const slide = pptx.addSlide();
+    slide.background = { color: WHITE };
+    const suffix = pageCount > 1 ? ` (${page + 1}/${pageCount})` : "";
+    slide.addText(stripTags(s.title || "Key Terms") + suffix, { x: 0.6, y: 0.4, w: 12, h: 0.7, fontSize: 26, color: INDIGO, bold: true });
+    items.slice(page * perSlide, (page + 1) * perSlide).forEach((it, i) => {
+      const term = Array.isArray(it) ? it[0] : (typeof it === "string" ? it : it.term);
+      const def = Array.isArray(it) ? it[1] : (typeof it === "string" ? "Define in your own words." : it.def);
+      const col = i % 2, row = Math.floor(i / 2);
+      const x = 0.7 + col * colW, y = 1.3 + row * 1.35;
+      slide.addShape("roundRect", { x: x, y: y, w: colW - 0.4, h: 1.18, fill: { color: "EEF2FF" }, rectRadius: 0.05 });
+      slide.addText(stripTags(term), { x: x + 0.15, y: y + 0.08, w: colW - 0.7, h: 0.35, fontSize: 14, color: INDIGO, bold: true });
+      slide.addText(stripTags(def), { x: x + 0.15, y: y + 0.45, w: colW - 0.7, h: 0.62, fontSize: 11, color: SLATE, valign: "top" });
+    });
+  }
+}
+
+function lessonSlides(s) {
   const slide = pptx.addSlide();
   slide.background = { color: WHITE };
-  slide.addText(stripTags(s.title || "Key Terms"), { x: 0.6, y: 0.4, w: 12, h: 0.7, fontSize: 26, color: INDIGO, bold: true });
-  const items = s.items || [];
-  const colW = 6.0;
-  items.forEach((it, i) => {
-    const term = Array.isArray(it) ? it[0] : it.term;
-    const def = Array.isArray(it) ? it[1] : it.def;
-    const col = i % 2, row = Math.floor(i / 2);
-    const x = 0.7 + col * colW, y = 1.3 + row * 1.15;
-    slide.addShape("roundRect", { x: x, y: y, w: colW - 0.4, h: 1.0, fill: { color: "EEF2FF" }, rectRadius: 0.05 });
-    slide.addText(stripTags(term), { x: x + 0.15, y: y + 0.08, w: colW - 0.7, h: 0.35, fontSize: 14, color: INDIGO, bold: true });
-    slide.addText(stripTags(def), { x: x + 0.15, y: y + 0.45, w: colW - 0.7, h: 0.5, fontSize: 11, color: SLATE });
-  });
+  slide.addShape("roundRect", { x: 0.6, y: 0.4, w: 12.1, h: 0.9, fill: { color: PURPLE }, rectRadius: 0.08 });
+  slide.addText(stripTags(s.title || "Lesson"), { x: 0.9, y: 0.4, w: 11.5, h: 0.9, fontSize: 22, color: WHITE, bold: true, valign: "middle" });
+  const objective = Array.isArray(s.objective) ? s.objective.join("\n") : (s.objective || "");
+  slide.addText("Objective: " + stripTags(objective), { x: 0.8, y: 1.45, w: 11.7, h: 0.7, fontSize: 14, color: INDIGO, bold: true, valign: "top" });
+  slide.addText(stripTags((s.concept || []).join("\n\n")), { x: 0.8, y: 2.2, w: 11.7, h: 2.7, fontSize: 14, color: SLATE, valign: "top", margin: 0.04 });
+  if (s.example) {
+    slide.addShape("roundRect", { x: 0.8, y: 5.1, w: 11.7, h: 1.6, fill: { color: "FFF7ED" }, line: { color: "FDBA74", width: 1.2 }, rectRadius: 0.05 });
+    slide.addText("Worked Example", { x: 1.0, y: 5.2, w: 3, h: 0.35, fontSize: 13, color: "C2410C", bold: true });
+    slide.addText(stripTags(s.example.problem || ""), { x: 1.0, y: 5.55, w: 7.2, h: 0.8, fontSize: 11.5, color: SLATE, valign: "top" });
+    slide.addText("Answer: " + stripTags(s.example.answer || ""), { x: 8.4, y: 5.55, w: 3.7, h: 0.8, fontSize: 11.5, color: GREEN, valign: "top" });
+  }
+  if ((s.practice || []).length) {
+    practiceSlide({ title: (s.title || "Lesson") + " — Practice", items: s.practice }, 1);
+  }
+}
+
+function figureSlide(s) {
+  const slide = pptx.addSlide();
+  slide.background = { color: WHITE };
+  slide.addText(stripTags(s.title || "Figure"), { x: 0.6, y: 0.4, w: 12, h: 0.7, fontSize: 26, color: INDIGO, bold: true });
+  const imagePath = path.join(__dirname, s.image || "");
+  if (s.image && fs.existsSync(imagePath)) {
+    slide.addImage({ path: imagePath, x: 1.2, y: 1.3, w: 10.9, h: 5.2 });
+  } else {
+    slide.addText("Missing image: " + stripTags(s.image || ""), { x: 1.0, y: 2.5, w: 11, h: 0.8, fontSize: 18, color: RED, align: "center" });
+  }
+  slide.addText(stripTags(s.caption || ""), { x: 1.0, y: 6.6, w: 11.3, h: 0.4, fontSize: 11, color: GRAY, italic: true, align: "center" });
 }
 
 function answerSlide(s, numStart) {
@@ -140,11 +179,19 @@ for (const s of sections) {
     practiceSlide(s, numStart);
     numStart += (s.items || []).length;
   } else if (s.kind === "vocabulary") vocabSlide(s);
+  else if (s.kind === "lesson") lessonSlides(s);
+  else if (s.kind === "figure") figureSlide(s);
+  else if (s.kind === "review" || s.kind === "regents_practice") {
+    practiceSlide({ title: s.title || "Review", items: s.items || [] }, numStart);
+    numStart += (s.items || []).length;
+  }
   else if (s.kind === "answer_key") {
     // answer key: collect all practice items
     const all = [];
     for (const ss of sections) {
       if (ss.kind === "practice") all.push(...(ss.items || []));
+      else if (ss.kind === "lesson") all.push(...(ss.practice || []));
+      else if (ss.kind === "review" || ss.kind === "regents_practice") all.push(...(ss.items || []));
     }
     const per = 6;
     for (let i = 0; i < all.length; i += per) {
@@ -161,7 +208,7 @@ for (const s of sections) {
   }
 }
 
-pptx.writeFile(out).then(() => console.log("PPTX saved: " + out));
+pptx.writeFile({ fileName: out }).then(() => console.log("PPTX saved: " + out));
 """
 
 def main():

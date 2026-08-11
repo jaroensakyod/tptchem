@@ -1,0 +1,15 @@
+{
+  "policy": "External resources are used for factual authority, scope, and quality benchmarking. Paid student-facing content is original unless a source is explicitly licensed for commercial adaptation.",
+  "accessed": "2026-08-11",
+  "sources": [
+    {"name":"Fulton County Schools Chemistry Curriculum Map 2026-27","url":"https://resources.finalsite.net/images/v1781628140/fultonschoolsorg/wjlhtg86pxvdyfvwodjg/ChemistryCurriculumMap2026-2027.pdf","use":"current pacing evidence","reuse":"facts only"},
+    {"name":"Park Hill Chemistry Curriculum 2026","url":"https://boepublic.parkhill.k12.mo.us/attachments/f52a3cf2-2b74-41cb-a154-fa87ebd55be5.pdf","use":"current pacing and assessment evidence","reuse":"facts only"},
+    {"name":"OpenStax Chemistry 2e","url":"https://openstax.org/books/chemistry-2e/pages/preface","license":"CC BY-NC-SA 4.0","use":"scope and difficulty benchmark","reuse":"no commercial adaptation"},
+    {"id":"acs-secondary-safety","name":"ACS Guidelines for Chemical Laboratory Safety in Secondary Schools","url":"https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/acs-secondary-safety-guidelines.pdf","use":"secondary-school safety authority, glass, heating, PPE, and emergency response","reuse":"factual reference; no copied passages"},
+    {"id":"acs-student-code","name":"ACS Student Laboratory Code of Conduct","url":"https://institute.acs.org/acs-center/lab-safety/education-training/high-school-labs/student-lab-code-of-conduct.html","use":"student conduct, incident reporting, chemical handling, and immediate response","reuse":"factual reference; no copied passages"},
+    {"id":"acs-lab-safety-agreement","name":"ACS ChemClub Laboratory Safety Agreement","url":"https://www.acs.org/content/dam/acsorg/education/students/highschool/chemistryclubs/chemclub-lab-safety-agreement.pdf","use":"skin exposure and student safety-response cross-check","reuse":"factual reference; no copied passages"},
+    {"name":"PhET Activity Sheet Design","url":"https://phet.colorado.edu/assets/virtual-workshop/Activity_Sheet_Design.pdf","license":"CC BY","use":"activity design principles","reuse":"principles only in current product"},
+    {"name":"TeachEngineering","url":"https://www.teachengineering.org/policies/termsofuse","use":"quality benchmark","reuse":"no commercial reuse without permission"},
+    {"name":"ChemCollective","url":"https://chemcollective.org/teachers/teacherGuide","license":"CC BY-NC-ND","use":"authentic-task benchmark","reuse":"no commercial adaptation"}
+  ]
+}

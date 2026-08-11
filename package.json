@@ -1,5 +1,13 @@
 {
+  "name": "curionest-tpt-chemistry",
+  "private": true,
+  "scripts": {
+    "ppt:smoke": "python build_ppt_pack.py mirror-json/b01-mirror.json smoke-test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "pptxgenjs": "^4.0.1"
+    "pptxgenjs": "4.0.1"
   }
 }

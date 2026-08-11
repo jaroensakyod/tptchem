@@ -3,10 +3,10 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+.python312/
 
 # Node
 node_modules/
-package-lock.json
 
 # Temp / logs
 *.log

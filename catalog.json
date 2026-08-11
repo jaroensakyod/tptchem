@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-11",
+  "brand": "CurioNest",
+  "active_products": [
+    {
+      "id": "CN-CH01-MATH",
+      "title": "Chapter 1 — Math & Measurement Unit Pack",
+      "source": "mirror-json/ch01-math-measurement.json",
+      "package_dir": "products/ch01-math-measurement",
+      "status": "packaged_pending_qa",
+      "cover": {
+        "kicker": "CHAPTER 1 UNIT PACK",
+        "title": "Math & Measurement",
+        "subtitle": "Measurement · Sig Figs · Density · Scientific Notation · Dimensional Analysis",
+        "badges": ["10-page unit", "Answer key", "Editable DOCX"],
+        "accent": "#ffb84d"
+      },
+      "required_files": [
+        "product.pdf",
+        "product-editable.docx",
+        "cover.png",
+        "preview.pdf"
+      ]
+    },
+    {
+      "id": "CN-CH01-ESSENTIAL",
+      "title": "Chapter 1 — Essential Ideas Unit Pack",
+      "source": "mirror-json/ch01-essential-ideas.json",
+      "package_dir": "products/ch01-essential-ideas",
+      "status": "packaged_pending_qa",
+      "cover": {
+        "kicker": "BACK-TO-SCHOOL CHEMISTRY",
+        "title": "Essential Ideas",
+        "subtitle": "Lab Safety · Matter · Measurement · Significant Figures",
+        "badges": ["10-page unit", "Answer key", "Editable DOCX"],
+        "accent": "#7fd1ae",
+        "figure": "figures/lab-equipment-grid-v2.png"
+      },
+      "required_files": [
+        "product.pdf",
+        "product-editable.docx",
+        "cover.png",
+        "preview.pdf"
+      ]
+    },
+    {
+      "id": "CN-LS-SCENARIO-01",
+      "title": "Lab Safety Scenario Analysis - Make the Safe Call",
+      "source": "products/lab-safety-scenario-analysis/source.json",
+      "package_dir": "products/lab-safety-scenario-analysis",
+      "status": "packaged_pending_qa",
+      "cover": {
+        "kicker": "CHEMISTRY FOUNDATIONS - FORMAT 1",
+        "title": "Lab Safety Scenario Analysis",
+        "subtitle": "10 original scenarios - Core + Honors - Exit Ticket - Full Key",
+        "badges": ["Grades 9-11", "Core 45-55 min", "Editable DOCX"],
+        "accent": "#007C83"
+      },
+      "required_files": [
+        "product.pdf",
+        "product-editable.docx",
+        "student-packet.pdf",
+        "student-packet-bw.pdf",
+        "teacher-guide-and-key.pdf",
+        "cover.png",
+        "preview.pdf",
+        "listing-01-cover.png",
+        "listing-02-inside.png",
+        "listing-03-teacher-ready.png"
+      ]
+    }
+  ],
+  "legacy_unpacked": [
+    "b01-mirror",
+    "b02-mirror",
+    "b03-mirror",
+    "b04-mirror",
+    "b05-mirror",
+    "b06-mirror",
+    "b07-lab-safety"
+  ],
+  "fixtures": [
+    "regents-builder-test",
+    "quiz-lab-safety-demo",
+    "hunt-lab-safety-demo"
+  ],
+  "notes": [
+    "Only active_products are considered current sellable candidates.",
+    "Legacy root-level DOCX/PDF files are retained for regression comparison but are not upload-ready packages.",
+    "A product may be published only after its status is changed to certified and a matching QA record exists."
+  ]
+}

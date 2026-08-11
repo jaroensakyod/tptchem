@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "updated": "2026-08-11",
+  "minimum_formats_per_topic": 10,
+  "preferred_formats_per_topic": 14,
+  "states": ["idea","researched","scoped","authored","built","qa_content","qa_visual","pilot_ready","certified","published"],
+  "format_catalog": [
+    "scenario_or_problem_analysis",
+    "guided_notes_three_levels",
+    "task_cards_print_and_digital",
+    "stations_circuit",
+    "no_lock_escape_room",
+    "color_or_picture_reveal",
+    "sorting_matching_domino",
+    "scavenger_hunt",
+    "reading_close_reading_sub_plan",
+    "practical_performance_task",
+    "quiz_test_ab_retake",
+    "digital_self_checking",
+    "project_choice_board_rubric",
+    "spiral_review_cumulative_challenge"
+  ],
+  "release_gates": ["content","language","rights","answer_usability","visual_print","listing_integrity"],
+  "stop_conditions": [
+    "factual_or_calculation_error",
+    "ambiguous_key_without_guidance",
+    "unverified_asset_or_license",
+    "unsafe_or_policy_specific_instruction_without_caveat",
+    "clipped_overlapping_or_missing_content",
+    "listing_claim_does_not_match_files"
+  ],
+  "current_first_family": {
+    "subject": "chemistry",
+    "topic": "lab_safety",
+    "format_1": "scenario_or_problem_analysis",
+    "status": "pilot_ready",
+    "certification_blocked": true,
+    "remaining_gates": [
+      "native_english_cold_read",
+      "certified_science_teacher_review",
+      "classroom_timing_pilot"
+    ]
+  }
+}

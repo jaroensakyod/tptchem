@@ -1,0 +1,15 @@
+[project]
+name = "curionest-tpt-chemistry"
+version = "0.1.0"
+description = "CurioNest chemistry teaching-resource production pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "python-docx>=1.1,<2",
+  "pywin32>=306; platform_system == 'Windows'",
+  "numpy>=1.26,<3",
+  "matplotlib>=3.8,<4",
+]
+
+[tool.curionest]
+catalog = "catalog.json"
+qa_command = "python qa.py all"

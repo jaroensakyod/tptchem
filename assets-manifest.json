@@ -7,7 +7,17 @@
       "name": "Poppins",
       "license": "OFL-1.1",
       "source_url": "https://fonts.google.com/specimen/Poppins",
-      "verification_status": "needs_local_license_copy"
+      "license_copy": "licenses/OFL-1.1-Poppins.txt",
+      "verification_status": "verified"
+    },
+    {
+      "path_glob": "fonts/Poppins-*.ttf",
+      "name": "Poppins document font",
+      "creator": "The Poppins Project Authors",
+      "license": "OFL-1.1",
+      "source_url": "https://github.com/google/fonts/tree/main/ofl/poppins",
+      "license_copy": "licenses/OFL-1.1-Poppins.txt",
+      "verification_status": "verified"
     },
     {
       "path_glob": "fonts/Nunito-*.woff2",

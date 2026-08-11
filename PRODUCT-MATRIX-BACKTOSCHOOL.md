@@ -28,7 +28,9 @@
 |---|---|
 | `us-chemistry-curriculum` | หลักสูตร/ศัพท์/patterns US (OpenStax) |
 | `chem-equations` + `omml.py` | สมการเคมี Word-native ($...$ OMML + \ce) |
-| `chem-figures` + `chem_figures.py` | รูป: matplotlib (กราฟ/scale), RDKit (โมเลกุล) |
+| `chem-figures` + `chem_figures.py` | ภาพ deterministic: matplotlib (กราฟ/scale), RDKit (โมเลกุล); ไม่ใช้วาด clipart อุปกรณ์ |
+| verified SVG assets | อุปกรณ์/GHS มาตรฐาน พร้อม source/creator/license ใน `assets-manifest.json` |
+| ImageGen | เฉพาะภาพบริบทที่ช่วยการเรียน; ไม่สร้างฉลาก สูตร GHS หรืออุปกรณ์สำหรับ identification |
 | `math-equations` | สมการคณิต OMML |
 | `build_mirror_pack.py` | Lesson Pack (schema: concept/practice/vocab/answer_key) |
 | `build_complete_pack.py` | Worksheet Pack (reading+MCQ+calc+short) |
@@ -42,15 +44,20 @@
 | `excalidraw` | แผนภาพแนวคิด (ถ้าต้องการ doodle) |
 | `hormozi-product-design` / `product-offer-design` | ออกแบบ offer/ราคา |
 
-### ⚠️ ยังขาด (ต้องสร้าง/หา)
+### ⚠️ สถานะ implementation ปัจจุบัน
 | ช่องว่าง | ต้องทำอะไร | วิธีแก้ |
 |---|---|---|
-| **Scavenger Hunt builder** | ยังไม่มี builder เฉพาะ | สร้าง schema ใหม่ (clue→station→answer) หรือดัด build_mirror_pack |
-| **Doodle/Visual notes builder** | ยังไม่มี (ต้องวาดเอง) | ใช้ excalidraw + chem_figures ประกอบชั่วคราว |
-| **Quiz (แบบเร็ว) builder** | มี MC ใน pack แล้ว แต่ยังไม่มี standalone quiz | ดัด build_complete_pack ให้ quiz-only |
-| **Google Slides/PPTX variant** | ครูยุคใหม่ชอบ digital | skill `powerpoint` มี — ต้องเขียน wrapper |
+| **Scavenger Hunt builder** | ✅ มี `build_scavenger_hunt.py` + demo JSON | เพิ่ม regression test และสร้างสินค้าจริง |
+| **Doodle/Visual notes builder** | ยังไม่มี | ใช้ layout-native shapes + verified SVG + `chem_figures.py` ตาม §G3-V |
+| **Quiz (แบบเร็ว) builder** | ✅ มี `build_quiz.py` + demo JSON | เพิ่ม regression test และสร้างสินค้าจริง |
+| **Google Slides/PPTX variant** | ✅ มี `build_ppt_pack.py` | ต้อง QA layout และทดสอบกับ schema รุ่นใหม่ |
+| **Reproducible QA** | ✅ มี `qa.py` ระดับ source/package | ยังต้องเพิ่ม render-based visual regression |
 
-### 📌 สรุป: core ครบ 80% — เหลือ 3 builder เล็ก (scavenger/quiz/ppt) + doodle ใช้ excalidraw
+### 📌 สรุป 2026-08-10
+
+Builder core มีครบแล้ว แต่ยังไม่ถือว่า production-ready จนกว่าจะ rebuild สินค้า
+ปัจจุบัน, ทดสอบ output และผ่าน `qa.py all --strict` งานเร่งด่วนจึงเป็น QA และ
+packaging ไม่ใช่สร้าง builder เพิ่ม ส่วน Doodle/Visual notes ยังเป็นช่องว่างจริง
 
 ---
 
