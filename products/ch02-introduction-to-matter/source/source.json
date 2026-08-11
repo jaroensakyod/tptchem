@@ -1,0 +1,333 @@
+{
+  "product_id": "CN-CH02-MATTER",
+  "quality_contract_version": "2026-08-11.1",
+  "brand": "CurioNest",
+  "title": "Chemistry Foundations: Introduction to Matter Complete Instructional Unit",
+  "short_title": "Introduction to Matter",
+  "file_prefix": "CurioNest_CH02_Introduction_to_Matter",
+  "target": "U.S. Grades 9-10 / General Chemistry",
+  "duration": "6-8 class periods",
+  "copyright": "© 2026 CurioNest · For classroom use only",
+  "lesson_count": 5,
+  "cover_visual": "matter-classification-ccby4.png",
+  "cover_credit": "Particle classification visual: John Trombley, CC BY 4.0, Wikimedia Commons",
+  "cover_features": [
+    "15 projectable teaching slides",
+    "12 student lesson, practice, and review pages",
+    "Unit Tests A and B with 20 multiple-choice items each",
+    "Teacher guide, full answers, rationales, and repair moves"
+  ],
+  "cover_claim": "Move from what students can see to particle-level claims they can defend.",
+  "unit_purpose": "Students build a coherent model of matter by connecting macroscopic observations with particle representations, composition, physical and chemical properties, change evidence, and property-based separation methods.",
+  "pacing": [
+    {"day": "1", "plan": "Lesson 1: Matter at Two Scales. Use the particle visual to separate observable evidence from model assumptions."},
+    {"day": "2", "plan": "Lesson 2: Classify Matter by Composition. Require evidence for every label."},
+    {"day": "3", "plan": "Lesson 3: Properties Describe Matter. Contrast property with change and intensive with extensive."},
+    {"day": "4", "plan": "Lesson 4: Physical or Chemical Change. Treat common clues as evidence, not automatic proof."},
+    {"day": "5", "plan": "Lesson 5: Separate Mixtures by Properties. Link each method to the property difference it exploits."},
+    {"day": "6", "plan": "Cumulative mixed review, feedback, and targeted reteaching."},
+    {"day": "7", "plan": "Unit Test A. Reserve Form B for a retake, alternate class, or test security."}
+  ],
+  "before_teaching": "Preview the particle-model conventions and the documented instructional visuals. Decide whether students will work individually or discuss the engage prompts in pairs. Emphasize that a model is useful evidence but is not a literal, to-scale photograph.",
+  "look_fors": "Students distinguish uniform from pure, property from change, physical clue from chemical proof, and a separation method from the property difference that makes it work.",
+  "support": "Keep the composition decision path and method-property bank visible. Let students annotate particle types and regions. Provide sentence frames that require claim, evidence, and reasoning.",
+  "extend": "Ask students to propose an additional test that could challenge a classification, compare two viable separation sequences, or identify a limitation in a particle representation.",
+  "release_scope": {
+    "market": "United States",
+    "language": "American English",
+    "paper": "US Letter",
+    "standards_claim": "Supports the NGSS practices of Developing and Using Models and Analyzing and Interpreting Data; no formal performance-expectation alignment is claimed.",
+    "difference_from_existing_sku": "This complete Chapter 2 unit includes explicit instruction, projectable slides, guided and independent practice, cumulative review, two 20-item tests, and rationale keys. It is distinct from Chapter 1 quantitative measurement work and from all legacy drafts; no scored prompt is reused."
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Matter at Two Scales",
+      "target": "Use the definition of matter and a particle model to make and limit claims about a sample.",
+      "engage": "Air is invisible, light is visible, and sound can be heard. Which of the three is matter, and what evidence should decide?",
+      "big_idea": "Matter has mass and occupies space. Particle models help explain composition and distribution, but their symbols, colors, spacing, and scale are simplified.",
+      "terms": [
+        {"term": "matter", "definition": "anything that has mass and occupies space"},
+        {"term": "macroscopic", "definition": "the scale of observations made directly or with ordinary tools"},
+        {"term": "particle model", "definition": "a simplified representation of particles and their arrangement"},
+        {"term": "model limitation", "definition": "a feature of reality that a representation does not show accurately"}
+      ],
+      "teach_points": [
+        "Use mass and occupied space—not visibility—as the classroom test for matter.",
+        "A particle symbol represents a type of particle; repeated symbols can reveal composition and distribution.",
+        "Identical particles support a pure-substance claim, while more than one particle type supports a mixture claim.",
+        "Models are not to scale and do not prove every property of the real sample."
+      ],
+      "visuals": [
+        {"file": "matter-classification-ccby4.png", "caption": "Particle types and distribution provide model evidence."}
+      ],
+      "worked_example": {
+        "prompt": "A sealed diagram contains identical two-atom particles. What can be concluded, and what remains unknown?",
+        "steps": [
+          "Every represented particle is identical, so the model supports a pure-substance claim.",
+          "Inspect the atom symbols inside one particle: the same element would indicate an element; different elements would indicate a compound.",
+          "If the symbols do not distinguish atom identity, the model lacks the evidence needed for the second decision."
+        ],
+        "answer": "The sample is modeled as pure. Element versus compound cannot be decided without evidence about the atom types in each particle."
+      },
+      "cfu": "Why does visibility not determine whether something is matter?",
+      "practice": [
+        {"id": "L1-1", "prompt": "Classify air in a sealed syringe, visible light, and sound as matter or not matter. Defend each decision.", "scaffold": "Apply both parts of the definition: mass and occupied space.", "answer": "Air is matter because it has mass and occupies space. Visible light and sound are forms of energy/waves, not samples of matter in this classroom classification."},
+        {"id": "L1-2", "prompt": "In the particle visual, what evidence distinguishes a homogeneous mixture from a heterogeneous mixture?", "answer": "Both have more than one particle type. The homogeneous mixture is uniformly distributed; the heterogeneous mixture has nonuniform regions or clustering."},
+        {"id": "L1-3", "prompt": "State one useful feature and one limitation of the particle visual.", "answer": "Useful: it makes composition and distribution visible. Limitation: particle sizes, colors, spacing, and two-dimensional positions are simplified and not to scale."},
+        {"id": "L1-4", "prompt": "A sample expands to fill its container. Explain why this observation alone does not prove it is not matter.", "answer": "A gas can expand to fill a container and is still matter because it has mass and occupies space."},
+        {"id": "L1-5", "prompt": "What additional evidence is needed to decide whether identical two-atom particles represent an element or a compound?", "answer": "Determine whether the two atoms in each particle are the same element or different elements."}
+      ],
+      "misconception": "Only solids and liquids are matter because gases cannot always be seen.",
+      "repair": "Use a sealed syringe or inflated balloon as evidence that gas occupies space and contributes mass."
+    },
+    {
+      "number": 2,
+      "title": "Classify Matter by Composition",
+      "target": "Classify elements, compounds, homogeneous mixtures, and heterogeneous mixtures from composition evidence.",
+      "engage": "A clear saltwater sample looks uniform. Does uniform appearance prove that it is a pure substance?",
+      "big_idea": "Classification depends on how many substances are present, whether composition is fixed, and whether multiple components are uniformly distributed.",
+      "terms": [
+        {"term": "pure substance", "definition": "matter with constant composition and characteristic properties"},
+        {"term": "element", "definition": "a pure substance made of one chemical element"},
+        {"term": "compound", "definition": "a pure substance containing elements chemically combined in fixed proportions"},
+        {"term": "mixture", "definition": "a physical combination of substances with variable composition"}
+      ],
+      "teach_points": [
+        "First decide pure substance versus mixture; then choose the more specific label.",
+        "An element contains one element type; a compound contains different elements chemically combined in a fixed composition.",
+        "A homogeneous mixture is uniform at the sampled scale but still contains multiple substances.",
+        "A heterogeneous mixture has nonuniform composition or visibly distinct regions. Physical separation evidence supports a mixture claim."
+      ],
+      "visuals": [
+        {"file": "matter-classification-ccby4.png", "caption": "Follow composition first, then distribution."},
+        {"file": "granite-slab-cc0.jpg", "caption": "Visible mineral regions make granite nonuniform at this scale."}
+      ],
+      "worked_example": {
+        "prompt": "A clear saltwater sample leaves salt after the water is removed by a physical process. Classify the original sample.",
+        "steps": [
+          "The sample appears uniform, so it is homogeneous at the observed scale.",
+          "A physical process recovers components, which supports the presence of more than one substance.",
+          "Uniform distribution plus multiple substances identifies a homogeneous mixture."
+        ],
+        "answer": "Saltwater is a homogeneous mixture, not a pure compound."
+      },
+      "cfu": "Why are the words homogeneous and pure not interchangeable?",
+      "practice": [
+        {"id": "L2-1", "prompt": "Classify a clean copper wire as element, compound, homogeneous mixture, or heterogeneous mixture. Explain.", "scaffold": "Ask whether the sample contains one element type or more than one substance.", "answer": "Element. A clean copper sample consists of one chemical element, Cu."},
+        {"id": "L2-2", "prompt": "Classify distilled water and explain why it is not an element.", "answer": "Compound. Pure water has hydrogen and oxygen chemically combined in a fixed composition as H2O."},
+        {"id": "L2-3", "prompt": "Classify clean, well-mixed air at one location. Explain why uniform does not mean pure.", "answer": "Homogeneous mixture. It is uniform at the sampled scale but contains multiple substances, including nitrogen, oxygen, argon, and others."},
+        {"id": "L2-4", "prompt": "Classify granite with visibly different mineral regions.", "answer": "Heterogeneous mixture because composition is not uniform across the visible sample."},
+        {"id": "L2-5", "prompt": "A model has two particle types evenly intermingled. Give the most specific label and two pieces of evidence.", "answer": "Homogeneous mixture: more than one particle type is present, and the types are uniformly distributed."}
+      ],
+      "misconception": "A sample that looks uniform must be a pure substance.",
+      "repair": "Ask whether a physical separation or particle model reveals more than one component before using the word pure."
+    },
+    {
+      "number": 3,
+      "title": "Properties Describe Matter",
+      "target": "Classify physical and chemical properties and distinguish intensive from extensive properties.",
+      "engage": "Copper conducts electricity and can react with oxygen. Which statement can be checked without changing copper into a new substance?",
+      "big_idea": "A physical property can be observed or measured without changing chemical identity; a chemical property describes the ability to undergo a chemical change.",
+      "terms": [
+        {"term": "physical property", "definition": "a characteristic observed or measured without changing identity"},
+        {"term": "chemical property", "definition": "the ability of a substance to undergo a chemical change"},
+        {"term": "intensive property", "definition": "a property independent of sample amount under stated conditions"},
+        {"term": "extensive property", "definition": "a property that depends on the amount of sample"}
+      ],
+      "teach_points": [
+        "Color, density, melting point, and conductivity are physical properties when measured without changing identity.",
+        "Flammability and reactivity describe possible chemical behavior, even when no reaction is occurring at that moment.",
+        "Mass and volume are extensive because they change with sample amount.",
+        "Density and melting point are intensive under the same stated conditions and can help identify a substance."
+      ],
+      "visuals": [
+        {"file": "native-copper-public-domain.jpg", "caption": "Color and luster are observable physical properties of copper."},
+        {"file": "burning-candle-cc0.jpg", "caption": "Flammability describes the ability to burn; the property exists before ignition."}
+      ],
+      "worked_example": {
+        "prompt": "Classify density and mass as physical or chemical and as intensive or extensive.",
+        "steps": [
+          "Both can be measured without changing chemical identity, so both are physical properties.",
+          "Density remains characteristic when sample amount changes under the same conditions, so it is intensive.",
+          "Mass increases or decreases with sample amount, so it is extensive."
+        ],
+        "answer": "Density is physical and intensive; mass is physical and extensive."
+      },
+      "cfu": "Why can flammability be stated as a property before a flame is present?",
+      "practice": [
+        {"id": "L3-1", "prompt": "Classify melting point as physical or chemical and intensive or extensive.", "scaffold": "Ask whether identity changes during measurement and whether the value depends on sample amount.", "answer": "Physical and intensive under the same pressure and purity conditions."},
+        {"id": "L3-2", "prompt": "Classify volume as physical or chemical and intensive or extensive.", "answer": "Physical and extensive because measuring volume does not require a new substance and volume depends on amount."},
+        {"id": "L3-3", "prompt": "Classify flammability and explain why it is not a physical property.", "answer": "Chemical property. It describes the ability to react by burning and form new substances."},
+        {"id": "L3-4", "prompt": "A lab card says 'Copper conducts electric current.' Is this a property or a change? Classify it.", "answer": "It is a physical property; conductivity can be observed without changing copper into a new substance."},
+        {"id": "L3-5", "prompt": "Why is density often more useful for identification than volume?", "answer": "Density is intensive and can remain characteristic under stated conditions, while volume changes with sample amount."}
+      ],
+      "misconception": "The word chemical in a material's name makes every listed characteristic a chemical property.",
+      "repair": "Use the identity-change test: could the characteristic be measured while the substance remains the same substance?"
+    },
+    {
+      "number": 4,
+      "title": "Physical or Chemical Change?",
+      "target": "Classify changes by the new-substance criterion and evaluate common clues in context.",
+      "engage": "Bubbles appear when a cold soda is opened and when two reacting solutions are mixed. Do bubbles prove the same kind of change in both cases?",
+      "big_idea": "A chemical change forms one or more new substances. Color, gas, precipitate, light, odor, or temperature change can support a claim but is not automatic proof.",
+      "terms": [
+        {"term": "physical change", "definition": "a change in form or state that does not require a new substance"},
+        {"term": "chemical change", "definition": "a process in which atoms rearrange to form new substances"},
+        {"term": "evidence", "definition": "an observation or result used to support or challenge a claim"},
+        {"term": "conservation of matter", "definition": "matter is not created or destroyed in a closed-system chemical change"}
+      ],
+      "teach_points": [
+        "Melting, freezing, crushing, dissolving in a recoverable context, and physical separation do not by themselves require a new substance.",
+        "Burning, decomposition, and reactions that form products with new compositions are chemical changes.",
+        "A clue must be compared with alternatives: bubbles may be a gas product, boiling, or released dissolved gas.",
+        "An open container may lose gaseous products from measurement; this does not violate conservation of matter."
+      ],
+      "visuals": [
+        {"file": "melting-ice-public-domain.jpg", "caption": "Melting changes state while the substance remains water."},
+        {"file": "burning-candle-cc0.jpg", "caption": "Burning forms new substances and is chemical."}
+      ],
+      "worked_example": {
+        "prompt": "Salt dissolves in water and is later recovered by evaporating the water. Classify the process in this context.",
+        "steps": [
+          "Dissolving produces a uniform solution but does not by itself establish a new substance.",
+          "The original salt is recovered by a physical method.",
+          "Recovery supports a physical-change/separation claim for this classroom context."
+        ],
+        "answer": "Physical change and physical separation in this context."
+      },
+      "cfu": "Name one nonchemical process that can produce bubbles.",
+      "practice": [
+        {"id": "L4-1", "prompt": "Ice melts in a sealed bag. Classify the change and identify what remains the same.", "scaffold": "Ask whether the substance's chemical identity changes.", "answer": "Physical change. The substance remains H2O; only its physical state changes."},
+        {"id": "L4-2", "prompt": "Candle wax burns in oxygen and produces different substances. Classify the change and cite decisive evidence.", "answer": "Chemical change because atoms are rearranged into new substances such as carbon dioxide and water vapor."},
+        {"id": "L4-3", "prompt": "A tablet is crushed into powder without reacting. Classify the change.", "answer": "Physical change; size and surface area change, but no new substance is required."},
+        {"id": "L4-4", "prompt": "Explain why bubbles support but do not by themselves prove a chemical-change claim.", "answer": "Bubbles may be a gas product, but boiling or release of dissolved gas can also make bubbles; context and additional evidence are needed."},
+        {"id": "L4-5", "prompt": "A solid is strongly heated in an open container and a gas escapes. Why can the measured solid mass decrease without violating conservation?", "answer": "Some product matter leaves as gas. Total matter is conserved when all products are included, but the open container does not retain every product."}
+      ],
+      "misconception": "Any color change, temperature change, or bubble formation automatically proves a chemical reaction.",
+      "repair": "Require students to name the proposed new substance or rule out a physical alternative before accepting the claim."
+    },
+    {
+      "number": 5,
+      "title": "Separate Mixtures by Properties",
+      "target": "Choose and sequence physical separation methods from differences in particle size, solubility, volatility, magnetism, or phase behavior.",
+      "engage": "A beaker contains iron filings, salt, sand, and water. Which separation should happen first, and why does order matter?",
+      "big_idea": "A separation method works because components differ in a physical property. A good plan names both the method and the property difference.",
+      "terms": [
+        {"term": "filtration", "definition": "separation using particle size and insolubility"},
+        {"term": "distillation", "definition": "separation using differences in volatility or boiling behavior"},
+        {"term": "chromatography", "definition": "separation using different attractions and travel rates"},
+        {"term": "decantation", "definition": "separation by carefully pouring one phase from another"}
+      ],
+      "teach_points": [
+        "Use magnetism before adding water when a dry magnetic component is present.",
+        "Use filtration for an insoluble solid in a liquid; dissolved solute passes with the liquid.",
+        "Use distillation when the goal includes collecting the more volatile liquid as well as the residue.",
+        "Use chromatography to test whether a soluble colored sample contains components with different attractions and travel rates."
+      ],
+      "visuals": [
+        {"file": "filtration-public-domain.png", "caption": "Residue remains on the filter; filtrate passes through."},
+        {"file": "simple-distillation-public-domain.png", "caption": "Vapor is condensed and collected during simple distillation."},
+        {"file": "separatory-funnel-public-domain.jpg", "caption": "Immiscible liquid layers can be drained separately."}
+      ],
+      "worked_example": {
+        "prompt": "A uniform blue liquid yields colorless liquid and blue solid after distillation. What claim is supported?",
+        "steps": [
+          "The original sample appears homogeneous, but appearance alone cannot establish purity.",
+          "Distillation is a physical method based on volatility or boiling behavior.",
+          "Recovering two components by a physical process supports a mixture claim."
+        ],
+        "answer": "The original sample is a homogeneous mixture with at least two components."
+      },
+      "cfu": "Why does filtration fail to remove salt dissolved in water?",
+      "practice": [
+        {"id": "L5-1", "prompt": "Choose a method to separate insoluble sand from water and name the property difference.", "scaffold": "Decide whether the solid is dissolved and whether its particles can be retained.", "answer": "Filtration; sand is insoluble and its particles are retained while water passes through."},
+        {"id": "L5-2", "prompt": "A saltwater sample must yield both water and salt. Choose a method and explain why evaporation alone is incomplete.", "answer": "Distillation. It collects condensed water and leaves salt; evaporation alone may recover salt but does not collect the water."},
+        {"id": "L5-3", "prompt": "Choose a method to test whether black marker ink contains more than one dye.", "answer": "Paper chromatography; components travel differently because of different attractions to the mobile and stationary phases."},
+        {"id": "L5-4", "prompt": "Choose the first method for a dry mixture of iron filings and table salt.", "answer": "Magnetic separation; a magnet attracts iron but not salt."},
+        {"id": "L5-5", "prompt": "Explain why separating a mixture is usually physical even when several steps are required.", "answer": "The methods exploit physical-property differences and recover components without requiring their chemical identities to change."}
+      ],
+      "misconception": "One separation method should remove every component from any mixture.",
+      "repair": "Build a method-property table and choose one step for one property difference at a time; then reevaluate the remaining mixture."
+    }
+  ],
+  "review": [
+    {"id": "R1", "prompt": "Explain why air is matter even though it is usually invisible.", "answer": "Air has mass and occupies space; visibility is not part of the definition of matter."},
+    {"id": "R2", "prompt": "A particle model shows one repeated particle made of two different atom types. Classify the sample.", "answer": "A pure compound: one particle type is present, and each particle contains different elements chemically combined."},
+    {"id": "R3", "prompt": "Classify salad dressing with visible oil and water layers.", "answer": "Heterogeneous mixture because composition is nonuniform and distinct phases are visible."},
+    {"id": "R4", "prompt": "Classify electrical conductivity and flammability as physical or chemical properties.", "answer": "Conductivity is physical; flammability is chemical."},
+    {"id": "R5", "prompt": "Explain why mass is extensive but density is intensive.", "answer": "Mass depends on sample amount; density can remain characteristic as amount changes under the same conditions."},
+    {"id": "R6", "prompt": "Classify boiling water and burning paper as physical or chemical changes.", "answer": "Boiling water is physical; burning paper is chemical because new substances form."},
+    {"id": "R7", "prompt": "Bubbles form when a liquid is warmed. What additional evidence is needed before claiming a chemical change?", "answer": "Rule out boiling or released dissolved gas and seek evidence of a new substance, such as a product with a new composition or properties."},
+    {"id": "R8", "prompt": "Choose a method for oil and water layers and name the property evidence.", "answer": "Decantation or a separatory funnel; immiscibility creates separate phases, and density helps determine their layering."},
+    {"id": "R9", "prompt": "A distillation starts with 120.0 g and recovers 92.0 g liquid plus 27.6 g solid. Calculate percent recovery.", "answer": "(92.0 + 27.6) / 120.0 x 100 = 99.7%."},
+    {"id": "R10", "prompt": "Why can a uniform appearance support but not prove a homogeneous-mixture classification?", "answer": "Appearance shows uniformity only at the observed scale; purity and dissolved components require additional evidence."}
+  ],
+  "assessment_blueprint": {
+    "A": [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 4],
+    "B": [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 4]
+  },
+  "tests": {
+    "A": [
+      {"stem": "Which sample is matter?", "choices": ["Visible light", "Sound from a speaker", "Air in a sealed syringe", "A reflected image"], "answer": 2, "rationale": "Air has mass and occupies space, so it is matter."},
+      {"stem": "A particle model contains two particle types evenly distributed. What is the best classification?", "choices": ["Element", "Compound", "Heterogeneous mixture", "Homogeneous mixture"], "answer": 3, "rationale": "More than one particle type indicates a mixture, and uniform distribution makes it homogeneous."},
+      {"stem": "Which statement describes a limitation of a typical particle model?", "choices": ["Particle size and spacing are not shown to scale.", "It can never show more than one particle type.", "It proves every property of the sample.", "Its symbols are literal photographs."], "answer": 0, "rationale": "Classroom particle diagrams simplify size, spacing, color, and dimensionality."},
+      {"stem": "Which evidence best supports that a clear solution is a mixture?", "choices": ["It is colorless.", "It occupies a beaker.", "It has a measurable mass.", "A physical process recovers two components."], "answer": 3, "rationale": "Physical recovery of components supports the presence of more than one substance."},
+      {"stem": "How should a clean copper wire be classified?", "choices": ["Element", "Compound", "Homogeneous mixture", "Heterogeneous mixture"], "answer": 0, "rationale": "Clean copper consists of one chemical element, Cu."},
+      {"stem": "How should pure water be classified?", "choices": ["Element", "Compound", "Homogeneous mixture", "Heterogeneous mixture"], "answer": 1, "rationale": "Water contains hydrogen and oxygen chemically combined in a fixed composition."},
+      {"stem": "Why is well-mixed air not a pure substance?", "choices": ["It has no mass.", "It is invisible.", "It contains multiple substances.", "It cannot fill a container."], "answer": 2, "rationale": "Air can be uniform while containing nitrogen, oxygen, argon, and other substances."},
+      {"stem": "Granite with visibly different mineral regions is a", "choices": ["compound", "element", "homogeneous mixture", "heterogeneous mixture"], "answer": 3, "rationale": "Distinct mineral regions show nonuniform composition."},
+      {"stem": "Which property is physical and intensive?", "choices": ["Mass", "Density", "Volume", "Flammability"], "answer": 1, "rationale": "Density can be measured without changing identity and does not depend on sample amount under the same conditions."},
+      {"stem": "Which property is chemical?", "choices": ["Color", "Melting point", "Conductivity", "Flammability"], "answer": 3, "rationale": "Flammability describes the ability to react by burning and form new substances."},
+      {"stem": "Which property depends on sample amount?", "choices": ["Mass", "Density", "Melting point", "Boiling point"], "answer": 0, "rationale": "Mass is extensive and changes with the amount of sample."},
+      {"stem": "Which process is a physical change?", "choices": ["Paper burns.", "Iron rusts.", "Ice melts.", "A compound decomposes."], "answer": 2, "rationale": "Melting changes physical state while the substance remains H2O."},
+      {"stem": "Which observation is decisive evidence of a chemical change?", "choices": ["The sample changes shape.", "The sample becomes smaller.", "A liquid boils.", "New substances with different compositions form."], "answer": 3, "rationale": "Formation of new substances is the defining criterion for a chemical change."},
+      {"stem": "Why do bubbles not always prove a chemical reaction?", "choices": ["Boiling can also produce bubbles.", "Gases are not matter.", "Bubbles contain no particles.", "All bubbles are physical objects."], "answer": 0, "rationale": "A phase change or release of dissolved gas can produce bubbles without a chemical reaction."},
+      {"stem": "Which method separates insoluble sand from water?", "choices": ["Distillation", "Filtration", "Chromatography", "Magnetism"], "answer": 1, "rationale": "Filtration retains insoluble particles while the liquid passes through."},
+      {"stem": "Which method should be used to collect both water and salt from saltwater?", "choices": ["Magnetic separation", "Simple filtration", "Decantation only", "Distillation"], "answer": 3, "rationale": "Distillation collects condensed water while salt remains."},
+      {"stem": "Which method tests whether marker ink contains multiple dyes?", "choices": ["Chromatography", "Filtration", "Magnetism", "Decantation"], "answer": 0, "rationale": "Chromatography separates soluble components by different attractions and travel rates."},
+      {"stem": "What is the best first step for dry iron filings mixed with salt?", "choices": ["Boil the mixture.", "Add acid.", "Use a magnet.", "Filter the dry mixture."], "answer": 2, "rationale": "Magnetism selectively removes iron before additional steps are needed."},
+      {"stem": "A 120.0 g sample yields 92.0 g liquid and 27.6 g solid. What is percent recovery?", "choices": ["76.7%", "99.7%", "100.4%", "119.6%"], "answer": 1, "rationale": "Recovered mass is 119.6 g; 119.6 / 120.0 x 100 = 99.7%."},
+      {"stem": "Why may solid mass decrease when heating occurs in an open container?", "choices": ["Matter is destroyed.", "The balance creates gas.", "A gaseous product may leave the container.", "Conservation applies only to solids."], "answer": 2, "rationale": "An open system may not retain gaseous products; total matter is conserved when all products are included."}
+    ],
+    "B": [
+      {"stem": "Which observation is not evidence that something is matter?", "choices": ["It occupies volume.", "It has mass.", "It can be weighed.", "It is visible."], "answer": 3, "rationale": "Visibility is not part of the definition; invisible gases can be matter."},
+      {"stem": "A model contains only identical particles made of two different atom types. What is the best classification?", "choices": ["Compound", "Element", "Homogeneous mixture", "Heterogeneous mixture"], "answer": 0, "rationale": "One repeated particle type supports purity; different elements bonded in each particle support a compound."},
+      {"stem": "What does a particle model most directly help students inspect?", "choices": ["The exact particle color", "The actual particle size", "Composition and distribution", "The sample's odor"], "answer": 2, "rationale": "Symbols and arrangement provide model evidence about particle types and distribution."},
+      {"stem": "A clear liquid leaves two recoverable substances after a physical separation. It is best classified as a", "choices": ["pure element", "homogeneous mixture", "pure compound", "single particle"], "answer": 1, "rationale": "The clear sample is uniform, while physical recovery of components shows it is a mixture."},
+      {"stem": "Which sample is a compound?", "choices": ["Distilled H2O", "Clean copper", "Well-mixed air", "Granite"], "answer": 0, "rationale": "Pure water contains hydrogen and oxygen chemically combined in a fixed ratio."},
+      {"stem": "Which sample is a homogeneous mixture?", "choices": ["Clean copper wire", "Distilled water", "Granite", "Well-mixed air"], "answer": 3, "rationale": "Well-mixed air contains multiple substances distributed uniformly at the sampled scale."},
+      {"stem": "Which sample is heterogeneous?", "choices": ["A single pure crystal", "Oil and water layers", "Distilled water", "Clean aluminum"], "answer": 1, "rationale": "Visible immiscible layers show nonuniform composition."},
+      {"stem": "Which result would most strongly challenge a claim that a sample is pure?", "choices": ["It has a constant temperature.", "It looks uniform.", "A physical method separates two components.", "It has a measurable volume."], "answer": 2, "rationale": "Recovering components physically supports a mixture rather than a pure substance."},
+      {"stem": "Which pair contains two physical properties?", "choices": ["Density and conductivity", "Flammability and reactivity", "Rusting and burning", "Reactivity and color"], "answer": 0, "rationale": "Density and conductivity can be measured without changing chemical identity."},
+      {"stem": "Which property is extensive?", "choices": ["Density", "Melting point", "Volume", "Color"], "answer": 2, "rationale": "Volume depends on the amount of sample present."},
+      {"stem": "Why is flammability a property even before ignition?", "choices": ["It describes potential chemical behavior.", "A flame is always invisible.", "Properties require no evidence.", "Burning is a physical state."], "answer": 0, "rationale": "A property can describe a substance's ability to undergo a change without the change occurring during the statement."},
+      {"stem": "Which process is a chemical change?", "choices": ["Salt dissolves and is recovered.", "A tablet is crushed.", "Water freezes.", "Wax burns and forms new substances."], "answer": 3, "rationale": "Burning rearranges atoms and forms products with new compositions."},
+      {"stem": "Which observation alone is insufficient to prove a chemical change?", "choices": ["A new substance is identified.", "Bubbles appear.", "Product composition differs.", "Atoms are rearranged into products."], "answer": 1, "rationale": "Bubbles can also result from boiling or release of dissolved gas."},
+      {"stem": "Why is crushing a solid usually a physical change?", "choices": ["Its size changes without requiring a new substance.", "Its mass becomes zero.", "Its atoms disappear.", "Its chemical formula must change."], "answer": 0, "rationale": "Crushing changes size and surface area, not chemical identity."},
+      {"stem": "Which method separates two immiscible liquid layers?", "choices": ["Chromatography", "Magnetism", "Decantation or a separatory funnel", "Filtration through paper only"], "answer": 2, "rationale": "Separate phases can be drained or poured apart; density helps determine layering."},
+      {"stem": "Why does filtration not remove dissolved salt from water?", "choices": ["Salt is magnetic.", "Water is a solid.", "The salt reacts with paper.", "Dissolved particles pass with the liquid."], "answer": 3, "rationale": "A filter retains insoluble particles but does not ordinarily remove dissolved solute."},
+      {"stem": "Which property difference is central to distillation?", "choices": ["Color", "Volatility or boiling behavior", "Magnetism", "Particle shape only"], "answer": 1, "rationale": "Components vaporize and condense differently because their volatility or boiling behavior differs."},
+      {"stem": "Which sequence is best for dry iron filings mixed with sand?", "choices": ["Use a magnet, then evaluate the sand.", "Distill before any other step.", "Use chromatography first.", "Melt both components."], "answer": 0, "rationale": "Magnetism selectively removes iron from a dry nonmagnetic solid."},
+      {"stem": "A uniform blue liquid leaves no filter residue but yields liquid and solid by distillation. What is the best claim?", "choices": ["It is an element.", "It is a pure compound.", "It is a homogeneous mixture with dissolved material.", "Filtration destroyed the solute."], "answer": 2, "rationale": "No residue is expected for dissolved solute, while distillation physically recovers components."},
+      {"stem": "Which statement correctly applies conservation of matter?", "choices": ["Only visible products count.", "Gas products count even if they leave an open container.", "Matter can disappear during heating.", "Conservation applies only to physical changes."], "answer": 1, "rationale": "All products, including gases, must be included when accounting for matter."}
+    ]
+  },
+  "sources": [
+    {"organization": "IUPAC", "title": "Gold Book: chemical substance", "url": "https://goldbook.iupac.org/terms/view/C01039", "use": "constant composition and characteristic properties"},
+    {"organization": "IUPAC", "title": "Gold Book: chemical element", "url": "https://goldbook.iupac.org/terms/view/C01022", "use": "element terminology"},
+    {"organization": "IUPAC", "title": "Gold Book: mixture", "url": "https://goldbook.iupac.org/terms/view/M03949", "use": "mixture terminology"},
+    {"organization": "IUPAC", "title": "Gold Book: homogeneity", "url": "https://goldbook.iupac.org/terms/view/H02845", "use": "uniform distribution concept"},
+    {"organization": "American Chemical Society", "title": "Middle School Core Concepts", "url": "https://www.acs.org/education/policies/middle-and-high-school-chemistry/core-concepts/middle-school.html", "use": "matter, properties, and chemical-change scope"},
+    {"organization": "American Chemical Society", "title": "Molecules Matter", "url": "https://www.acs.org/middleschoolchemistry/lessonplans/chapter1/lesson1.html", "use": "matter and particle-model context"},
+    {"organization": "American Chemical Society", "title": "What is a Chemical Reaction?", "url": "https://www.acs.org/middleschoolchemistry/lessonplans/chapter6/lesson1.html", "use": "new-substance criterion and conservation context"},
+    {"organization": "Next Generation Science Standards", "title": "Developing and Using Models", "url": "https://www.nextgenscience.org/practice/developing-and-using-models", "use": "science practice support; no formal alignment claim"},
+    {"organization": "Next Generation Science Standards", "title": "Analyzing and Interpreting Data", "url": "https://www.nextgenscience.org/practice/analyzing-and-interpreting-data", "use": "science practice support; no formal alignment claim"},
+    {"organization": "Institute of Education Sciences", "title": "Organizing Instruction and Study to Improve Student Learning", "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/1", "use": "worked examples, practice, and quizzing sequence"}
+  ],
+  "blocked_sources": [
+    "ChemPride questions, answers, files, images, and page layouts - benchmark only",
+    "Local Chemistry 2e PDF and extracted text - excluded from direct generative authoring and commercial adaptation",
+    "CHEM P'M materials and branding - excluded from buyer-facing products"
+  ]
+}

@@ -1,0 +1,7 @@
+CurioNest Measurement Visual Worksheet
+Automated package build: 2026-08-11
+Buyer ZIP: CurioNest_Measurement_Visual_Worksheet_TPT.zip
+SHA-256: 3c41841032859093ec74f0b2f428c61fee9ecf895d37fecfe85837385a9c56de
+Release status: BLOCKED - human review gates pending
+Copyright: © 2026 CurioNest · For classroom use only
+Review RELEASE-EVIDENCE.md before Make Listing Active.

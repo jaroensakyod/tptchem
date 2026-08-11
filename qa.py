@@ -27,6 +27,26 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
+QUALITY_CONTRACT_PATH = ROOT / "product-lines" / "complete-unit-quality-baseline.json"
+LOCKED_QUALITY_CONTRACT_VERSION = "2026-08-11.1"
+
+LOCKED_QUALITY_MINIMA = {
+    ("instruction", "lesson_count"): 5,
+    ("instruction", "minimum_terms_per_lesson"): 4,
+    ("instruction", "minimum_teach_points_per_lesson"): 4,
+    ("instruction", "practice_items_per_lesson"): 5,
+    ("instruction", "mixed_review_items"): 10,
+    ("instruction", "test_forms"): 2,
+    ("instruction", "test_items_per_form"): 20,
+    ("instruction", "choices_per_test_item"): 4,
+    ("typography", "body_pt"): 10.4,
+    ("typography", "small_pt"): 8.6,
+    ("typography", "tiny_pt"): 7.4,
+    ("typography", "label_pt"): 8.2,
+    ("typography", "minimum_nonfooter_pt"): 7.2,
+    ("visuals", "minimum_unique_assets_per_unit"): 6,
+    ("visuals", "minimum_lessons_with_instructional_visuals"): 4,
+}
 
 MIRROR_KINDS = {
     "header", "learning_objectives", "concept", "practice", "vocabulary",
@@ -208,6 +228,51 @@ def valid_docx(path):
 
 def check_catalog(results):
     print("\n== Catalog and packages ==")
+    contract = load_json(QUALITY_CONTRACT_PATH, results)
+    if contract is None:
+        return
+    if contract.get("version") != LOCKED_QUALITY_CONTRACT_VERSION:
+        results.fail("complete-unit quality contract version must remain {} unless the user explicitly approves a version change".format(LOCKED_QUALITY_CONTRACT_VERSION))
+    elif contract.get("locked_minimum") is not True:
+        results.fail("complete-unit quality contract must remain locked")
+    else:
+        results.ok("complete-unit quality contract is locked at {}".format(LOCKED_QUALITY_CONTRACT_VERSION))
+    for path, floor in LOCKED_QUALITY_MINIMA.items():
+        value = contract
+        for key in path:
+            value = value.get(key, {}) if isinstance(value, dict) else None
+        if not isinstance(value, (int, float)) or value < floor:
+            results.fail("quality contract {} cannot be below {} (found {})".format(".".join(path), floor, value))
+    contract_pages = contract.get("package", {}).get("pages", {})
+    expected_pages = {
+        "complete": 51,
+        "lesson_slides": 15,
+        "student_guided_notes_and_practice": 12,
+        "unit_test_a": 4,
+        "unit_test_b": 4,
+        "teacher_guide_and_answer_key": 13,
+        "rights_and_sources": 2,
+        "preview": 6,
+    }
+    if contract_pages != expected_pages:
+        results.fail("complete-unit package page contract changed without an approved lock-version update")
+    else:
+        results.ok("complete-unit package page contract is preserved")
+    required_release_flags = (
+        "render_every_final_pdf_page",
+        "inspect_full_size_and_thumbnail",
+        "component_to_complete_parity",
+        "listing_uses_delivered_pages_only",
+        "exact_zip_malware_scan_and_sha256",
+        "automated_qa_required",
+        "automated_pass_never_certifies",
+    )
+    release_contract = contract.get("release", {})
+    if not all(release_contract.get(name) is True for name in required_release_flags):
+        results.fail("complete-unit release contract is missing a mandatory gate")
+    else:
+        results.ok("complete-unit automated and human release gates are preserved")
+
     catalog_path = ROOT / "catalog.json"
     catalog = load_json(catalog_path, results)
     if catalog is None:
@@ -232,25 +297,77 @@ def check_catalog(results):
             if not (package_dir / name).is_file():
                 results.fail("{} package is missing {}".format(pid, name))
 
-        product_pdf = package_dir / "product.pdf"
-        preview_pdf = package_dir / "preview.pdf"
-        cover = package_dir / "cover.png"
-        editable = package_dir / "product-editable.docx"
+        artifacts = product.get("artifacts", {})
+        product_pdf = package_dir / artifacts.get("product_pdf", "product.pdf")
+        preview_pdf = package_dir / artifacts.get("preview_pdf", "preview.pdf")
+        cover = package_dir / artifacts.get("cover", "cover.png")
+        editable = package_dir / artifacts.get("editable", "product-editable.docx")
+        profile = product.get("package_profile", {})
+        if profile.get("type") == "complete_unit_v2":
+            contract_version = profile.get("quality_contract_version")
+            if contract_version != contract.get("version"):
+                results.fail("{} catalog quality_contract_version is {} instead of {}".format(
+                    pid, contract_version, contract.get("version")))
+            source_data = load_json(source, results) if source.is_file() else None
+            if source_data is not None and source_data.get("quality_contract_version") != contract.get("version"):
+                results.fail("{} source quality_contract_version is {} instead of {}".format(
+                    pid, source_data.get("quality_contract_version"), contract.get("version")))
+        expected_product_pages = profile.get("product_pages")
+        expected_preview_pages = profile.get("preview_pages", 3)
+        expected_cover_pixels = tuple(profile.get("cover_pixels", [1200, 1200]))
+        editable_required = profile.get("editable_required", True)
         product_pages = pdf_page_count(product_pdf) if product_pdf.is_file() else None
         preview_pages = pdf_page_count(preview_pdf) if preview_pdf.is_file() else None
         dimensions = png_dimensions(cover) if cover.is_file() else None
-        if product_pages is None or product_pages < 4:
+        if expected_product_pages is not None and product_pages != expected_product_pages:
+            results.fail("{} product PDF must contain exactly {} pages (found {})".format(
+                pid, expected_product_pages, product_pages))
+        elif expected_product_pages is None and (product_pages is None or product_pages < 4):
             results.fail("{} product.pdf has an invalid page count: {}".format(pid, product_pages))
-        if preview_pages != 3:
-            results.fail("{} preview.pdf must contain exactly 3 pages (found {})".format(pid, preview_pages))
+        if preview_pages != expected_preview_pages:
+            results.fail("{} preview PDF must contain exactly {} pages (found {})".format(
+                pid, expected_preview_pages, preview_pages))
         if product_pages and preview_pages and preview_pages >= product_pages:
             results.fail("{} preview must be shorter than the product".format(pid))
-        if dimensions != (1200, 1200):
-            results.fail("{} cover must be 1200x1200 PNG (found {})".format(pid, dimensions))
-        if not editable.is_file() or not valid_docx(editable):
+        if dimensions != expected_cover_pixels:
+            results.fail("{} cover must be {}x{} PNG (found {})".format(
+                pid, expected_cover_pixels[0], expected_cover_pixels[1], dimensions))
+        if editable_required and (not editable.is_file() or not valid_docx(editable)):
             results.fail("{} editable DOCX is missing or invalid".format(pid))
         if product.get("status") != "certified":
             results.warn("{} is {} and must not be published yet".format(pid, product.get("status")))
+
+        visual_gate = product.get("visual_gate")
+        if not isinstance(visual_gate, dict):
+            results.fail("{} is missing the mandatory item-level visual_gate record".format(pid))
+        else:
+            visual_status = visual_gate.get("status")
+            required_count = visual_gate.get("required_count")
+            completed_count = visual_gate.get("completed_count")
+            plan_file = ROOT / visual_gate.get("plan_file", "")
+            if not isinstance(required_count, int) or required_count < 0:
+                results.fail("{} visual_gate required_count is invalid".format(pid))
+            if not isinstance(completed_count, int) or completed_count < 0:
+                results.fail("{} visual_gate completed_count is invalid".format(pid))
+            if isinstance(required_count, int) and isinstance(completed_count, int) and completed_count > required_count:
+                results.fail("{} visual_gate completed_count exceeds required_count".format(pid))
+            if not plan_file.is_file():
+                results.fail("{} visual_gate plan file is missing: {}".format(pid, visual_gate.get("plan_file")))
+            if visual_status == "passed":
+                if profile.get("type") == "complete_unit_v2" and isinstance(required_count, int) and required_count < contract["visuals"]["minimum_unique_assets_per_unit"]:
+                    results.fail("{} complete-unit visual count {} is below the locked minimum {}".format(
+                        pid, required_count, contract["visuals"]["minimum_unique_assets_per_unit"]))
+                if completed_count != required_count:
+                    results.fail("{} visual_gate is passed but coverage is {}/{}".format(pid, completed_count, required_count))
+                else:
+                    results.ok("{} instructional visual gate passed ({}/{})".format(pid, completed_count, required_count))
+            else:
+                message = "{} instructional visual gate is {} ({}/{})".format(
+                    pid, visual_status, completed_count, required_count)
+                if product.get("status") in ("certified", "published"):
+                    results.fail(message + " and blocks this release status")
+                else:
+                    results.warn(message + "; product cannot be called complete")
 
         product_failures = [message for message in results.failures if message.startswith(pid)]
         if not product_failures:

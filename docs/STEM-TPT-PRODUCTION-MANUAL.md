@@ -33,7 +33,7 @@
 | ชั้น | ใช้ตอบคำถาม | ตัวอย่าง |
 |---|---|---|
 | Standards/pacing | เด็กต้องเรียนอะไรและเมื่อไร | district map, NGSS, state standards |
-| Reference text | ขอบเขต ศัพท์ ลำดับ และระดับความยาก | OpenStax, official course framework |
+| Reference text | ขอบเขต ศัพท์ ลำดับ และระดับความยาก | NIST, ACS, IUPAC, official course framework, or an OER whose exact-version rights permit the intended commercial/AI use |
 | Worksheet exemplars | กิจกรรมที่ใช้งานง่ายหน้าตาเป็นอย่างไร | AACT, PhET, peer-reviewed OER |
 
 ห้ามยึดแหล่งเดียวเป็นทั้งหลักสูตร เนื้อหา และแบบฝึกหัด
@@ -49,6 +49,18 @@
 - `blocked`: ห้ามเข้าสินค้า
 
 คำว่า free, downloadable หรือ classroom use ไม่เท่ากับสิทธิ์ขายต่อ ถ้าไม่ชัดให้ถือเป็น `benchmark_only`.
+
+### 3.1 ChemPride base rule for chemistry
+
+For chemistry products, use `https://chempride.weebly.com/` as the permanent base benchmark for topic mapping, classroom workflow rhythm, and student/teacher/answer-key package architecture. Its rights status is `benchmark_only`: do not copy or adapt questions, wording, answers, images, screenshots, distinctive layout, or packet sequence. Write all sellable content independently as original CurioNest material.
+
+For this chemistry worksheet line, the verified free-source visual rule overrides any later general option that mentions ImageGen or code-drawn substitutes: required instructional visuals must come from documented commercial-use sources, or the work remains `BLOCKED`.
+
+Before a topic enters production, map it in `product-lines/chempride-topic-format-map.md`, select a genuinely different cognitive task from the 14-format catalog, complete the item-level Visual Plan, and build a 4-page Student/Tutor proof. Expand only after the proof passes rights, content, visual, and print QA.
+
+### 3.2 OpenStax Chemistry 2e restriction
+
+The current OpenStax Chemistry 2e page states a CC BY-NC-SA license and prohibits ingestion into generative AI without permission. The local `chemistry2e.pdf` therefore has status `blocked_direct_ai_and_commercial_reuse` until the exact file/version and its commercial permissions are documented. Do not upload, paste, extract, or otherwise provide that PDF to an LLM. Do not copy or adapt its text, questions, answers, figures, or distinctive instructional sequence into a paid product.
 
 ### 4. Topic brief
 
@@ -98,6 +110,11 @@
 
 ### 7. Visual asset selection
 
+- ทำ Visual Plan ระดับ item/page ก่อน authoring: ระบุ `required` หรือ `not required`, learning purpose, asset type, source/license และสถานะ
+- งาน observation, hazard recognition, equipment identification, spatial setup, symbols และ particle/model interpretation ต้องมีภาพที่นักเรียนใช้เป็นหลักฐาน
+- `not required` ต้องมีเหตุผลเชิงการเรียนรู้เฉพาะข้อ ห้ามใช้เหตุผลกว้าง ๆ ว่า text เพียงพอหรือหาภาพไม่ได้
+- ถ้าภาพที่จำเป็นยังไม่มีสิทธิ์ใช้เชิงพาณิชย์ ให้หยุดงานไว้ที่ `BLOCKED`; ห้ามลดโจทย์เป็น text-only เพื่อให้ผ่าน QA
+- จำนวน required/completed/missing visuals ต้องถูกบันทึกใน source, catalog visual gate และ QA report
 - สัญลักษณ์และอุปกรณ์มาตรฐาน: ใช้ verified SVG/PNG จากแหล่งตรวจสอบได้
 - กราฟ สมการ scale และ diagram เชิงปริมาณ: ใช้ deterministic code/native vector
 - ภาพบริบท: ใช้ภาพที่มี commercial license หรือ ImageGen เมื่อช่วยการเรียนจริง
@@ -158,6 +175,15 @@
 - preview ไม่เปิดเผย key ทั้งหมดและไม่มี claim เกินจริง
 - ห้ามนับ cover, TOU, key หรือ color duplicate เพื่อพอง page count
 
+#### G7 Marketplace/account safety
+
+- ไม่มี duplicate/cosmetic relisting; variant ต้องต่างเชิงสาระและอธิบายความต่างใน listing
+- ไม่มี external sales links, required buyer accounts หรือ lower/free duplicate elsewhere
+- final ZIP แตกทดสอบ เปิดทุกไฟล์ สแกนด้วย approved antivirus และบันทึก SHA-256
+- account identity, tax and payout information ตรงกับเจ้าของสิทธิ์จริง; ผู้ช่วยใช้ TPT VA Login เท่านั้น
+- มี backup และ incident pack ต่อ SKU นอก TPT
+- automated QA ไม่เปลี่ยนสถานะเป็น `certified` แทน human release gates
+
 ### 10. Release decision
 
 - `PASS`: ทุก gate ผ่านและไม่มี blocker
@@ -169,11 +195,13 @@
 - source สร้างใหม่ได้ deterministically
 - PDF เปิดได้และขนาด US Letter
 - ตรวจภาพครบทุกหน้าและเก็บ QA record
+- Visual Plan ครบทุก item/page และ required visuals มีจริงครบ 100%; ถ้าขาดแม้หนึ่งรายการให้เป็น `FAIL/BLOCKED`
 - answer coverage 100%
 - ไม่มี unverified asset
 - มี differentiation หรือ implementation note
 - student instructions ผ่าน cold-read
 - status ใน catalog/plan ตรงความจริง
+- `RELEASE-EVIDENCE.md` ครบ human signoffs, malware result, ZIP hash และ seller authorization
 
 ## การใช้ agents
 

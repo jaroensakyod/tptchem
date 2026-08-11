@@ -1,119 +1,169 @@
-# ChemNest Product Quality Standard v1.1
+# CurioNest Product Quality Standard v2.1
 
-> มาตรฐานบังคับก่อนขึ้นร้าน TPT ทุกชิ้น — แก้ไขได้โดย owner เท่านั้น (version bump)
-> v1.0 อนุมัติ 2026-08-09 · v1.1 เพิ่ม Visual Asset Gate 2026-08-10 · owner approval required for future version bumps
+> Mandatory release standard for every CurioNest TPT product. Version 2.1 adds a model-independent quality lock on 2026-08-11.
 
-## หลักการ
+## Core promise
 
-1. **ครูซื้อเพราะไว้ใจ** — สินค้าทุกชิ้นต้อง "ผ่านประตูตรวจ" ครบ 4 ประตู ก่อนขึ้นร้าน ไม่มีข้อยกเว้น
-2. **Risk-based ไม่ใช่ตรวจเท่ากันหมด** — แบ่ง tier ตามปริมาณภาษาที่ต้องเสี่ยง (ไม่งั้นขยาย 3,349 ข้อไม่จบ)
-3. **ตรวจครั้งเดียวให้จบ** — ทุกการแก้ต้อง log ไว้ กันแก้ซ้ำที่เดิม
-4. **มาตรฐาน = moat** — กันคู่แข่ง AI slop (TPT demote คุณภาพต่ำ) และเป็นเหตุผลที่ครูเลือกเรา
+CurioNest sells classroom-ready instruction, not pages of unsupported questions. A product may use the words `lesson`, `unit`, `complete`, or `core pack` only when it contains an explicit teaching sequence, supported practice, assessment, complete keys, teacher guidance, and verified rights.
 
-## สถานะสินค้า (pipeline)
+Automated QA never authorizes publication. A product may be listed only after all automated gates and the three human gates are approved.
 
-```
-draft → translated → lang_qa (G2) → packaged (G3) → certified (G4) → published
-```
+## Model-independent quality lock
 
-- ขายได้เฉพาะ status = **certified** ขึ้นไป
-- ทุกสถานะมี log (product-qa-log.md หรือ JSON)
+- Every model or agent must begin with `AGENTS.md` and `.agents/skills/curionest-complete-unit/SKILL.md`.
+- `product-lines/complete-unit-quality-baseline.json` is the machine-readable minimum for complete units.
+- Source and catalog metadata must name the active `quality_contract_version`; automated QA must reject missing or stale versions.
+- Never lower a typography minimum, visual minimum, instructional component, assessment requirement, QA gate, or human gate to make a build pass.
+- A lower minimum or removed gate requires explicit user approval, a new contract version, and synchronized changes to policy, generator, QA, source, catalog, and release evidence.
 
-## 4 ประตู (Gates)
+## Required learning sequence (G0)
 
-### G1 — Chemistry Gate (สืบทอดจาก chem-pm-unified)
-- ข้อต้องมี `review.chemistry_status = approved` จาก bank ต้นทาง (QA 2 รอบ: Codex chemistry QA + second-pass)
-- ห้ามแก้เนื้อหาเคมีหลัง freeze (SHA-256 ของ batch) โดยไม่ผ่าน review ใหม่
-- **ตรวจ:** source batch + review trail ตรงกัน
+Every chapter unit must follow this sequence:
 
-### G2 — Language Gate (ใหม่)
-- ภาษาอังกฤษต้องเป็นธรรมชาติแบบเจ้าของภาษา: grammar, word order, ไม่มี "AI-ism" (ประโยคอวยพรซ้ำ, คำฟุ่มเฟือย, ศัพท์ผิดบริบท)
-- **ศัพท์ต้องตรง glossary-th-en.md 100%** (ห้าม pH บางชิ้น pOH บางชิ้นใช้คนละคำ)
-- ตัวเลข/หน่วย/สูตร/LaTeX ต้องไม่เพี้ยนจากการแปล
-- **ตรวจตาม tier:**
-  - Tier A (numeric MC, สูตรล้วน): sample 10% + glossary check
-  - Tier B (MC ทั่วไป): 100% ภาษา + ทวนเคมีเบา
-  - Tier C (short_answer / written_solution): 100% + ทวนคำตอบเชิงคำนวณ + misconception
-- Residual risk: ก่อน publish ครั้งแรกของร้าน ควรมีเจ้าของภาษาอ่านทวนทั้งชิ้น 1 รอบ (บันทึกใน log)
+`Engage -> Teach -> Model -> Guided Practice -> Independent Practice -> Formative Check -> Mixed Review -> Summative Assessment`
 
-### G3 — Product Gate (ใหม่)
-- ไฟล์ขาย (product PDF) ครบ: cover + **หน้า Welcome (cover letter ถึงครู — จำเป็นทุกชิ้น ตามธรรมเนียม US sellers)** + TOU + เนื้อหา + answer key
-- Answer key ครบทุกข้อ (20/20) + มีคำอธิบาย + misconception
-- Review card / teacher guide ตามชนิดสินค้า
-- Difficulty ระบุชัด (dots ●○○/●●○/●●●) — สนับสนุนการ differentiate
-- Preview images ครบ (อย่างน้อย 3: cover, ตัวอย่างเนื้อหา, ตัวอย่างเฉลย)
-- PDF เปิดได้, ฟอนต์ฝัง (ไม่เพี้ยนบนเครื่องครู), ไม่มีแท็กหลุด, US Letter
-- ตรวจด้วย pipeline: build ผ่าน + pypdf ตรวจหน้า/แท็ก + vision/มนุษย์ดู layout
-- **Roadmap ตามคู่แข่ง (EazyScience):** reading passage ต่อสินค้า (รูปแบบที่ครูซื้อจริง — "independent reading activity") · เวอร์ชัน B&W (ประหยัดหมึก) · real-world connections ในเนื้อหา (ครูชมในรีวิว)
+For every lesson:
 
-### G3-V — Visual Asset Gate (บังคับ)
+1. State a measurable learning target and prerequisite.
+2. Begin with a phenomenon, data point, image, prediction, or prior-knowledge prompt.
+3. Teach the concept in student-friendly American English.
+4. Define essential vocabulary in context.
+5. Include at least one fully worked example or modeled reasoning path.
+6. Include guided practice that names the scaffold or thinking step.
+7. Include independent practice that requires transfer, not copied arithmetic.
+8. End with an exit ticket or other observable formative check.
+9. Provide a teacher-facing answer, likely misconception, and specific repair action.
 
-จัดประเภทภาพก่อนสร้างหรือค้นหา ห้ามเลือกเครื่องมือจากความสะดวก:
+A chapter unit must also contain:
 
-1. **สัญลักษณ์และอุปกรณ์วิทยาศาสตร์มาตรฐาน** — ใช้ SVG/ภาพจากแหล่งที่ตรวจสอบได้ เช่น UNECE GHS, Bioicons, Servier หรือ OpenClipart พร้อม URL ผู้สร้าง และ license รายไฟล์ ห้ามวาดเลียนแบบเองเมื่อมีมาตรฐานอยู่แล้ว
-2. **แผนภาพที่ค่าทางวิทยาศาสตร์เป็นสาระ** — ใช้ `chem_figures.py`, matplotlib, RDKit, OMML หรือโค้ด deterministic สำหรับกราฟ สเกล meniscus โครงสร้างโมเลกุล ตาราง และการคำนวณ พร้อมตรวจตัวเลข/หน่วย
-3. **ภาพบริบทสมจริงหรือภาพประกอบเชิงเรื่องราว** — ใช้ ImageGen ได้เมื่อช่วยการเรียนจริงและไม่มีแหล่งมาตรฐานที่เหมาะสม ห้ามให้ AI สร้าง GHS อุปกรณ์ที่ต้องระบุชื่อ สูตรเคมี ฉลาก ข้อความ หรือขั้นตอนความปลอดภัย
-4. **องค์ประกอบเลย์เอาต์** — การ์ด เส้น กล่อง หมายเลข และพื้นที่ตอบ ใช้ shape ของเอกสารหรือโค้ดได้ แต่ต้องไม่ปลอมเป็น clipart อุปกรณ์
+- a pacing guide and teacher moves;
+- a cumulative mixed review after all lessons;
+- a multiple-choice summative test after instruction and practice;
+- two equivalent test forms (A and B) for retakes/test security;
+- four plausible, parallel choices per multiple-choice item;
+- a keyed rationale for every answer and a misconception note when useful;
+- at least one application, data, model, or evidence-based item in each test form.
 
-ข้อห้ามและการตรวจ:
+Stop release if a tested skill was not explicitly taught and practiced, or if a taught learning target is never assessed.
 
-- ห้ามใช้ภาพวาดหยาบ ตัวการ์ตูน หรืออุปกรณ์จาก shape เมื่องานต้องการการจำแนกอุปกรณ์จริง
-- ห้ามผสมหลายสไตล์โดยไม่มีระบบ และห้ามใช้ภาพที่ย้อนกลับไปหาแหล่ง/สิทธิ์ไม่ได้
-- ลงทะเบียน asset ใน `assets-manifest.json` **ก่อน** แทรกลงสินค้า; ภาพผสมต้องบันทึก provenance ของทุกองค์ประกอบ
-- Cover และ listing ต้องใช้ภาพจากหน้าจริงหรือ asset ชุดเดียวกับสินค้า ห้ามทำ mockup ที่สัญญาเกินไฟล์ขาย
-- Render ตรวจทุกหน้าและภาพ listing ที่ขนาด thumbnail; ตรวจชื่ออุปกรณ์ สัญลักษณ์ ความคม การครอป และความสม่ำเสมอ
-- หลัง QA ให้ลบภาพทดลอง ไฟล์ render ชั่วคราว และ derivative ที่ไม่มีผู้ใช้งาน แต่เก็บ source SVG + derivative สุดท้ายที่ builder เรียกใช้
+## U.S. science design (G0-S)
 
-### G4 — Compliance Gate (ใหม่)
-- **AI disclosure:** ตอบตามจริงในขั้นตอนอัปโหลด TPT (AI-assisted) + description กล่าวถึง QA ไม่ใช่โฆษณา AI
-- **ลิขสิทธิ์:** ฟอนต์ OFL เท่านั้น (Google Fonts ✓) · รูป/ไอคอนสร้างเองหรือ CC · ห้ามคลิปอาร์ต/ตัวการ์ตูนติดลิขสิทธิ์
-- **Benchmarking Policy:** ศึกษาโครงสร้าง/ฟีเจอร์/ราคาของร้านขายดีได้ (บันทึกใน tpt-benchmark.md) แต่ห้ามก็อปเนื้อหา/ข้อความ/ดีไซน์/ภาพ/ชื่อร้านของใคร — ห้ามดาวน์โหลดไฟล์ร้านอื่นมาแกะ (DMCA + แบนร้าน)
-- TOU อยู่ในไฟล์ (single-teacher license)
-- หมวดหมู่/เกรด/แท็ก/ราคา ครบตาม tpt-listing-pack.md
-- ไม่มีข้อความ "ฉาบฉวย" แบบ AI slop (ชมตัวเองซ้ำ, คำสัญญาเกินจริง)
+- Use U.S. Grades 9-10 expectations, American English, and US Letter pages.
+- Use a coherent learning progression rather than disconnected worksheets.
+- Embed formative checks throughout instruction; do not rely only on the final test.
+- Use phenomena, models, data, and evidence when they materially support sensemaking.
+- Distinguish `supports NGSS practices` from a formal NGSS performance-expectation alignment claim.
+- Do not claim NGSS alignment unless a documented three-dimensional alignment review is complete.
 
-## Risk Tiers
+## Chemistry accuracy (G1)
 
-| Tier | ประเภทข้อ | ตรวจภาษา | ตรวจเคมี |
-|---|---|---|---|
-| A | numeric (มี value/unit/tolerance) | sample 10% + glossary | ทวนตัวเลขย้อนกลับ (sample) |
-| B | multiple_choice ทั่วไป | 100% | ทวนคำตอบ + เอกฐานตัวเลือก |
-| C | short_answer / written_solution | 100% | ทวนเต็ม + misconception |
+- Verify every definition, equation, unit, numerical result, distractor, and rationale.
+- Recalculate quantitative answers independently from the keyed result.
+- Record accepted conventions and any scientifically reasonable alternate response.
+- Freeze source content by hash after review; any content change requires rerunning chemistry QA.
+- Do not publish an item the seller cannot solve and explain aloud.
 
-## Checklist ต่อชิ้น (คัดลอกลง product-qa-log.md ทุกชิ้น)
+## Language and accessibility (G2)
 
-```
-[ ] G1: source batch + chemistry_status=approved
-[ ] G2: แปลครบ ไม่มี AI-ism · glossary ตรง · tier ตามชนิดข้อ
-[ ] G3: PDF ครบ structure · key ครบ · preview ครบ · ฟอนต์ฝัง
-[ ] G3-V: route ภาพถูกประเภท · provenance ครบ · ไม่มีภาพวาดแทนอุปกรณ์/GHS · visual QA ผ่าน
-[ ] G4: disclosure · ลิขสิทธิ์ · TOU · หมวด/แท็ก/ราคา
-[ ] build + verify: ALL PASS (script)
-[ ] (ครั้งแรกของร้าน) เจ้าของภาษาอ่านทวน 1 รอบ
-```
+- Use natural American English, concise teacher language, and grade-appropriate vocabulary.
+- Define necessary academic language; avoid decorative jargon and generic AI phrasing.
+- Keep prompts unambiguous and choices grammatically parallel.
+- Avoid trick questions, cultural assumptions, and unnecessary reading load.
+- Provide sufficient writing space and readable print contrast.
+- A native-English cold read remains mandatory before publication.
 
-## KPI
+## Product completeness (G3)
 
-- 0 บั๊กภาษา/เคมีที่เกิดจากรีวิว 1 ดาว
-- ค่าเฉลี่ยรีวิว ≥ 4.8★
-- ทุกชิ้นที่ publish ต้องมี log ครบ 4 ประตู
+Every complete chapter unit must include:
 
-## Anti-AI-look Checklist (กัน "ดูเหมือน AI ทำ" — ตรวจทุกชิ้นก่อน publish)
+- cover;
+- teacher quick-start and pacing;
+- projectable lesson slides or equivalent teacher-led teaching pages;
+- student teaching notes and practice;
+- cumulative review;
+- Unit Test A and Unit Test B;
+- teacher guide and full answer key;
+- terms, rights, and sources;
+- preview PDF and at least three truthful listing images;
+- listing copy, upload checklist, QA report, release evidence, malware result, and package hash.
 
-| # | ตรวจ | ผ่านเมื่อ |
-|---|---|---|
-| 1 | Cover ไม่ซ้ำแบบกับชิ้นอื่นในร้าน | layout/องค์ประกอบต่างกันตามชนิดสินค้า (worksheet / digital / bundle) |
-| 2 | ภาษาไม่เป็น "AI-ism" | ผ่าน glossary §"ห้ามใช้" + อ่านแล้วเหมือนครูเขียน (contraction, พูดตรงกับครู) |
-| 3 | มี "สัมผัสครู" อย่างน้อย 2 อย่าง | misconception / review card / teacher tip / ตัวอย่างเจาะจง / ลายมือ (Caveat) |
-| 4 | เนื้อหาถูกต้อง (ไม่มีรอย AI มั่ว) | G1-G2 ผ่าน + สุ่มตรวจตัวเลขย้อนกลับ |
-| 5 | "Teacher-voice pass" | อ่าน description + หน้าแรกของไฟล์ออกเสียงแล้วฟังดูเป็นคน (ไม่ใช่โบรชัวร์) |
-| 6 | มีเรื่องมนุษย์ในร้าน | bio "About the author" มีเรื่องจริง (ครู/ผู้เชี่ยวชาญ/แรงจูงใจ) ไม่ใช่ประโยคgeneric |
-| 7 | ไม่มี "AI บอกให้ครูทำอะไร" ที่ห่วย | ตรวจ Q&A/คำแนะนำในสินค้า ว่าเป็นคำแนะนำที่ครูจริงจะใช้ |
+PDF-only products are allowed when the listing states PDF-only. Never advertise an editable file that is not delivered and render-verified.
 
-> หมายเหตุ: รีวิวจากครูจริงคือสัญญาณ "ไม่ใช่ AI slop" ที่แรงที่สุด — freebie + คุณภาพ = เครื่องมือหลัก ไม่ใช่แค่ดีไซน์
+## Instructional visual gate (G3-V)
 
-## แหล่งอ้างอิง
+- Write an item-level visual plan before layout.
+- If an item asks students to identify equipment, read a scale, interpret particles, recognize a hazard, inspect a structure, or reason spatially, include a functional visual.
+- Use internationally recognizable free/open sources that permit commercial use. Record source URL, creator, license, downloaded file, and local license evidence.
+- Do not use AI-generated instructional images or code-drawn substitutes for this product line.
+- Layout shapes, rules, numbering, and answer areas are allowed; they are not instructional art.
+- A decorative image never satisfies a required instructional visual.
+- Block release when a required visual or rights record is missing.
 
-- glossary-th-en.md (ศัพท์มาตรฐาน)
-- tpt-listing-pack.md (การตั้งค่า listing + นโยบาย AI)
-- product-qa-log.md (ประวัติการตรวจรายชิ้น)
+## Assessment gate (G3-A)
+
+For each test form, automated QA must verify:
+
+- the required number of unique items;
+- exactly four choices per item;
+- exactly one keyed best answer;
+- no answer-position pattern longer than three;
+- coverage of every stated learning target;
+- no assessment item outside taught scope;
+- no verbatim reuse between Forms A and B;
+- rationales for all items;
+- comparable skill coverage and difficulty between forms;
+- answer keys separated from student test files.
+
+Multiple choice is one measure, not the entire learning experience. Guided reasoning, independent application, and formative checks remain required before the final test.
+
+## Rights, originality, and platform compliance (G4)
+
+- Brand buyer-facing files exactly as `CurioNest`.
+- Use the exact line `© 2026 CurioNest · For classroom use only`.
+- Do not place CHEM P'M, CHEM_PM, ChemPride, OpenStax, or another publisher name in buyer-facing content except where a license legally requires attribution and has been approved.
+- ChemPride may inform only broad topic architecture and classroom workflow. Never copy or adapt its questions, answers, wording, art, screenshots, distinctive layouts, or packet sequence.
+- The local Chemistry 2e PDF is blocked from direct authoring and commercial adaptation.
+- Write original questions, examples, explanations, distractors, and page composition.
+- Answer TPT's AI disclosure truthfully. Do not promise sales, formal endorsement, or zero account risk.
+- Listing claims must match the exact files and page counts in the buyer ZIP.
+- Scan the exact final ZIP and record SHA-256 after every rebuild.
+
+## Visual and print QA (G5)
+
+- US Letter, embedded fonts, consistent margins, page numbers, and edition labels.
+- Render every final PDF page to PNG after the last content change.
+- Reject clipped text, overlap, broken symbols, low-resolution visuals, unreadable choices, ambiguous answer space, blank pages, or accidental extra pages.
+- Inspect listing images at full resolution and thumbnail size.
+- Preserve a calm print-first hierarchy; avoid repetitive dashboard cards and decorative clutter.
+
+## Duplicate-product gate (G6)
+
+- Document the instructional purpose, audience, format, assessed skills, and prompt inventory.
+- A new SKU must differ in learning task or classroom use, not only title, colors, or rearranged questions.
+- Never reuse scored prompts across separately listed products without clearly disclosed bundle relationships.
+
+## Human release gates (G7)
+
+All three decisions must be recorded as `APPROVED` after reviewing the final rebuilt files:
+
+1. Native-English cold read.
+2. U.S. chemistry/science teacher review of content, level, assessment, and safety.
+3. Classroom dry run with observed timing and usability notes.
+
+Any correction reopens affected automated gates. Until all three are approved, status remains `draft_pending_teacher_review` and publication is blocked.
+
+## Required status flow
+
+`idea -> researched -> scoped -> authored -> built -> qa_content -> qa_visual -> automated_complete_human_review_pending -> certified -> published`
+
+## Definition of done
+
+A chapter is finished for automated production only when:
+
+- G0 through G6 pass;
+- all final files are rebuilt from the same source;
+- every page is visually reviewed;
+- listing and package inventories match;
+- the exact final ZIP passes malware scan and its hash is recorded;
+- catalog, chapter queue, and release evidence are updated;
+- G7 remains visibly blocking until real reviewers approve it.

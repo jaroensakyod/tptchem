@@ -1,0 +1,327 @@
+{
+  "product_id": "CN-CH01-MATH",
+  "quality_contract_version": "2026-08-11.1",
+  "brand": "CurioNest",
+  "title": "Chemistry Foundations: Math and Measurement Complete Instructional Unit",
+  "short_title": "Math and Measurement",
+  "file_prefix": "CurioNest_CH01_Math_and_Measurement",
+  "target": "U.S. Grades 9-10 / General Chemistry",
+  "duration": "6-8 class periods",
+  "copyright": "© 2026 CurioNest · For classroom use only",
+  "lesson_count": 5,
+  "cover_visual": "graduated-cylinder-public-domain.jpg",
+  "cover_credit": "Graduated-cylinder photo: Darrien / Haltopub, Public Domain, Wikimedia Commons",
+  "cover_features": [
+    "15 projectable teaching slides",
+    "12 student lesson, practice, and review pages",
+    "Unit Tests A and B with 20 multiple-choice items each",
+    "Teacher guide, full answers, rationales, and repair moves"
+  ],
+  "cover_claim": "Build the measurement habits students need before chemistry calculations begin.",
+  "unit_purpose": "Students learn how measurements become defensible evidence. The unit moves from tools, units, and notation to factor-label reasoning, density, percent error, and evidence-based claims about accuracy and precision.",
+  "pacing": [
+    {"day": "1", "plan": "Lesson 1: Measurement Evidence and SI Records. Use Slides 1-3, Student Pages 1-2, and the exit ticket."},
+    {"day": "2", "plan": "Lesson 2: Scientific Notation and Significant Figures. Model rounding only after the full calculation."},
+    {"day": "3", "plan": "Lesson 3: Dimensional Analysis. Require units on every factor and a visible cancellation check."},
+    {"day": "4", "plan": "Lesson 4: Density and Percent Error. Connect calculations to measured evidence and units."},
+    {"day": "5", "plan": "Lesson 5: Accuracy, Precision, and Error. Compare repeated trials before making a claim."},
+    {"day": "6", "plan": "Cumulative mixed review, feedback, and targeted reteaching."},
+    {"day": "7", "plan": "Unit Test A. Reserve Form B for a retake, alternate class, or test security."}
+  ],
+  "before_teaching": "Decide calculator expectations and the significant-figure convention used by your course. Confirm students can multiply powers of ten. Preview the pictured tools and remind students that the correct tool depends on the quantity and needed resolution.",
+  "look_fors": "Students attach units to measured values, distinguish exact conversion factors from measured data, cancel units before calculating, round once at the end, and use repeated trials when discussing precision.",
+  "support": "Keep the prefix table, factor-label frame, and formula bank visible. Let students annotate units in color. Reduce arithmetic load without removing the reasoning step.",
+  "extend": "Ask students to design a repeated-trial measurement plan, predict the effect of a systematic offset, and defend which additional data would strengthen an accuracy claim.",
+  "release_scope": {
+    "market": "United States",
+    "language": "American English",
+    "paper": "US Letter",
+    "standards_claim": "Supports the NGSS practice of Using Mathematics and Computational Thinking; no formal performance-expectation alignment is claimed.",
+    "difference_from_existing_sku": "This complete unit includes explicit instruction, projectable slides, guided and independent practice, cumulative review, two 20-item tests, and rationale keys. CN-MM-VISUAL-01 is a separate short visual instrument-choice worksheet and does not reuse scored prompts."
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Measurement Evidence and SI Records",
+      "target": "Distinguish qualitative and quantitative observations, choose an appropriate tool, and record a complete SI-style measurement.",
+      "engage": "Two students describe the same sample as 'heavy' and '18.62 g.' Which record can another scientist compare directly, and what makes it more useful?",
+      "big_idea": "A measurement is evidence only when the value, unit, quantity, tool, and reasonable precision are communicated clearly.",
+      "terms": [
+        {"term": "qualitative", "definition": "descriptive evidence without a measured number"},
+        {"term": "quantitative", "definition": "evidence that includes a measured or counted number"},
+        {"term": "resolution", "definition": "the smallest increment an instrument can display or support"},
+        {"term": "SI unit", "definition": "a standard unit used to communicate a physical quantity"}
+      ],
+      "teach_points": [
+        "A complete quantitative record names the measured quantity and gives a number with a unit.",
+        "Choose the tool for the quantity and needed resolution: a balance measures mass; a graduated cylinder measures liquid volume more precisely than a beaker.",
+        "Write a space between a value and its unit symbol, use correct capitalization, and do not pluralize symbols: 6.0 mL, not 6.0mls.",
+        "A leading zero prevents a missed decimal: write 0.45 g, not .45 g."
+      ],
+      "visuals": [
+        {"file": "electronic-balance-ccby3.png", "caption": "Electronic balance: mass"},
+        {"file": "graduated-cylinder-ccby3.png", "caption": "Graduated cylinder: liquid volume"},
+        {"file": "beaker-ccby3.png", "caption": "Beaker: holding and approximate volume"}
+      ],
+      "worked_example": {
+        "prompt": "A data table contains only '42.7.' Diagnose the record and repair it for a liquid-volume measurement.",
+        "steps": [
+          "Identify what is missing: the record does not name the measured quantity or unit.",
+          "Use the measurement context to choose the correct unit: milliliters for this liquid volume.",
+          "Preserve the reported precision and apply SI spacing and capitalization."
+        ],
+        "answer": "Record the result as 'liquid volume = 42.7 mL' and identify the instrument used."
+      },
+      "cfu": "Why is 24.6 mL more informative than the number 24.6 alone?",
+      "practice": [
+        {"id": "L1-1", "prompt": "Classify 'The solution is pale blue' and 'The solution volume is 18.5 mL' as qualitative or quantitative.", "scaffold": "Look for a measured number and unit.", "answer": "'Pale blue' is qualitative. '18.5 mL' is quantitative because it includes a measured value and unit."},
+        {"id": "L1-2", "prompt": "Choose the pictured tool best suited to measure 24.6 mL of water. Cite one visual feature.", "answer": "The graduated cylinder; its narrow body and graduated scale support a more precise volume reading than a beaker."},
+        {"id": "L1-3", "prompt": "Repair each record: (a) .45g (b) 6.0ml (c) 5 kgs.", "answer": "(a) 0.45 g (b) 6.0 mL (c) 5 kg."},
+        {"id": "L1-4", "prompt": "A student needs the mass of a dry solid. Explain why a graduated cylinder is not the correct first tool.", "answer": "A graduated cylinder measures volume. An electronic balance directly measures mass."},
+        {"id": "L1-5", "prompt": "Write one complete quantitative record for a sample with a mass display of 7.250 g.", "answer": "Example: sample mass = 7.250 g, measured with an electronic balance."}
+      ],
+      "misconception": "A number automatically makes an observation scientific and complete.",
+      "repair": "Require students to underline the value once and circle the unit; if either mark is missing, the record is incomplete."
+    },
+    {
+      "number": 2,
+      "title": "Scientific Notation and Significant Figures",
+      "target": "Represent measured values in scientific notation and apply significant-figure rules to calculations.",
+      "engage": "Two calculators display 39.68 and 39.680000. Does the longer display automatically make the experimental answer more precise?",
+      "big_idea": "Scientific notation preserves place value; significant figures communicate justified precision from measured data.",
+      "terms": [
+        {"term": "coefficient", "definition": "the number from 1 up to, but not including, 10 in scientific notation"},
+        {"term": "exponent", "definition": "the power of ten that records decimal movement"},
+        {"term": "significant figure", "definition": "a digit justified by the measurement and its recorded precision"},
+        {"term": "exact number", "definition": "a counted or defined value that does not limit significant figures"}
+      ],
+      "teach_points": [
+        "Scientific notation has the form a x 10^n, where 1 <= a < 10.",
+        "Leading zeros are placeholders; zeros between nonzero digits and recorded trailing decimal zeros are significant.",
+        "For multiplication and division, round to the fewest significant figures among measured values.",
+        "For addition and subtraction, round to the least precise decimal place. Keep guard digits and round once at the end."
+      ],
+      "visuals": [],
+      "worked_example": {
+        "prompt": "Calculate 12.4 x 3.20 and report the answer with justified precision.",
+        "steps": [
+          "Calculate without early rounding: 12.4 x 3.20 = 39.68.",
+          "Count significant figures: 12.4 has 3 and 3.20 has 3.",
+          "Round the product to 3 significant figures."
+        ],
+        "answer": "39.7"
+      },
+      "cfu": "Why is 39.68 not the final reported answer for the worked example?",
+      "practice": [
+        {"id": "L2-1", "prompt": "Write 0.0005070 in scientific notation and state its significant figures.", "scaffold": "Move the decimal until the coefficient is between 1 and 10; preserve recorded trailing zeros.", "answer": "5.070 x 10^-4; four significant figures."},
+        {"id": "L2-2", "prompt": "State the number of significant figures in (a) 0.004060 (b) 700. (c) 1.0200 (d) 0.030.", "answer": "(a) 4 (b) 3 (c) 5 (d) 2."},
+        {"id": "L2-3", "prompt": "Calculate 45.60 / 2.5 and round correctly.", "answer": "18; the calculator result 18.24 is rounded to two significant figures."},
+        {"id": "L2-4", "prompt": "Calculate 18.42 + 3.7 + 0.006 and round correctly.", "answer": "22.1; the tenths place limits the sum."},
+        {"id": "L2-5", "prompt": "A student rounds every intermediate step. State one risk and one repair.", "answer": "Early rounding can accumulate error. Keep guard digits and round once after the final operation."}
+      ],
+      "misconception": "All zeros are either always significant or never significant.",
+      "repair": "Have students label each zero as leading, captive, or trailing before counting significant figures."
+    },
+    {
+      "number": 3,
+      "title": "Dimensional Analysis",
+      "target": "Convert quantities by arranging conversion factors so unwanted units cancel and the target unit remains.",
+      "engage": "A conversion gives the expected number, but the unwanted unit never cancels. Should the result be trusted?",
+      "big_idea": "A conversion factor equals one. Its orientation is chosen by units, and unit cancellation is the built-in reasonableness check.",
+      "terms": [
+        {"term": "conversion factor", "definition": "a ratio of equivalent quantities that equals one"},
+        {"term": "factor-label method", "definition": "a method that tracks and cancels units through multiplication"},
+        {"term": "target unit", "definition": "the unit required in the final answer"},
+        {"term": "dimensional consistency", "definition": "agreement between the units in a setup and the intended quantity"}
+      ],
+      "teach_points": [
+        "Start with the given quantity and write its unit.",
+        "Place each unwanted unit opposite itself so it cancels.",
+        "Continue multiplying by equal ratios until only the target unit remains.",
+        "Defined conversion factors, such as 1000 m = 1 km, are exact and do not limit significant figures."
+      ],
+      "visuals": [
+        {"file": "speedometer-kmh-public-domain.jpg", "caption": "A rate such as km/h combines two units; both must be tracked during conversion."}
+      ],
+      "worked_example": {
+        "prompt": "Convert 72.0 km/h to m/s.",
+        "steps": [
+          "Write 72.0 km/h x (1000 m / 1 km) so kilometers cancel.",
+          "Multiply by (1 h / 3600 s) so hours cancel.",
+          "Calculate 72.0 x 1000 / 3600 and retain three significant figures."
+        ],
+        "answer": "20.0 m/s"
+      },
+      "cfu": "What does it mean if both kilometers and meters remain in the final unit?",
+      "practice": [
+        {"id": "L3-1", "prompt": "Convert 3.45 km to meters using a visible conversion factor.", "scaffold": "Place kilometers in the denominator of the factor so they cancel.", "answer": "3.45 km x (1000 m / 1 km) = 3.45 x 10^3 m."},
+        {"id": "L3-2", "prompt": "Convert 0.0825 L to milliliters.", "answer": "82.5 mL."},
+        {"id": "L3-3", "prompt": "Convert 2.60 x 10^5 mg to grams and preserve significant figures.", "answer": "2.60 x 10^2 g, or 260. g."},
+        {"id": "L3-4", "prompt": "Convert 18.0 m/s to km/h.", "answer": "64.8 km/h."},
+        {"id": "L3-5", "prompt": "Explain why a setup that ends in h/s is incomplete when the target is m/s.", "answer": "The distance unit was not converted or canceled correctly; dimensional consistency requires only m/s to remain."}
+      ],
+      "misconception": "Conversion means moving a decimal according to a memorized direction.",
+      "repair": "Cover the numbers and inspect only the units. Reorient factors until every unwanted unit cancels."
+    },
+    {
+      "number": 4,
+      "title": "Density and Percent Error",
+      "target": "Calculate density, rearrange the density relationship, and use percent error to compare an experimental result with an accepted value.",
+      "engage": "Two objects have different masses but the same density. What does density reveal that mass alone does not?",
+      "big_idea": "Density relates mass to volume, while percent error measures the size of a difference relative to an accepted value.",
+      "terms": [
+        {"term": "density", "definition": "mass per unit volume, d = m / V"},
+        {"term": "accepted value", "definition": "the reference value used for comparison"},
+        {"term": "experimental value", "definition": "the value produced by a measurement or calculation"},
+        {"term": "percent error", "definition": "absolute difference divided by accepted value, multiplied by 100"}
+      ],
+      "teach_points": [
+        "Density units combine mass and volume, commonly g/mL or g/cm^3.",
+        "Use d = m / V; rearrange to m = dV or V = m/d when needed.",
+        "Percent error = |experimental - accepted| / accepted x 100%.",
+        "Keep the absolute value in the numerator and use the accepted value as the denominator."
+      ],
+      "visuals": [
+        {"file": "graduated-cylinder-public-domain.jpg", "caption": "Read liquid volume at eye level; use the bottom of a concave meniscus."}
+      ],
+      "worked_example": {
+        "prompt": "A sample has a mass of 57.0 g and a volume of 20.0 mL. Calculate its density.",
+        "steps": [
+          "Select d = m / V and substitute measured values with units.",
+          "Calculate 57.0 g / 20.0 mL = 2.85 g/mL.",
+          "Both measurements have three significant figures, so report three."
+        ],
+        "answer": "2.85 g/mL"
+      },
+      "cfu": "Why must a density answer include both a mass unit and a volume unit?",
+      "practice": [
+        {"id": "L4-1", "prompt": "A 31.6 g sample occupies 25.5 mL. Calculate density.", "scaffold": "Write d = m / V before substituting values.", "answer": "31.6 g / 25.5 mL = 1.24 g/mL."},
+        {"id": "L4-2", "prompt": "A liquid has density 1.24 g/mL and volume 25.5 mL. Calculate mass.", "answer": "m = dV = 31.6 g."},
+        {"id": "L4-3", "prompt": "A solid has mass 14.9 g and density 2.50 g/cm^3. Calculate volume.", "answer": "V = m/d = 5.96 cm^3."},
+        {"id": "L4-4", "prompt": "An experimental value is 12.4 g/mL and the accepted value is 12.0 g/mL. Calculate percent error.", "answer": "|12.4 - 12.0| / 12.0 x 100 = 3.33%."},
+        {"id": "L4-5", "prompt": "Explain why percent error uses the accepted value in the denominator.", "answer": "The accepted value provides the reference scale, so the difference is expressed relative to what is expected."}
+      ],
+      "misconception": "Density is the same as mass, or a larger sample must have a larger density.",
+      "repair": "Compare two amounts of the same material and calculate m/V for each; the ratio stays constant while mass and volume change."
+    },
+    {
+      "number": 5,
+      "title": "Accuracy, Precision, and Error",
+      "target": "Use repeated measurements and an accepted value to distinguish precision, accuracy, random variation, and systematic error.",
+      "engage": "Three measurements agree closely with one another but are all higher than the accepted value. Is the method precise, accurate, both, or neither?",
+      "big_idea": "Precision is agreement among repeated trials; accuracy is agreement with an accepted value. One statistic cannot establish both.",
+      "terms": [
+        {"term": "precision", "definition": "closeness of repeated measurements to one another"},
+        {"term": "accuracy", "definition": "closeness of a result to an accepted value"},
+        {"term": "random error", "definition": "unpredictable variation that changes from trial to trial"},
+        {"term": "systematic error", "definition": "a consistent offset caused by method or instrument bias"}
+      ],
+      "teach_points": [
+        "Judge precision from the spread of repeated measurements, not from one trial.",
+        "Judge accuracy by comparing a result or mean with an accepted value.",
+        "Random variation increases scatter; repeated trials reveal its size.",
+        "Systematic error shifts results in a consistent direction and is not fixed by averaging more biased trials."
+      ],
+      "visuals": [
+        {"file": "electronic-balance-ccby3.png", "caption": "A zero offset can create a systematic mass error."},
+        {"file": "trueness-precision-ccby-sa3.png", "caption": "Center agreement and trial spread answer different questions."}
+      ],
+      "worked_example": {
+        "prompt": "Trials are 1.247, 1.249, and 1.248 g/mL; the accepted value is 1.200 g/mL. Evaluate the results.",
+        "steps": [
+          "Compare trials: the range is only 0.002 g/mL, so the measurements are precise.",
+          "Find the mean: (1.247 + 1.249 + 1.248) / 3 = 1.248 g/mL.",
+          "Compare with 1.200 g/mL: the mean is consistently high; percent error is 4.00%."
+        ],
+        "answer": "Precise but not accurate relative to the accepted value; the pattern suggests a systematic high bias."
+      },
+      "cfu": "Why would ten more trials not automatically remove a balance zero offset?",
+      "practice": [
+        {"id": "L5-1", "prompt": "Trials are 10.01, 10.00, and 10.02 g; accepted mass is 10.01 g. Classify accuracy and precision.", "scaffold": "First compare the trials with one another; then compare their center with the accepted value.", "answer": "The trials are precise and accurate: they cluster tightly and center on the accepted value."},
+        {"id": "L5-2", "prompt": "Trials are 8.42, 8.43, and 8.42 mL; accepted volume is 8.00 mL. Classify accuracy and precision.", "answer": "Precise but not accurate relative to 8.00 mL."},
+        {"id": "L5-3", "prompt": "A student reads a meniscus from above. Name the error and give a specific repair.", "answer": "Parallax/line-of-sight error. Move the eye to liquid level and read the bottom of the concave meniscus."},
+        {"id": "L5-4", "prompt": "A balance reads +0.20 g when empty. Explain why repeating trials without zeroing it does not solve the problem.", "answer": "The zero offset is systematic; every result is shifted high by about 0.20 g. Zero or calibrate the balance first."},
+        {"id": "L5-5", "prompt": "Explain why percent error alone cannot establish precision.", "answer": "Percent error compares with an accepted value; precision requires repeated trials to judge their agreement."}
+      ],
+      "misconception": "A low percent error proves the procedure is precise.",
+      "repair": "Ask for the repeated-trial data. If no spread can be examined, a precision claim is unsupported."
+    }
+  ],
+  "review": [
+    {"id": "R1", "prompt": "Rewrite '.075kgs' as a correct SI-style record.", "answer": "0.075 kg."},
+    {"id": "R2", "prompt": "Write 0.0008200 in scientific notation and state its significant figures.", "answer": "8.200 x 10^-4; four significant figures."},
+    {"id": "R3", "prompt": "Calculate 6.20 x 4.1 and report the correct significant figures.", "answer": "25; the product 25.42 rounds to two significant figures."},
+    {"id": "R4", "prompt": "Calculate 12.08 + 0.6 + 3.214 and apply the decimal-place rule.", "answer": "15.9."},
+    {"id": "R5", "prompt": "Convert 2.75 h to seconds using dimensional analysis.", "answer": "2.75 h x 60 min/h x 60 s/min = 9.90 x 10^3 s."},
+    {"id": "R6", "prompt": "A sample has mass 24.96 g and volume 10.00 mL. Calculate density.", "answer": "2.496 g/mL."},
+    {"id": "R7", "prompt": "A material has density 3.60 g/mL and volume 7.25 mL. Calculate mass.", "answer": "26.1 g."},
+    {"id": "R8", "prompt": "Experimental density is 2.40 g/mL; accepted density is 2.50 g/mL. Calculate percent error.", "answer": "4.00%."},
+    {"id": "R9", "prompt": "Trials 24.9, 25.0, and 25.1 g surround an accepted value of 25.0 g. Evaluate accuracy and precision.", "answer": "Precise and accurate: trials cluster tightly and center on the accepted value."},
+    {"id": "R10", "prompt": "A conversion result has the unit kg·mL/g when the target is mL. Diagnose the setup.", "answer": "An unwanted mass unit did not cancel; reverse or replace the mass conversion factor before calculating."}
+  ],
+  "assessment_blueprint": {
+    "A": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5, 3, 4, 1],
+    "B": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5, 3, 2, 1]
+  },
+  "tests": {
+    "A": [
+      {"stem": "Which observation is quantitative?", "choices": ["The solid is shiny.", "The sample mass is 12.40 g.", "The vapor has a sharp odor.", "The liquid appears clear."], "answer": 1, "rationale": "A quantitative observation includes a measured number and unit: 12.40 g."},
+      {"stem": "Which tool is best for measuring 24.6 mL of water?", "choices": ["Electronic balance", "Beaker", "Graduated cylinder", "Thermometer"], "answer": 2, "rationale": "A graduated cylinder is designed for liquid-volume measurement and supports finer readings than a beaker."},
+      {"stem": "Which record follows SI writing conventions?", "choices": ["0.45 g", ".45g", "0.45 gs", "0.45 G"], "answer": 0, "rationale": "The record uses a leading zero, a space, and the correct lowercase unit symbol without a plural s."},
+      {"stem": "What is 0.0825 L in milliliters?", "choices": ["0.0000825 mL", "0.825 mL", "8.25 mL", "82.5 mL"], "answer": 3, "rationale": "Multiply liters by the exact factor 1000 mL/L: 0.0825 L = 82.5 mL."},
+      {"stem": "Which is 0.0005070 in scientific notation?", "choices": ["5.07 x 10^-3", "5.070 x 10^-4", "50.70 x 10^-5", "0.5070 x 10^-3"], "answer": 1, "rationale": "A normalized coefficient lies between 1 and 10, and the recorded trailing zero preserves four significant figures."},
+      {"stem": "How many significant figures are in 700.?", "choices": ["3", "1", "2", "0"], "answer": 0, "rationale": "The decimal point shows that both trailing zeros are recorded as significant, giving three significant figures."},
+      {"stem": "What is 12.4 x 3.20 with correct significant figures?", "choices": ["39.68", "40", "39.7", "39.680"], "answer": 2, "rationale": "Both factors have three significant figures, so 39.68 rounds to 39.7."},
+      {"stem": "What is 18.42 + 3.7 + 0.006 with correct precision?", "choices": ["22.126", "22.13", "22", "22.1"], "answer": 3, "rationale": "The tenths place is least precise, so the sum 22.126 rounds to 22.1."},
+      {"stem": "Which factor converts 2.50 h directly toward seconds?", "choices": ["3600 s / 1 h", "1 h / 3600 s", "60 h / 1 min", "1 s / 3600 h"], "answer": 0, "rationale": "Hours must cancel, so hours belong in the denominator and seconds in the numerator."},
+      {"stem": "What is 90.0 km/h in m/s?", "choices": ["2.50 m/s", "9.00 m/s", "25.0 m/s", "32.4 m/s"], "answer": 2, "rationale": "90.0 x 1000 / 3600 = 25.0 m/s, retaining three significant figures."},
+      {"stem": "A sample has mass 57.0 g and volume 20.0 mL. What is its density?", "choices": ["0.351 g/mL", "2.85 g/mL", "37.0 g/mL", "1140 g/mL"], "answer": 1, "rationale": "Density is mass divided by volume: 57.0 / 20.0 = 2.85 g/mL."},
+      {"stem": "A liquid has density 1.24 g/mL and volume 25.5 mL. What is its mass?", "choices": ["0.0486 g", "20.6 g", "30.74 g", "31.6 g"], "answer": 3, "rationale": "m = dV = 1.24 x 25.5 = 31.62 g, which rounds to 31.6 g."},
+      {"stem": "Experimental density is 12.4 g/mL; accepted density is 12.0 g/mL. What is percent error?", "choices": ["0.0333%", "0.400%", "3.33%", "96.8%"], "answer": 2, "rationale": "|12.4 - 12.0| / 12.0 x 100 = 3.33%."},
+      {"stem": "Trials are 5.01, 5.00, and 5.02 g. Which claim is supported without an accepted value?", "choices": ["The trials are precise.", "The trials are accurate.", "The method has zero error.", "The balance is calibrated."], "answer": 0, "rationale": "The tight grouping supports precision. Accuracy requires comparison with an accepted value."},
+      {"stem": "A mean is very close to an accepted value. Which property is most directly supported?", "choices": ["High resolution", "High precision", "Random error", "Accuracy"], "answer": 3, "rationale": "Accuracy describes agreement with an accepted value."},
+      {"stem": "What is the best repair for reading a concave meniscus from above?", "choices": ["Use a wider container.", "Read at eye level at the bottom of the meniscus.", "Add more liquid.", "Round to fewer digits."], "answer": 1, "rationale": "Eye-level viewing at the bottom of a concave meniscus reduces parallax error."},
+      {"stem": "Why can percent error not establish precision by itself?", "choices": ["Precision requires repeated trials.", "Percent error has no units.", "Accepted values are always exact.", "Precision uses only qualitative data."], "answer": 0, "rationale": "Precision is agreement among repeated measurements, so a single percent-error value is insufficient."},
+      {"stem": "A conversion ends with both km and m in the units. What should the student do?", "choices": ["Round the number.", "Add the units.", "Ignore one unit.", "Reorient a factor so the unwanted unit cancels."], "answer": 3, "rationale": "Uncanceled units reveal an incomplete setup; conversion factors must be oriented by unit cancellation."},
+      {"stem": "Samples of 5.0 g and 50.0 g of the same material have the same density. What does this show?", "choices": ["Density is exact.", "Mass is intensive.", "Density is intensive.", "Volume is constant."], "answer": 2, "rationale": "Density does not depend on sample amount under the same conditions, so it is intensive."},
+      {"stem": "Which final record communicates a calculated density most completely?", "choices": ["2.85", "2.85 g/mL", "about three", "density was measured"], "answer": 1, "rationale": "The value includes a justified numerical result and the compound unit required for density."}
+    ],
+    "B": [
+      {"stem": "Which observation is qualitative?", "choices": ["The crystal is colorless.", "The temperature is 22.4 °C.", "The mass is 6.250 g.", "The volume is 15.0 mL."], "answer": 0, "rationale": "Colorless is a descriptive observation without a measured number."},
+      {"stem": "Which tool should be used first to measure the mass of a dry solid?", "choices": ["Graduated cylinder", "Electronic balance", "Beaker", "Meter stick"], "answer": 1, "rationale": "An electronic balance directly measures mass."},
+      {"stem": "Which record uses the correct symbol and spacing for milliliters?", "choices": ["6.0ml", "6.0 mls", "6.0 ML", "6.0 mL"], "answer": 3, "rationale": "Milliliter uses lowercase m, uppercase L, a space after the value, and no plural s."},
+      {"stem": "Treating 7400 micrograms as two significant figures, what is the mass in milligrams?", "choices": ["0.0074 mg", "0.74 mg", "7.4 mg", "74 mg"], "answer": 2, "rationale": "1000 micrograms = 1 milligram, so 7400 micrograms = 7.4 mg."},
+      {"stem": "What is 8.12 x 10^5 in standard notation?", "choices": ["0.000812", "81,200", "812,000", "8,120,000"], "answer": 2, "rationale": "A positive exponent of 5 moves the decimal five places right: 812,000."},
+      {"stem": "How many significant figures are in 1.0200?", "choices": ["3", "4", "2", "5"], "answer": 3, "rationale": "The captive zero and both trailing decimal zeros are significant, for five total."},
+      {"stem": "What is 45.60 / 2.5 with correct significant figures?", "choices": ["18", "18.2", "18.24", "20"], "answer": 0, "rationale": "The divisor has two significant figures, so 18.24 rounds to 18."},
+      {"stem": "What is 100.0 - 0.37 with correct decimal-place precision?", "choices": ["99.63", "99.6", "100", "99.630"], "answer": 1, "rationale": "100.0 is precise to the tenths place, so 99.63 rounds to 99.6."},
+      {"stem": "What is 3.60 days in hours?", "choices": ["0.150 h", "15.0 h", "72.0 h", "86.4 h"], "answer": 3, "rationale": "3.60 days x 24 h/day = 86.4 h; 24 is an exact defined factor."},
+      {"stem": "What is 18.0 m/s in km/h?", "choices": ["5.00 km/h", "64.8 km/h", "180 km/h", "648 km/h"], "answer": 1, "rationale": "18.0 x 3600 / 1000 = 64.8 km/h."},
+      {"stem": "A sample has mass 44.7 g and volume 15.0 mL. What is its density?", "choices": ["0.336 g/mL", "2.68 g/mL", "2.98 g/mL", "670 g/mL"], "answer": 2, "rationale": "Density equals mass divided by volume: 44.7 g / 15.0 mL = 2.98 g/mL."},
+      {"stem": "A solid has mass 14.9 g and density 2.50 g/cm^3. What is its volume?", "choices": ["5.96 cm^3", "12.4 cm^3", "17.4 cm^3", "37.3 cm^3"], "answer": 0, "rationale": "V = m/d = 14.9 / 2.50 = 5.96 cm^3."},
+      {"stem": "Experimental mass is 24.0 g; accepted mass is 25.0 g. What is percent error?", "choices": ["1.00%", "4.00%", "24.0%", "96.0%"], "answer": 1, "rationale": "|24.0 - 25.0| / 25.0 x 100 = 4.00%."},
+      {"stem": "Measurements are spread out but their mean equals the accepted value. Which description fits best?", "choices": ["Precise and accurate", "Precise but not accurate", "Neither precise nor accurate", "Accurate on average but not precise"], "answer": 3, "rationale": "The mean supports accuracy, but the wide spread shows low precision."},
+      {"stem": "Measurements cluster tightly above the accepted value. Which description fits best?", "choices": ["Accurate but not precise", "Precise but not accurate", "Both accurate and precise", "Neither can be judged"], "answer": 1, "rationale": "Tight grouping shows precision; consistent displacement from the accepted value shows inaccuracy."},
+      {"stem": "An empty balance reads +0.20 g. What type of problem is this?", "choices": ["A systematic offset", "Random variation", "A significant-figure rule", "A qualitative observation"], "answer": 0, "rationale": "A constant zero offset shifts measurements in one direction and is systematic."},
+      {"stem": "Why are repeated trials useful?", "choices": ["They guarantee accuracy.", "They remove every bias.", "They reveal the spread and support a precision judgment.", "They make units unnecessary."], "answer": 2, "rationale": "Repeated trials show variation and therefore provide evidence about precision."},
+      {"stem": "Why does the exact factor 1000 m = 1 km not limit significant figures?", "choices": ["It is a defined relationship.", "It is larger than one.", "It contains a zero.", "It is written as a fraction."], "answer": 0, "rationale": "Defined unit relationships are exact rather than measured."},
+      {"stem": "Compared with 12.3 mL, what does 12.30 mL communicate?", "choices": ["A larger volume", "A different unit", "A less accurate tool", "One additional recorded decimal place"], "answer": 3, "rationale": "The trailing decimal zero records an additional place of precision; it does not change the magnitude."},
+      {"stem": "Which answer is complete for a calculated volume?", "choices": ["5.96 cm^3", "5.96", "volume is small", "about six"], "answer": 0, "rationale": "A quantitative result must include its justified value and unit."}
+    ]
+  },
+  "sources": [
+    {"organization": "NIST", "title": "SI Units", "url": "https://www.nist.gov/pml/owm/metric-si/si-units", "use": "SI structure and unit communication"},
+    {"organization": "NIST", "title": "Metric (SI) Prefixes", "url": "https://www.nist.gov/pml/owm/metric-si-prefixes", "use": "prefix names, symbols, and powers of ten"},
+    {"organization": "NIST", "title": "Writing with SI Units", "url": "https://www.nist.gov/pml/owm/writing-si-metric-system-units", "use": "unit-symbol style"},
+    {"organization": "BIPM", "title": "The International System of Units (SI), 9th edition", "url": "https://www.bipm.org/en/publications/si-brochure", "use": "international SI authority"},
+    {"organization": "American Chemical Society", "title": "2025 Guidelines for Teaching Middle and High School Chemistry", "url": "https://www.acs.org/content/dam/acsorg/education/policies/guidelines-teaching-mshs-chemistry/2025/acs-guidelines-and-recommendations-for-teaching-middle-and-high-school-chemistry.pdf", "use": "U.S. secondary chemistry context"},
+    {"organization": "American Chemical Society", "title": "Density of Water", "url": "https://www.acs.org/middleschoolchemistry/lessonplans/chapter3/lesson3.html", "use": "mass-volume relationship and measurement context"},
+    {"organization": "Next Generation Science Standards", "title": "Using Mathematics and Computational Thinking", "url": "https://www.nextgenscience.org/practice/using-mathematics-and-computational-thinking", "use": "science practice support; no formal alignment claim"},
+    {"organization": "Institute of Education Sciences", "title": "Organizing Instruction and Study to Improve Student Learning", "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/1", "use": "worked examples, practice, and quizzing sequence"}
+  ],
+  "blocked_sources": [
+    "ChemPride content, questions, answers, images, and page layouts - benchmark only",
+    "Local Chemistry 2e PDF and extracted text - blocked from generative authoring and commercial adaptation",
+    "CHEM P'M materials and branding - excluded from buyer-facing products"
+  ]
+}

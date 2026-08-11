@@ -1,34 +1,196 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated": "2026-08-11",
   "brand": "CurioNest",
   "active_products": [
     {
-      "id": "CN-CH01-MATH",
-      "title": "Chapter 1 — Math & Measurement Unit Pack",
-      "source": "mirror-json/ch01-math-measurement.json",
-      "package_dir": "products/ch01-math-measurement",
-      "status": "packaged_pending_qa",
-      "cover": {
-        "kicker": "CHAPTER 1 UNIT PACK",
-        "title": "Math & Measurement",
-        "subtitle": "Measurement · Sig Figs · Density · Scientific Notation · Dimensional Analysis",
-        "badges": ["10-page unit", "Answer key", "Editable DOCX"],
-        "accent": "#ffb84d"
+      "id": "CN-MM-VISUAL-01",
+      "brand": "CurioNest",
+      "title": "Chemistry Measurement Lab Tools & Density Visual Worksheet + Answer Key",
+      "source": "products/math-measurement-visual-worksheet/source/source.json",
+      "package_dir": "products/math-measurement-visual-worksheet",
+      "status": "draft_pending_teacher_review",
+      "qa_record": "products/math-measurement-visual-worksheet/docs/QA-REPORT.md",
+      "release_evidence": "products/math-measurement-visual-worksheet/docs/RELEASE-EVIDENCE.md",
+      "release_gate": {
+        "status": "blocked_human_review_pending",
+        "native_english_cold_read": "pending",
+        "chemistry_teacher_review": "pending",
+        "classroom_dry_run": "pending",
+        "malware_scan": "passed_no_threats_2026-08-11",
+        "automated_package_qa": "passed_91_of_91",
+        "pdf_render_review": "passed",
+        "docx_render_review": "passed_8_pages",
+        "listing_image_review": "passed_3_images",
+        "buyer_zip_sha256": "3c41841032859093ec74f0b2f428c61fee9ecf895d37fecfe85837385a9c56de"
+      },
+      "visual_gate": {
+        "status": "passed",
+        "required_count": 4,
+        "completed_count": 4,
+        "missing_count": 0,
+        "plan_file": "product-lines/chempride-topic-format-map.md"
+      },
+      "artifacts": {
+        "tpt_zip": "output/tpt-upload/CurioNest_Measurement_Visual_Worksheet_TPT.zip",
+        "product_pdf": "output/buyer-files/CurioNest_Measurement_Visual_Worksheet_Complete.pdf",
+        "student_pdf": "output/buyer-files/CurioNest_Measurement_Visual_Worksheet_Student.pdf",
+        "answer_key_pdf": "output/buyer-files/CurioNest_Measurement_Visual_Worksheet_Answer_Key.pdf",
+        "editable": "output/buyer-files/CurioNest_Measurement_Visual_Worksheet_Editable.docx",
+        "preview_pdf": "output/tpt-upload/CurioNest_Measurement_Visual_Worksheet_Preview.pdf",
+        "cover": "output/tpt-upload/cover.png"
       },
       "required_files": [
-        "product.pdf",
-        "product-editable.docx",
-        "cover.png",
-        "preview.pdf"
+        "output/tpt-upload/CurioNest_Measurement_Visual_Worksheet_TPT.zip",
+        "output/tpt-upload/CurioNest_Measurement_Visual_Worksheet_Preview.pdf",
+        "output/tpt-upload/cover.png",
+        "output/tpt-upload/listing-02-inside.png",
+        "output/tpt-upload/listing-03-teacher-ready.png",
+        "output/tpt-upload/TPT-LISTING-COPY.md",
+        "output/tpt-upload/TPT-UPLOAD-CHECKLIST.md",
+        "output/tpt-upload/RELEASE-EVIDENCE.md",
+        "output/tpt-upload/UPLOAD-EVIDENCE.txt"
       ]
     },
+    {
+      "id": "CN-CH01-MATH",
+      "brand": "CurioNest",
+      "title": "Chemistry Foundations: Math and Measurement Complete Instructional Unit",
+      "source": "products/ch01-math-measurement/source/source.json",
+      "package_dir": "products/ch01-math-measurement",
+      "status": "draft_pending_teacher_review",
+      "package_profile": {
+        "type": "complete_unit_v2",
+        "quality_contract_version": "2026-08-11.1",
+        "product_pages": 51,
+        "preview_pages": 6,
+        "cover_pixels": [1600, 1600],
+        "editable_required": false
+      },
+      "qa_record": "products/ch01-math-measurement/docs/QA-REPORT.md",
+      "release_evidence": "products/ch01-math-measurement/docs/RELEASE-EVIDENCE.md",
+      "release_gate": {
+        "status": "blocked_human_review_pending",
+        "native_english_cold_read": "pending",
+        "chemistry_teacher_review": "pending",
+        "classroom_dry_run": "pending",
+        "malware_scan": "passed_no_threats_2026-08-11",
+        "automated_package_qa": "passed_263_of_263",
+        "pdf_render_review": "passed_107_final_pages_51_complete_and_6_preview_visually_inspected",
+        "docx_render_review": "not_applicable_pdf_only_package",
+        "listing_image_review": "passed_3_images",
+        "buyer_zip_sha256": "b0cce3d4b03cb28ccf4cd5fe8c427c4c713c8b76cfb69c93f13e42151717c548"
+      },
+      "visual_gate": {
+        "status": "passed",
+        "required_count": 6,
+        "completed_count": 6,
+        "missing_count": 0,
+        "plan_file": "products/ch01-math-measurement/assets/manifest.json"
+      },
+      "artifacts": {
+        "tpt_zip": "output/tpt-upload/CurioNest_CH01_Math_and_Measurement_TPT_Package.zip",
+        "product_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Complete.pdf",
+        "slides_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf",
+        "student_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf",
+        "test_a_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf",
+        "test_b_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf",
+        "answer_key_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf",
+        "rights_pdf": "output/buyer-files/CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf",
+        "preview_pdf": "output/tpt-upload/CurioNest_CH01_Math_and_Measurement_Preview.pdf",
+        "cover": "output/tpt-upload/listing-01-cover.png"
+      },
+      "required_files": [
+        "output/tpt-upload/CurioNest_CH01_Math_and_Measurement_TPT_Package.zip",
+        "output/tpt-upload/CurioNest_CH01_Math_and_Measurement_Preview.pdf",
+        "output/tpt-upload/listing-01-cover.png",
+        "output/tpt-upload/listing-02-teach-practice.png",
+        "output/tpt-upload/listing-03-assessment-key.png",
+        "output/tpt-upload/TPT-LISTING-COPY.md",
+        "output/tpt-upload/TPT-UPLOAD-CHECKLIST.md",
+        "output/tpt-upload/RELEASE-EVIDENCE.md",
+        "output/tpt-upload/DEFENDER-SCAN.txt",
+        "output/tpt-upload/QA-REPORT.md",
+        "output/tpt-upload/UPLOAD-MANIFEST.json"
+      ]
+    },
+    {
+      "id": "CN-CH02-MATTER",
+      "brand": "CurioNest",
+      "title": "Chemistry Foundations: Introduction to Matter Complete Instructional Unit",
+      "source": "products/ch02-introduction-to-matter/source/source.json",
+      "package_dir": "products/ch02-introduction-to-matter",
+      "status": "draft_pending_teacher_review",
+      "package_profile": {
+        "type": "complete_unit_v2",
+        "quality_contract_version": "2026-08-11.1",
+        "product_pages": 51,
+        "preview_pages": 6,
+        "cover_pixels": [1600, 1600],
+        "editable_required": false
+      },
+      "qa_record": "products/ch02-introduction-to-matter/docs/QA-REPORT.md",
+      "release_evidence": "products/ch02-introduction-to-matter/docs/RELEASE-EVIDENCE.md",
+      "release_gate": {
+        "status": "blocked_human_review_pending",
+        "native_english_cold_read": "pending",
+        "chemistry_teacher_review": "pending",
+        "classroom_dry_run": "pending",
+        "malware_scan": "passed_no_threats_2026-08-11",
+        "automated_package_qa": "passed_271_of_271",
+        "pdf_render_review": "passed_107_final_pages_51_complete_and_6_preview_visually_inspected",
+        "docx_render_review": "not_applicable_pdf_only_package",
+        "listing_image_review": "passed_3_images",
+        "buyer_zip_sha256": "3339c8f2b932fa39be1126c30f462a38b6dfab20add25af3a52666ff0f951a24"
+      },
+      "visual_gate": {
+        "status": "passed",
+        "required_count": 8,
+        "completed_count": 8,
+        "missing_count": 0,
+        "plan_file": "products/ch02-introduction-to-matter/assets/manifest.json"
+      },
+      "artifacts": {
+        "tpt_zip": "output/tpt-upload/CurioNest_CH02_Introduction_to_Matter_TPT_Package.zip",
+        "product_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Complete.pdf",
+        "slides_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf",
+        "student_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf",
+        "test_a_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf",
+        "test_b_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf",
+        "answer_key_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf",
+        "rights_pdf": "output/buyer-files/CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf",
+        "preview_pdf": "output/tpt-upload/CurioNest_CH02_Introduction_to_Matter_Preview.pdf",
+        "cover": "output/tpt-upload/listing-01-cover.png"
+      },
+      "required_files": [
+        "output/tpt-upload/CurioNest_CH02_Introduction_to_Matter_TPT_Package.zip",
+        "output/tpt-upload/CurioNest_CH02_Introduction_to_Matter_Preview.pdf",
+        "output/tpt-upload/listing-01-cover.png",
+        "output/tpt-upload/listing-02-teach-practice.png",
+        "output/tpt-upload/listing-03-assessment-key.png",
+        "output/tpt-upload/TPT-LISTING-COPY.md",
+        "output/tpt-upload/TPT-UPLOAD-CHECKLIST.md",
+        "output/tpt-upload/RELEASE-EVIDENCE.md",
+        "output/tpt-upload/DEFENDER-SCAN.txt",
+        "output/tpt-upload/QA-REPORT.md",
+        "output/tpt-upload/UPLOAD-MANIFEST.json"
+      ]
+    }
+  ],
+  "inactive_products": [
     {
       "id": "CN-CH01-ESSENTIAL",
       "title": "Chapter 1 — Essential Ideas Unit Pack",
       "source": "mirror-json/ch01-essential-ideas.json",
       "package_dir": "products/ch01-essential-ideas",
-      "status": "packaged_pending_qa",
+      "status": "retired_replaced_by_complete_unit",
+      "inactive_reason": "Legacy package directory was removed and the instructional scope is superseded by CN-CH01-MATH.",
+      "visual_gate": {
+        "status": "pending_item_level_audit",
+        "required_count": 0,
+        "completed_count": 0,
+        "plan_file": "templates/product-brief-template.md"
+      },
       "cover": {
         "kicker": "BACK-TO-SCHOOL CHEMISTRY",
         "title": "Essential Ideas",
@@ -47,9 +209,22 @@
     {
       "id": "CN-LS-SCENARIO-01",
       "title": "Lab Safety Scenario Analysis - Make the Safe Call",
-      "source": "products/lab-safety-scenario-analysis/source.json",
+      "source": "products/lab-safety-scenario-analysis/source/source.json",
       "package_dir": "products/lab-safety-scenario-analysis",
-      "status": "packaged_pending_qa",
+      "status": "paused_missing_required_visual_rebuild",
+      "inactive_reason": "Package directory is not present; do not reactivate until rights-cleared visuals, source, outputs, and all release gates are rebuilt.",
+      "visual_gate": {
+        "status": "blocked_missing_required_visuals",
+        "required_count": 10,
+        "completed_count": 0,
+        "plan_file": "product-lines/instructional-visual-policy.md"
+      },
+      "artifacts": {
+        "product_pdf": "output/buyer/product.pdf",
+        "preview_pdf": "output/listing/preview.pdf",
+        "cover": "output/listing/cover.png",
+        "editable": "output/buyer/product-editable.docx"
+      },
       "cover": {
         "kicker": "CHEMISTRY FOUNDATIONS - FORMAT 1",
         "title": "Lab Safety Scenario Analysis",
@@ -58,16 +233,59 @@
         "accent": "#007C83"
       },
       "required_files": [
-        "product.pdf",
-        "product-editable.docx",
-        "student-packet.pdf",
-        "student-packet-bw.pdf",
-        "teacher-guide-and-key.pdf",
-        "cover.png",
-        "preview.pdf",
-        "listing-01-cover.png",
-        "listing-02-inside.png",
-        "listing-03-teacher-ready.png"
+        "output/buyer/product.pdf",
+        "output/buyer/product-editable.docx",
+        "output/buyer/student-packet.pdf",
+        "output/buyer/student-packet-bw.pdf",
+        "output/buyer/teacher-guide-and-key.pdf",
+        "output/listing/cover.png",
+        "output/listing/preview.pdf",
+        "output/listing/listing-01-cover.png",
+        "output/listing/listing-02-inside.png",
+        "output/listing/listing-03-teacher-ready.png"
+      ]
+    },
+    {
+      "id": "CN-LS-TASK-02",
+      "title": "Lab Safety Task Cards - Notice, Choose, Report",
+      "source": "products/lab-safety-task-cards/source/source.json",
+      "package_dir": "products/lab-safety-task-cards",
+      "status": "paused_missing_required_visual_rebuild",
+      "inactive_reason": "Package directory is not present; do not reactivate until rights-cleared visuals, source, outputs, and all release gates are rebuilt.",
+      "visual_gate": {
+        "status": "blocked_missing_required_visuals",
+        "required_count": 16,
+        "completed_count": 4,
+        "plan_file": "product-lines/lab-safety-task-cards-brief.md"
+      },
+      "artifacts": {
+        "product_pdf": "output/buyer/product.pdf",
+        "preview_pdf": "output/listing/preview.pdf",
+        "cover": "output/listing/cover.png",
+        "editable": "output/buyer/product-editable.docx"
+      },
+      "cover": {
+        "kicker": "CHEMISTRY FOUNDATIONS - FORMAT 2",
+        "title": "Lab Safety Task Cards",
+        "subtitle": "24 original cards - rights-cleared visuals - 4 station PDFs - Full Key",
+        "badges": ["Grades 9-11", "Print + Editable", "4 Station PDFs"],
+        "accent": "#007C83"
+      },
+      "required_files": [
+        "output/buyer/product.pdf",
+        "output/buyer/product-editable.docx",
+        "output/buyer/student-packet.pdf",
+        "output/buyer/student-packet-bw.pdf",
+        "output/buyer/teacher-guide-and-key.pdf",
+        "output/stations/portion-a-notice-and-pause.pdf",
+        "output/stations/portion-b-choose-next-move.pdf",
+        "output/stations/portion-c-communicate-procedure.pdf",
+        "output/stations/portion-d-transfer-repair.pdf",
+        "output/listing/cover.png",
+        "output/listing/preview.pdf",
+        "output/listing/listing-01-cover.png",
+        "output/listing/listing-02-inside.png",
+        "output/listing/listing-03-teacher-ready.png"
       ]
     }
   ],

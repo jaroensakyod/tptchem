@@ -1,0 +1,106 @@
+{
+  "product_id": "curionest-math-measurement-visual-worksheet-v1",
+  "brand": "CurioNest",
+  "title": "Chemistry Measurement Lab Tools & Density Visual Worksheet",
+  "subtitle": "Instrument choice, units, density, percent error, and evidence-based reasoning",
+  "target": "Grades 8-10 / Introductory Chemistry",
+  "audience_profile": {
+    "market": "United States",
+    "language": "American English",
+    "paper_size": "US Letter",
+    "student_fields": [
+      "Name",
+      "Date",
+      "Class Period"
+    ]
+  },
+  "duration": "35-45 minutes",
+  "student_pages": 4,
+  "answer_key_pages": 4,
+  "learning_targets": [
+    "Match common lab tools to the quantity and unit they measure.",
+    "Choose an appropriate tool and justify the choice with visual evidence.",
+    "Calculate density and percent error with correct units and reasonable precision.",
+    "Diagnose a measurement error and name a specific repair action."
+  ],
+  "answers": {
+    "tool_1": "Electronic balance - mass - g",
+    "tool_2": "Graduated cylinder - liquid volume - mL",
+    "tool_3": "Beaker - holding/mixing; rough volume only",
+    "choice_1": "Graduated cylinder. Its narrow shape and graduated scale support a more precise volume reading than a beaker.",
+    "choice_2": "Beaker. The task asks for an approximate amount and mixing space, not a precise delivered volume.",
+    "photo_evidence": "Any two visible features: tall/narrow vessel, graduated marks, numbered scale, stable base, or pouring lip.",
+    "density_1": "2.60 g/mL",
+    "volume_2": "10.0 mL",
+    "mass_3": "19.7 g",
+    "percent_error_4": "4.44%",
+    "dataset": "Set A is accurate and precise. Set B is precise but not accurate.",
+    "case_mass": "24.88 g",
+    "case_density": "1.24 g/mL",
+    "case_percent_error": "0.480% (0.48% acceptable)",
+    "case_claim": "The result is close to the accepted value, but the student should repeat trials before judging precision.",
+    "repair": "Read the bottom of the meniscus at eye level, record one estimated digit, keep units through every step, and repeat measurements."
+  },
+  "visual_gate": {
+    "required_count": 4,
+    "completed_count": 4,
+    "missing_count": 0,
+    "decision": "PASS",
+    "items": [
+      "cover-equipment-photo",
+      "reference-instrument-comparison",
+      "practice-instrument-identification",
+      "evidence-graduated-cylinder-photo"
+    ]
+  },
+  "source_policy": {
+    "buyer_facing_content_references": [
+      {
+        "organization": "National Institute of Standards and Technology",
+        "title": "NIST Special Publication 811: Guide for the Use of the International System of Units (SI)",
+        "url": "https://www.nist.gov/publications/guide-use-international-system-units-si",
+        "use": "SI unit presentation"
+      },
+      {
+        "organization": "American Chemical Society",
+        "title": "Guidelines and Recommendations for Teaching Middle and High School Chemistry",
+        "url": "https://www.acs.org/content/dam/acsorg/education/policies/guidelines-teaching-mshs-chemistry/2025/acs-guidelines-and-recommendations-for-teaching-middle-and-high-school-chemistry.pdf",
+        "use": "U.S. secondary chemistry classroom scope"
+      },
+      {
+        "organization": "American Chemical Society",
+        "title": "Lab and Safety Equipment",
+        "url": "https://www.acs.org/education/policies/middle-and-high-school-chemistry/classroom-and-lab-facilities/safety-equipment.html",
+        "use": "U.S. secondary laboratory equipment context"
+      },
+      {
+        "organization": "American Chemical Society",
+        "title": "Density of Water",
+        "url": "https://www.acs.org/middleschoolchemistry/lessonplans/chapter3/lesson2.html",
+        "use": "density as a mass-to-volume relationship"
+      },
+      {
+        "organization": "American Chemical Society",
+        "title": "The Importance of the Laboratory Experience",
+        "url": "https://www.acs.org/education/policies/middle-and-high-school-chemistry/teaching-and-assessment/lab-experience.html",
+        "use": "U.S. secondary laboratory learning context"
+      },
+      {
+        "organization": "Next Generation Science Standards",
+        "title": "Using Mathematics and Computational Thinking",
+        "url": "https://www.nextgenscience.org/practice/using-mathematics-and-computational-thinking",
+        "use": "science and engineering practice emphasis; not a standards-alignment claim"
+      }
+    ],
+    "internal_benchmark_only": {
+      "title": "ChemPride Unit 1 Math & Measurement",
+      "url": "https://chempride.weebly.com/unit-1-math--measurement.html",
+      "use": "topic and classroom-workflow benchmark only; no copied or adapted content, visuals, or layout"
+    },
+    "excluded_as_direct_input": [
+      "OpenStax Chemistry 2e local PDF pending commercial generative-use permission"
+    ],
+    "publisher_not_content_source": "CurioNest",
+    "buyer_facing_copyright": "© 2026 CurioNest · For classroom use only"
+  }
+}

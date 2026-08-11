@@ -1,0 +1,95 @@
+{
+  "policy": "Only externally sourced visuals with documented commercial-use-compatible rights are used. No AI-generated or code-drawn instructional image is included.",
+  "accessed": "2026-08-11",
+  "assets": [
+    {
+      "file": "matter-classification-ccby4.png",
+      "creator": "John Trombley",
+      "credit": "Particle classification visual: John Trombley",
+      "license": "CC BY 4.0 International",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mixtures_and_Pure_Substances_2x2.svg",
+      "direct_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mixtures_and_Pure_Substances_2x2.svg?width=1280",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modification": "Wikimedia-rendered PNG; placed without content alteration",
+      "use": "Particle-level classification evidence"
+    },
+    {
+      "file": "filtration-public-domain.png",
+      "creator": "LadyofHats (Mariana Ruiz)",
+      "credit": "Filtration diagram: LadyofHats / Mariana Ruiz",
+      "license": "Public Domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Filtration_diagram.svg",
+      "direct_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Filtration_diagram.svg?width=1280",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modification": "Wikimedia-rendered PNG; placed without content alteration",
+      "use": "Physical separation and residue/filtrate evidence"
+    },
+    {
+      "file": "burning-candle-cc0.jpg",
+      "creator": "USER-62114",
+      "credit": "Burning-candle photograph: USER-62114",
+      "license": "CC0 1.0 Universal",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Burning-candle.jpg",
+      "direct_source": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Burning-candle.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification": "Cropped only by page placement",
+      "use": "Chemical-change evidence context"
+    },
+    {
+      "file": "simple-distillation-public-domain.png",
+      "creator": "Quantockgoblin",
+      "credit": "Simple-distillation apparatus diagram: Quantockgoblin",
+      "license": "Public Domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Simple_distillation_apparatus.png",
+      "direct_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Simple_distillation_apparatus.png?width=1280",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modification": "Placed without content alteration",
+      "use": "Distillation setup and separation-by-volatility evidence"
+    },
+    {
+      "file": "granite-slab-cc0.jpg",
+      "creator": "Tomwsulcer",
+      "credit": "Granite slab photograph: Tomwsulcer",
+      "license": "CC0 1.0 Universal",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Granite_slab_up_close.jpg",
+      "direct_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Granite_slab_up_close.jpg/1280px-Granite_slab_up_close.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification": "Placed without content alteration",
+      "use": "Visible nonuniform composition in a heterogeneous mixture"
+    },
+    {
+      "file": "native-copper-public-domain.jpg",
+      "creator": "Aram Dulyan (Aramgutang)",
+      "credit": "Native-copper photograph: Aram Dulyan (Aramgutang)",
+      "license": "Public Domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Native_copper.jpg",
+      "direct_source": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Native_copper.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modification": "Placed without content alteration",
+      "use": "Element sample and observable physical properties"
+    },
+    {
+      "file": "melting-ice-public-domain.jpg",
+      "creator": "Rosendahl; Wikimedia Commons transfer by Fæ",
+      "credit": "Melting-ice photograph: Rosendahl / Fæ",
+      "license": "Public Domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Melting_ice.jpg",
+      "direct_source": "https://upload.wikimedia.org/wikipedia/commons/3/34/Melting_ice.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modification": "Placed without content alteration",
+      "use": "Physical-change comparison with combustion"
+    },
+    {
+      "file": "separatory-funnel-public-domain.jpg",
+      "creator": "Rifleman 82",
+      "credit": "Separatory-funnel photograph: Rifleman 82",
+      "license": "Public Domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Separatory_funnel.jpg",
+      "direct_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Separatory_funnel.jpg/1280px-Separatory_funnel.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modification": "Placed without content alteration",
+      "use": "Immiscible liquid layers and phase separation"
+    }
+  ],
+  "evidence_folder": "assets/license-evidence"
+}

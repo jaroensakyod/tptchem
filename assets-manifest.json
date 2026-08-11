@@ -3,6 +3,25 @@
   "updated": "2026-08-10",
   "assets": [
     {
+      "path_glob": "products/math-measurement-visual-worksheet/assets/graduated-cylinder-public-domain.jpg",
+      "name": "Graduated cylinder photograph",
+      "creator": "Darrien / Haltopub upload",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Graduated_cylinder.jpg",
+      "verification_status": "verified",
+      "placements": ["product cover", "visual-evidence task", "TPT listing cover"]
+    },
+    {
+      "path_glob": "products/math-measurement-visual-worksheet/assets/*-ccby3.png",
+      "name": "Measurement equipment icons",
+      "creator": "Servier via Bioicons",
+      "license": "CC BY 3.0",
+      "source_url": "https://github.com/duerrsimon/bioicons",
+      "license_copy": "licenses/CC-BY-3.0.txt",
+      "verification_status": "verified",
+      "placements": ["instrument reference", "instrument-identification practice", "TPT listing images"]
+    },
+    {
       "path_glob": "fonts/Poppins-*.woff2",
       "name": "Poppins",
       "license": "OFL-1.1",
@@ -85,11 +104,52 @@
       ]
     },
     {
+      "path_glob": "prototypes/chem-pm-measurement-pattern/assets/graduated-cylinder-public-domain.jpg",
+      "name": "Graduated cylinder photograph",
+      "creator": "Darrien / Haltopub upload",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Graduated_cylinder.jpg",
+      "verification_status": "verified",
+      "placements": ["proof cover", "photo-evidence analysis"]
+    },
+    {
+      "path_glob": "prototypes/chem-pm-measurement-pattern/assets/*-ccby3.png",
+      "name": "Measurement equipment icons copied from the verified Bioicons set",
+      "creator": "Servier via Bioicons",
+      "license": "CC BY 3.0",
+      "source_url": "https://github.com/duerrsimon/bioicons",
+      "license_copy": "licenses/CC-BY-3.0.txt",
+      "verification_status": "verified",
+      "placements": ["instrument summary", "instrument-identification practice"]
+    },
+    {
       "path_glob": "figures/*.png",
       "name": "Generated chemistry figures and composed grids",
       "license": "Project-generated or derived from entries above",
       "source_url": null,
       "verification_status": "review_derivation_per_file"
+    }
+  ],
+  "inactive_assets": [
+    {
+      "path_glob": "products/lab-safety-task-cards/source/visuals/wash-bottles-cc0.jpg",
+      "name": "Wash bottles photograph",
+      "creator": "Abdsomod",
+      "license": "CC0-1.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wash_bottles.jpg",
+      "license_copy": "licenses/CC0-1.0.txt",
+      "verification_status": "verified",
+      "inactive_reason": "The associated task-card package is inactive and its local package directory is not present."
+    },
+    {
+      "path_glob": "products/lab-safety-task-cards/source/visuals/laboratory-hot-plate-ccby25.jpg",
+      "name": "Laboratory hot plate photograph",
+      "creator": "Jeffrey M. Vinocur",
+      "license": "CC-BY-2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laboratory_hot_plate.JPG",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/",
+      "verification_status": "verified",
+      "inactive_reason": "The associated task-card package is inactive and its local package directory is not present."
     }
   ]
 }

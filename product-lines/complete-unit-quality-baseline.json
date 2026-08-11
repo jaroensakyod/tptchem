@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "contract_id": "curionest-complete-unit",
+  "version": "2026-08-11.1",
+  "locked_minimum": true,
+  "change_rule": "Do not lower a minimum or remove a gate without explicit user approval and a recorded contract version change.",
+  "identity": {
+    "brand": "CurioNest",
+    "copyright": "© 2026 CurioNest · For classroom use only",
+    "target": "U.S. Grades 9-10 / General Chemistry",
+    "language": "American English",
+    "paper": "US Letter"
+  },
+  "instruction": {
+    "lesson_count": 5,
+    "sequence": [
+      "engage",
+      "teach",
+      "model",
+      "guided_practice",
+      "independent_practice",
+      "formative_check",
+      "mixed_review",
+      "summative_assessment"
+    ],
+    "minimum_terms_per_lesson": 4,
+    "minimum_teach_points_per_lesson": 4,
+    "practice_items_per_lesson": 5,
+    "mixed_review_items": 10,
+    "test_forms": 2,
+    "test_items_per_form": 20,
+    "choices_per_test_item": 4,
+    "minimum_assessment_items_per_lesson_per_form": 3,
+    "rationale_required": true,
+    "misconception_and_repair_required": true
+  },
+  "package": {
+    "buyer_pdf_count": 7,
+    "pages": {
+      "complete": 51,
+      "lesson_slides": 15,
+      "student_guided_notes_and_practice": 12,
+      "unit_test_a": 4,
+      "unit_test_b": 4,
+      "teacher_guide_and_answer_key": 13,
+      "rights_and_sources": 2,
+      "preview": 6
+    },
+    "total_final_pdf_pages": 107,
+    "listing_images": {
+      "count": 3,
+      "width_px": 1600,
+      "height_px": 1600
+    },
+    "format": "PDF only unless another format is explicitly built, rendered, verified, and truthfully listed"
+  },
+  "typography": {
+    "body_pt": 10.4,
+    "body_leading_pt": 13.2,
+    "small_pt": 8.6,
+    "tiny_pt": 7.4,
+    "label_pt": 8.2,
+    "footer_pt": 7.2,
+    "page_title_pt": 18.5,
+    "student_target_pt": 10.2,
+    "student_teaching_pt": 8.8,
+    "practice_prompt_pt": 9.4,
+    "test_stem_pt": 9.4,
+    "test_choice_pt": 8.5,
+    "minimum_nonfooter_pt": 7.2,
+    "layout_rule": "Prefer larger readable type and efficient page use; add or reflow pages instead of shrinking below these values."
+  },
+  "visuals": {
+    "minimum_unique_assets_per_unit": 6,
+    "minimum_lessons_with_instructional_visuals": 4,
+    "required_when": [
+      "equipment identification or use",
+      "measurement scales or graphs",
+      "particle or spatial models",
+      "hazards, PPE, labels, or symbols",
+      "observable before-and-after evidence",
+      "structures or apparatus students must inspect"
+    ],
+    "allowed_licenses": [
+      "Public Domain",
+      "CC0 1.0 Universal",
+      "CC BY 3.0 Unported",
+      "CC BY 4.0 International",
+      "CC BY-SA 3.0 Unported"
+    ],
+    "source_rule": "Use documented free/open international sources with creator, HTTPS provenance page, license, local file, placement, access date, and retained evidence.",
+    "prohibited": [
+      "AI-generated instructional images",
+      "code-drawn instructional substitutes",
+      "images copied from benchmark worksheets",
+      "decorative art counted as instructional coverage"
+    ]
+  },
+  "release": {
+    "render_every_final_pdf_page": true,
+    "inspect_full_size_and_thumbnail": true,
+    "component_to_complete_parity": true,
+    "listing_uses_delivered_pages_only": true,
+    "exact_zip_malware_scan_and_sha256": true,
+    "automated_qa_required": true,
+    "human_gates": [
+      "native_english_cold_read",
+      "us_chemistry_science_teacher_review",
+      "classroom_dry_run"
+    ],
+    "automated_pass_never_certifies": true
+  }
+}

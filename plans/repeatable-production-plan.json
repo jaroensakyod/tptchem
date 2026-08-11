@@ -1,6 +1,53 @@
 {
-  "version": "1.0",
+  "version": "2.1",
   "updated": "2026-08-11",
+  "quality_contract": {
+    "id": "curionest-complete-unit",
+    "version": "2026-08-11.1",
+    "file": "product-lines/complete-unit-quality-baseline.json",
+    "locked_minimum": true,
+    "model_entrypoint": ".agents/skills/curionest-complete-unit/SKILL.md",
+    "change_requires_explicit_user_approval": true
+  },
+  "base_benchmark": {
+    "name": "ChemPride / Longwood Flipped Chemistry Classroom",
+    "url": "https://chempride.weebly.com/",
+    "use": [
+      "chemistry_topic_map",
+      "classroom_workflow_rhythm",
+      "student_teacher_answer_key_package_architecture"
+    ],
+    "rights_status": "benchmark_only",
+    "prohibited": [
+      "copy_or_adapt_questions_answers_or_wording",
+      "reuse_art_logos_screenshots_or_diagrams",
+      "imitate_distinctive_layout_or_packet_sequence"
+    ]
+  },
+  "topic_sequence": [
+    "math_and_measurement",
+    "introduction_to_matter",
+    "phase_changes_and_heat",
+    "atomic_structure",
+    "periodic_table",
+    "chemical_bonding",
+    "moles_and_stoichiometry",
+    "gas_laws",
+    "solutions",
+    "acids_and_bases",
+    "kinetics_and_equilibrium",
+    "electrochemistry",
+    "nuclear_chemistry",
+    "organic_chemistry"
+  ],
+  "complete_unit_pattern": {
+    "proof_pages": 4,
+    "required_sequence": ["engage","teach","model","guided_practice","independent_practice","formative_check","mixed_review","summative_assessment"],
+    "buyer_files": ["complete_teacher_file","projectable_lesson_slides","student_guided_notes_and_practice","unit_test_a","unit_test_b","teacher_guide_and_answer_key","rights_and_sources"],
+    "assessment": {"forms": 2, "multiple_choice_items_per_form": 20, "choices_per_item": 4, "rationale_required": true},
+    "paired_editions": ["student", "tutor"],
+    "same_geometry_required": true
+  },
   "minimum_formats_per_topic": 10,
   "preferred_formats_per_topic": 14,
   "states": ["idea","researched","scoped","authored","built","qa_content","qa_visual","pilot_ready","certified","published"],
@@ -20,14 +67,23 @@
     "project_choice_board_rubric",
     "spiral_review_cumulative_challenge"
   ],
-  "release_gates": ["content","language","rights","answer_usability","visual_print","listing_integrity"],
+  "release_gates": ["instructional_sequence","taught_assessed_alignment","content","language","rights","answer_usability","instructional_visual_coverage","assessment_forms_ab","visual_print","listing_integrity","duplicate_listing","malware_scan","account_safety","human_release_evidence"],
   "stop_conditions": [
+    "missing_teach_model_guided_independent_sequence",
+    "tested_skill_not_taught_and_practiced",
+    "taught_target_not_assessed",
     "factual_or_calculation_error",
     "ambiguous_key_without_guidance",
     "unverified_asset_or_license",
+    "missing_required_instructional_visual",
+    "visual_plan_missing_item_level_decisions",
     "unsafe_or_policy_specific_instruction_without_caveat",
     "clipped_overlapping_or_missing_content",
-    "listing_claim_does_not_match_files"
+    "listing_claim_does_not_match_files",
+    "duplicate_or_cosmetic_relisting",
+    "final_zip_not_scanned_or_hash_not_recorded",
+    "account_or_rights_holder_identity_mismatch",
+    "human_release_evidence_missing"
   ],
   "current_first_family": {
     "subject": "chemistry",

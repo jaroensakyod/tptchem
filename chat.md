@@ -198,4 +198,60 @@ Inspect every rendered page at full size and thumbnail size. Report clipping, hi
 
 ## งานถัดไป
 
-ปิด human/classroom gates ของ Scenario Analysis ก่อน จากนั้นจึงเริ่ม **Lab Safety Task Cards** เป็นรูปแบบที่ 2 โดยเขียนสถานการณ์และงานคิดใหม่ ไม่คัดลอกคำถาม 10 ข้อจากรูปแบบที่ 1
+ปิด native-English, U.S. chemistry-teacher และ classroom dry-run gates ของ Chapter 1–2 ก่อน จากนั้นจึงเริ่มวิจัย Chapter 3 ตาม `plans/chapter-production-queue.json` งาน Lab Safety แยกออกจากลำดับ chapter unit นี้
+
+## Permanent production decision - 2026-08-11
+
+- Use `https://chempride.weebly.com/` as the permanent base benchmark for chemistry topic order, classroom workflow rhythm, and package architecture.
+- Treat ChemPride as `benchmark_only`. Never copy or adapt its questions, wording, answers, art, screenshots, distinctive layouts, or packet sequence.
+- Split every chemistry topic into distinct product formats using the 14-format catalog; each format must change the cognitive task or classroom use, not merely restyle the same questions.
+- For a chapter-unit SKU, the first sellable build must be a complete teaching unit. A short visual worksheet may exist only as a separate secondary format and must not replace explicit teaching, modeled examples, practice, review, and assessment.
+- Every item/page receives a Visual Plan. When visual evidence is required, use a verified free-source commercial-use asset with provenance. Do not use AI-generated or code-drawn substitute images. Missing required visuals mean `BLOCKED`.
+- The authoritative working map is `product-lines/chempride-topic-format-map.md`; it supersedes older notes that conflict with this decision.
+
+## First ChemPride-based product example - 2026-08-11
+
+- Completed the automated package build for `products/math-measurement-visual-worksheet/` as the first CurioNest example. It is not certified for sale until human release gates pass.
+- Product: Chemistry Measurement Lab Tools & Density Visual Worksheet, Grades 8-10, English, US Letter.
+- Package includes 4 student pages, 4-page teacher key, teacher quick-start, editable DOCX, rights/source file, 3-page preview, 3 listing images, listing copy, upload checklist, and one TPT-ready ZIP.
+- Visual gate passed 4/4 using Public Domain and CC BY 3.0 source images; no AI-generated or code-drawn instructional image is used.
+- Automated product QA passed with zero product-specific failures and is registered as `CN-MM-VISUAL-01` in `catalog.json` with status `draft_pending_teacher_review`.
+
+## U.S. worksheet release corrections - 2026-08-11
+
+- Target all new TPT student-facing chemistry resources to U.S. students unless a brief explicitly says otherwise: American English, US Letter, U.S. grade bands, and Name/Date/Class Period fields.
+- Student response lines and teacher answers are mutually exclusive render states. Never place an answer box or answer text over a student line, prompt, border, or image.
+- Retire CHEM P'M from this TPT line. CurioNest is the rights holder/brand and must never be presented as an instructional content reference.
+- Every buyer-facing file uses the exact rights line `© 2026 CurioNest · For classroom use only`.
+- ChemPride remains an internal topic/workflow benchmark only. Do not present it as a buyer-facing content authority and do not copy or adapt its protected content or layout.
+- Use official U.S. content references for buyer-facing scope checks (for example NIST, ACS, and NGSS practices).
+- Required instructional images must come from international/public repositories with explicit commercial-use-compatible rights and direct provenance, such as Wikimedia Commons or Bioicons/Servier. Do not use AI-generated, code-drawn, or locally copied worksheet images as substitutes.
+
+## TPT marketplace account-safety decision - 2026-08-11
+
+- Automated QA never means ready to sell. `certified` requires native-English review, Chemistry/Science teacher review, a classroom pilot/dry run, named reviewers, dates, corrections, and a rerun of all QA.
+- ChemPride remains `benchmark_only`; public access does not create reuse rights.
+- The local OpenStax Chemistry 2e PDF is `blocked_direct_ai_and_commercial_reuse` until exact-version rights are proven. Never upload, paste, extract, or otherwise provide it to generative AI.
+- Every non-original visual requires creator, direct URL, license, access date, exact placement, and a retained license snapshot. This product line uses verified free-source visuals only; no AI-generated or code-drawn instructional substitutes.
+- One resource may have only one TPT listing unless a separate product is substantively different and the listing explains the similarities and differences.
+- Before upload: extract/open every buyer file, run render QA, scan the final ZIP with Microsoft Defender, record SHA-256, back up the exact ZIP/listing/rights/reviewer evidence outside TPT, and complete `RELEASE-EVIDENCE.md`.
+- Account identity/tax/payout data must match the rights holder. Never share the seller password; assistants use TPT VA Login only.
+- Keep an incident pack per SKU so a report or suspension can be answered with the exact uploaded ZIP, hash, listing snapshot, rights ledger, reviewer evidence, malware result, and factual timeline.
+
+## Complete instructional unit decision - 2026-08-11
+
+- A chapter product must teach before it asks students to practice: `Engage -> Teach -> Model -> Guided Practice -> Independent Practice -> Exit Ticket -> Cumulative Mixed Review -> Unit Test A/B`.
+- Each chapter unit contains five lessons, fifteen projectable slides, twelve student lesson/practice/review pages, two 20-item multiple-choice test forms, complete rationales, teacher guidance, and a rights record unless a later brief explicitly raises the requirement.
+- A tested skill must have been explicitly taught and practiced. A stated learning target must be checked formatively and represented in the assessment blueprint.
+- Final buyer inventory is PDF only unless another format is separately built, rendered, verified, and truthfully listed.
+- Every final PDF page must be rendered after the last content change. Component pages must match the complete file, and the preview/listing images must use delivered product pages.
+- Automated completion ends at `automated_complete_human_review_pending`; it never changes the product to `certified` without the three real human reviews.
+- The governing files are `product-quality-standard.md` v2.1 and `product-lines/complete-unit-instruction-standard.md`; they supersede worksheet-first notes for chapter-unit products.
+
+## Model-independent quality lock - 2026-08-11
+
+- Any replacement LLM or agent must begin with `AGENTS.md` and `.agents/skills/curionest-complete-unit/SKILL.md` before changing a CurioNest chemistry product.
+- `product-lines/complete-unit-quality-baseline.json` version `2026-08-11.1` preserves the accepted typography, visual coverage, package counts, instructional sequence, assessment structure, and release gates in machine-readable form.
+- Source and catalog records must carry the same `quality_contract_version`; deterministic QA must fail when the version is missing, stale, or the baseline is weakened.
+- No model may reduce type sizes, visuals, instruction, practice, assessment support, rights evidence, render checks, malware checks, or human gates merely to finish faster or make a layout fit.
+- Lowering a minimum requires explicit user approval, a contract version change, and synchronized updates to the policies, generator, QA, product source, catalog, and release evidence.

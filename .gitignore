@@ -11,6 +11,7 @@ node_modules/
 # Temp / logs
 *.log
 kpi_log.json
+~$*
 
 # Large research PDFs (เกิน Git เหมาะสม — เก็บในเครื่อง)
 research-inrs-acids-bases.pdf

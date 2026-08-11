@@ -1,10 +1,10 @@
-# Product QA Log — ChemNest
+# Product QA Log — CurioNest
 
 ## Catalog reconciliation — 2026-08-10
 
 | Product ID | Package | Status | Blocking evidence |
 |---|---|---|---|
-| `CN-CH01-MATH` | `products/ch01-math-measurement/` | `packaged_pending_qa` | rebuild DOCX/PDF, full-page visual QA, native-English review, attribution verification |
+| `CN-CH01-MATH` | `products/ch01-math-measurement/` | `draft_pending_teacher_review` | automated QA 89/89, PDF/listing visual QA and Defender pass; native-English review, U.S. chemistry teacher review, classroom dry run pending; DOCX excluded |
 | `CN-CH01-ESSENTIAL` | `products/ch01-essential-ideas/` | `packaged_pending_qa` | rebuild DOCX/PDF, full-page visual QA, native-English review, attribution verification |
 
 สองรายการนี้เป็นสินค้าปัจจุบันตาม `catalog.json` และยังไม่ certified ส่วน
@@ -67,6 +67,34 @@
 1. [ ] เจ้าของภาษาอ่านทวนภาษาอังกฤษทั้งชิ้น (ตาม G2 residual risk)
 2. [ ] สมัคร Seller account + ตั้งร้าน ChemNest
 3. [ ] อัปโหลดตาม tpt-listing-pack.md (title §3, description §4, tags §5, settings §6, images §7)
+
+---
+
+## 2026-08-11 — CN-CH02-MATTER
+
+- Automated package QA: `PASS 91/91`
+- PDF visual review: `PASS` — 15/15 complete-product pages and 3/3 preview pages
+- Listing visual review: `PASS` — 3/3 images
+- Visual rights gate: `PASS` — 3/3 assets documented with source and license evidence
+- Buyer package: PDF only; no editable file advertised or delivered
+- Microsoft Defender: `PASS` — no threats found
+- Buyer ZIP SHA-256: `d1ea9a5cbbef2602beb1f792dc4694f8528d10e553b21f6088f07883c718967a`
+- Release status: `BLOCKED` pending native-English review, U.S. chemistry-teacher review, and classroom dry run
+
+---
+
+## 2026-08-11 — Complete-unit rebuild closure
+
+| Product | Automated QA | PDF rendering | Visuals | Exact buyer ZIP | Release state |
+|---|---:|---:|---:|---|---|
+| `CN-CH01-MATH` | `PASS 240/240` | `PASS — 113/113 final pages; component parity verified` | `4/4 documented open assets` | `a6deef48e35cc5d180459878dd7efea68c73acfa2b601bf8bf8f1a91adf1f1c8` | `BLOCKED — three human gates pending` |
+| `CN-CH02-MATTER` | `PASS 236/236` | `PASS — 113/113 final pages; component parity verified` | `3/3 documented open assets` | `9a0ebb18c4216338c1bedf5f6460f8b850d6dcd7e7b1d439c13847a46308c766` | `BLOCKED — three human gates pending` |
+
+- Both units now follow `Engage → Teach → Model → Guided Practice → Independent Practice → Exit Ticket → Mixed Review → Test A/B`.
+- Every final PDF is US Letter, American English, PDF only, and branded CurioNest.
+- Listing images use verified product-page renders; no AI-generated or code-drawn instructional visual is used.
+- Microsoft Defender found no threats in either exact ZIP hash above.
+- Obsolete student/key PDFs and old listing graphics were removed from the current output folders.
 
 ---
 

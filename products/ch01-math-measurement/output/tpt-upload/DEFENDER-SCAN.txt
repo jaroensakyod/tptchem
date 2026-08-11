@@ -1,0 +1,10 @@
+Microsoft Defender final buyer-ZIP scan
+Product: CN-CH01-MATH
+Date: 2026-08-11
+File: CurioNest_CH01_Math_and_Measurement_TPT_Package.zip
+SHA-256: b0cce3d4b03cb28ccf4cd5fe8c427c4c713c8b76cfb69c93f13e42151717c548
+Scanner: Microsoft Defender MpCmdRun 4.18.26070.9-0
+Mode: Custom file scan; remediation disabled
+Result: PASS - no threats found
+
+This result applies only to the exact ZIP hash above. Rebuilds require a new scan and record.

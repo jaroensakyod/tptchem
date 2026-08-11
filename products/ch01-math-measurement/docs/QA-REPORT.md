@@ -1,0 +1,272 @@
+# Automated QA Report - CN-CH01-MATH
+
+**Result:** PASS (263/263)
+
+> Automated PASS does not authorize publication. Native-English, U.S. chemistry-teacher, and classroom dry-run gates remain mandatory.
+
+Source SHA-256: `5a47d7db9e3309c44cedd9a0abfe450b202712ddadb1af260307695c1878fa4a`
+Quality contract: `curionest-complete-unit 2026-08-11.1`
+
+- [x] Quality contract is locked - `True`
+- [x] Active quality-contract version - `2026-08-11.1`
+- [x] Exact product brand - `CurioNest`
+- [x] Exact copyright source line - `© 2026 CurioNest · For classroom use only`
+- [x] U.S. target is explicit - `U.S. Grades 9-10 / General Chemistry`
+- [x] Five-lesson instructional sequence - `5`
+- [x] American-English source contains no Thai script - `clear`
+- [x] Source contains no Unicode replacement characters - `clear`
+- [x] Lesson 1: target, engage, and big idea - `present`
+- [x] Lesson 1: essential vocabulary - `4`
+- [x] Lesson 1: explicit teaching points - `4`
+- [x] Lesson 1: complete worked example - `3`
+- [x] Lesson 1: check for understanding - `present`
+- [x] Lesson 1: guided, independent, and exit sequence - `5`
+- [x] Lesson 1: guided scaffold - `Look for a measured number and unit.`
+- [x] Lesson 1: every practice item keyed - `5`
+- [x] Lesson 1: misconception and repair move - `present`
+- [x] Lesson 2: target, engage, and big idea - `present`
+- [x] Lesson 2: essential vocabulary - `4`
+- [x] Lesson 2: explicit teaching points - `4`
+- [x] Lesson 2: complete worked example - `3`
+- [x] Lesson 2: check for understanding - `present`
+- [x] Lesson 2: guided, independent, and exit sequence - `5`
+- [x] Lesson 2: guided scaffold - `Move the decimal until the coefficient is between 1 and 10; preserve recorded trailing zeros.`
+- [x] Lesson 2: every practice item keyed - `5`
+- [x] Lesson 2: misconception and repair move - `present`
+- [x] Lesson 3: target, engage, and big idea - `present`
+- [x] Lesson 3: essential vocabulary - `4`
+- [x] Lesson 3: explicit teaching points - `4`
+- [x] Lesson 3: complete worked example - `3`
+- [x] Lesson 3: check for understanding - `present`
+- [x] Lesson 3: guided, independent, and exit sequence - `5`
+- [x] Lesson 3: guided scaffold - `Place kilometers in the denominator of the factor so they cancel.`
+- [x] Lesson 3: every practice item keyed - `5`
+- [x] Lesson 3: misconception and repair move - `present`
+- [x] Lesson 4: target, engage, and big idea - `present`
+- [x] Lesson 4: essential vocabulary - `4`
+- [x] Lesson 4: explicit teaching points - `4`
+- [x] Lesson 4: complete worked example - `3`
+- [x] Lesson 4: check for understanding - `present`
+- [x] Lesson 4: guided, independent, and exit sequence - `5`
+- [x] Lesson 4: guided scaffold - `Write d = m / V before substituting values.`
+- [x] Lesson 4: every practice item keyed - `5`
+- [x] Lesson 4: misconception and repair move - `present`
+- [x] Lesson 5: target, engage, and big idea - `present`
+- [x] Lesson 5: essential vocabulary - `4`
+- [x] Lesson 5: explicit teaching points - `4`
+- [x] Lesson 5: complete worked example - `3`
+- [x] Lesson 5: check for understanding - `present`
+- [x] Lesson 5: guided, independent, and exit sequence - `5`
+- [x] Lesson 5: guided scaffold - `First compare the trials with one another; then compare their center with the accepted value.`
+- [x] Lesson 5: every practice item keyed - `5`
+- [x] Lesson 5: misconception and repair move - `present`
+- [x] Ten-item cumulative mixed review - `10`
+- [x] Every review item keyed - `10`
+- [x] Test A: 20 items - `20`
+- [x] Test A: 20-item blueprint - `20`
+- [x] Test A: every lesson assessed at least three times - `{1: 5, 2: 4, 3: 3, 4: 4, 5: 4}`
+- [x] Test A: exactly four choices per item - `20/20`
+- [x] Test A: exactly one keyed index per item - `20/20`
+- [x] Test A: rationale for every item - `20/20`
+- [x] Test A: rationales are substantive - `20/20`
+- [x] Test A: no answer-position run longer than three - `1`
+- [x] Test A: balanced answer positions - `{1: 5, 2: 5, 0: 5, 3: 5}`
+- [x] Test A: unique stems - `20`
+- [x] Test A: unique choices within each item - `20/20`
+- [x] Test B: 20 items - `20`
+- [x] Test B: 20-item blueprint - `20`
+- [x] Test B: every lesson assessed at least three times - `{1: 5, 2: 5, 3: 3, 4: 3, 5: 4}`
+- [x] Test B: exactly four choices per item - `20/20`
+- [x] Test B: exactly one keyed index per item - `20/20`
+- [x] Test B: rationale for every item - `20/20`
+- [x] Test B: rationales are substantive - `20/20`
+- [x] Test B: no answer-position run longer than three - `2`
+- [x] Test B: balanced answer positions - `{0: 6, 1: 5, 3: 5, 2: 4}`
+- [x] Test B: unique stems - `20`
+- [x] Test B: unique choices within each item - `20/20`
+- [x] No verbatim stem reuse between Forms A and B - `0`
+- [x] No exact scored-prompt duplication inside product - `0`
+- [x] Science audit: multiplication and significant figures - `39.7`
+- [x] Science audit: percent-error calculation - `3.333333%`
+- [x] Science audit: mean, accuracy, and precision example - `mean=1.248; error=4.00%`
+- [x] Assessment calculation audit A: 0.0825 L - `82.5 mL`
+- [x] Assessment calculation audit A: 12.4 x 3.20 - `39.7`
+- [x] Assessment calculation audit A: 90.0 km/h - `25.0 m/s`
+- [x] Assessment calculation audit A: mass 57.0 g - `2.85 g/mL`
+- [x] Assessment calculation audit A: density 1.24 g/mL - `31.6 g`
+- [x] Assessment calculation audit A: accepted density is 12.0 - `3.33%`
+- [x] Assessment calculation audit B: 7400 micrograms - `7.4 mg`
+- [x] Assessment calculation audit B: 45.60 / 2.5 - `18`
+- [x] Assessment calculation audit B: 100.0 - 0.37 - `99.6`
+- [x] Assessment calculation audit B: 3.60 days - `86.4 h`
+- [x] Assessment calculation audit B: 18.0 m/s - `64.8 km/h`
+- [x] Assessment calculation audit B: mass 44.7 g - `2.98 g/mL`
+- [x] Assessment calculation audit B: density 2.50 g/cm^3 - `5.96 cm^3`
+- [x] Assessment calculation audit B: accepted mass is 25.0 - `4.00%`
+- [x] Quality baseline: minimum documented instructional visuals - `6`
+- [x] Quality baseline: lessons with instructional visuals - `4`
+- [x] Every placed or cover visual is documented in the manifest - `complete`
+- [x] Every manifest visual has a product placement - `complete`
+- [x] Visual exists: graduated-cylinder-public-domain.jpg - `42282`
+- [x] Commercial-use-compatible visual license: graduated-cylinder-public-domain.jpg - `Public Domain`
+- [x] HTTPS visual provenance: graduated-cylinder-public-domain.jpg - `https://commons.wikimedia.org/wiki/File:Graduated_cylinder.jpg`
+- [x] Visual credit recorded: graduated-cylinder-public-domain.jpg - `Graduated-cylinder photograph: Darrien / Haltopub`
+- [x] Visual exists: electronic-balance-ccby3.png - `29816`
+- [x] Commercial-use-compatible visual license: electronic-balance-ccby3.png - `CC BY 3.0 Unported`
+- [x] HTTPS visual provenance: electronic-balance-ccby3.png - `https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Lab_apparatus/Servier/scale.svg`
+- [x] Visual credit recorded: electronic-balance-ccby3.png - `Electronic balance icon: Servier via Bioicons`
+- [x] Visual exists: graduated-cylinder-ccby3.png - `20991`
+- [x] Commercial-use-compatible visual license: graduated-cylinder-ccby3.png - `CC BY 3.0 Unported`
+- [x] HTTPS visual provenance: graduated-cylinder-ccby3.png - `https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/measuringcylinder-empty.svg`
+- [x] Visual credit recorded: graduated-cylinder-ccby3.png - `Graduated cylinder icon: Servier via Bioicons`
+- [x] Visual exists: beaker-ccby3.png - `27892`
+- [x] Commercial-use-compatible visual license: beaker-ccby3.png - `CC BY 3.0 Unported`
+- [x] HTTPS visual provenance: beaker-ccby3.png - `https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/beaker-empty.svg`
+- [x] Visual credit recorded: beaker-ccby3.png - `Beaker icon: Servier via Bioicons`
+- [x] Visual exists: speedometer-kmh-public-domain.jpg - `519257`
+- [x] Commercial-use-compatible visual license: speedometer-kmh-public-domain.jpg - `Public Domain`
+- [x] HTTPS visual provenance: speedometer-kmh-public-domain.jpg - `https://commons.wikimedia.org/wiki/File:Speedometer_(kmh).JPG`
+- [x] Visual credit recorded: speedometer-kmh-public-domain.jpg - `Kilometers-per-hour speedometer photograph: Bluescan sv.wiki`
+- [x] Visual exists: trueness-precision-ccby-sa3.png - `26286`
+- [x] Commercial-use-compatible visual license: trueness-precision-ccby-sa3.png - `CC BY-SA 3.0 Unported`
+- [x] HTTPS visual provenance: trueness-precision-ccby-sa3.png - `https://commons.wikimedia.org/wiki/File:Trueness_precision.png`
+- [x] Visual credit recorded: trueness-precision-ccby-sa3.png - `Trueness and precision target diagram: Bernhard Thiery`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Complete.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `51`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `2354068`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `7.2`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `[(612, 792), (792, 612)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Complete.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `15`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `927545`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `7.2`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `[(792, 612)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `12`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `890264`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `7.2`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `4`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `80921`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `4`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `81024`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `13`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `173581`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\buyer-files\CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf`
+- [x] Page count: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `2`
+- [x] Nontrivial PDF size: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `78151`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf - `clear`
+- [x] Buyer folder contains exactly seven current PDFs - `['CurioNest_CH01_Math_and_Measurement_Complete.pdf', 'CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf', 'CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf', 'CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf', 'CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf', 'CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf', 'CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf']`
+- [x] Student sequence includes: TARGET - `present`
+- [x] Student sequence includes: ENGAGE - `present`
+- [x] Student sequence includes: TEACH - `present`
+- [x] Student sequence includes: WORKED EXAMPLE - `present`
+- [x] Student sequence includes: GUIDED PRACTICE - `present`
+- [x] Student sequence includes: INDEPENDENT - `present`
+- [x] Student sequence includes: EXIT TICKET - `present`
+- [x] Student sequence includes: CUMULATIVE MIXED REVIEW - `present`
+- [x] Slides include: ENGAGE - `present`
+- [x] Slides include: TEACH - `present`
+- [x] Slides include: MODEL - `present`
+- [x] Slides include: WORKED EXAMPLE - `present`
+- [x] Slides include: CHECK: - `present`
+- [x] Student lesson file contains no answer labels - `clear`
+- [x] Student tests contain no answer labels - `clear`
+- [x] Teacher key contains 25 practice and 10 review answers - `35`
+- [x] Teacher key includes misconception repair - `present`
+- [x] Teacher file includes both rationale keys - `present`
+- [x] Six-page truthful preview - `6`
+- [x] Preview demonstrates teaching, practice, and answer support - `present`
+- [x] Preview author metadata - `CurioNest`
+- [x] American-English preview text is clean - `clear`
+- [x] Quality baseline: listing-image count - `3`
+- [x] Listing image exists: listing-01-cover.png - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\tpt-upload\listing-01-cover.png`
+- [x] Listing image size: listing-01-cover.png - `(1600, 1600)`
+- [x] Listing image is not blank: listing-01-cover.png - `13593.1`
+- [x] Listing image exists: listing-02-teach-practice.png - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\tpt-upload\listing-02-teach-practice.png`
+- [x] Listing image size: listing-02-teach-practice.png - `(1600, 1600)`
+- [x] Listing image is not blank: listing-02-teach-practice.png - `6787.3`
+- [x] Listing image exists: listing-03-assessment-key.png - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\tpt-upload\listing-03-assessment-key.png`
+- [x] Listing image size: listing-03-assessment-key.png - `(1600, 1600)`
+- [x] Listing image is not blank: listing-03-assessment-key.png - `9937.4`
+- [x] Listing exact claim: 15 projectable lesson slides - `present`
+- [x] Listing exact claim: 12 student lesson, practice, and review pages - `present`
+- [x] Listing exact claim: Unit Test A - `present`
+- [x] Listing exact claim: Unit Test B - `present`
+- [x] Listing exact claim: 20 multiple-choice items per form - `present`
+- [x] Listing exact claim: PDF only - `present`
+- [x] Listing exact claim: US Letter - `present`
+- [x] Listing exact claim: American English - `present`
+- [x] Listing avoids unverified NGSS alignment - `present`
+- [x] Listing does not advertise an editable file - `clear`
+- [x] Listing contains no blocked-source or retired-brand name - `clear`
+- [x] American-English listing text is clean - `clear`
+- [x] Buyer ZIP exists - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch01-math-measurement\output\tpt-upload\CurioNest_CH01_Math_and_Measurement_TPT_Package.zip`
+- [x] ZIP contains exactly seven verified buyer PDFs - `['CurioNest_CH01_Math_and_Measurement_Complete.pdf', 'CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf', 'CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf', 'CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf', 'CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf', 'CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf', 'CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf']`
+- [x] ZIP integrity - `PASS`
+- [x] Manifest SHA-256 matches buyer ZIP - `b0cce3d4b03cb28ccf4cd5fe8c427c4c713c8b76cfb69c93f13e42151717c548`
+- [x] Manifest quality-contract version - `2026-08-11.1`
+- [x] Manifest inventory matches buyer files - `['CurioNest_CH01_Math_and_Measurement_Complete.pdf', 'CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf', 'CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf', 'CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf', 'CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf', 'CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf', 'CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf']`
+- [x] Buyer ZIP is below 50 MB - `3869272`
+- [x] Rights record excludes generated/drawn instructional images - `present`
+- [x] Three human gates block publication - `blocked`
+- [x] Exact final ZIP has a recorded no-threat result - `present`
+- [x] Defender record names the exact final ZIP SHA-256 - `b0cce3d4b03cb28ccf4cd5fe8c427c4c713c8b76cfb69c93f13e42151717c548`
+- [x] Release evidence names the exact final ZIP SHA-256 - `b0cce3d4b03cb28ccf4cd5fe8c427c4c713c8b76cfb69c93f13e42151717c548`
+- [x] Render manifest quality-contract version - `2026-08-11.1`
+- [x] Every final PDF has a completed render manifest - `PASS`
+- [x] All 107 final PDF pages rendered - `107`
+- [x] All six component PDFs match the complete unit - `6`
+- [x] Obsolete upload artifacts removed - `clear`

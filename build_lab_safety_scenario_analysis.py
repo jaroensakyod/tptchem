@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import hashlib
 from datetime import datetime
 from xml.sax.saxutils import escape as xml_escape
 
@@ -12,9 +13,17 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "products" / "lab-safety-scenario-analysis"
-DATA = json.loads((OUT / "source.json").read_text(encoding="utf-8"))
-DOCX = OUT / "product-editable.docx"
+PRODUCT_DIR = ROOT / "products" / "lab-safety-scenario-analysis"
+SOURCE_DIR = PRODUCT_DIR / "source"
+BUYER_OUT = PRODUCT_DIR / "output" / "buyer"
+LISTING_OUT = PRODUCT_DIR / "output" / "listing"
+SOURCE_FILE = SOURCE_DIR / "source.json"
+DATA = json.loads(SOURCE_FILE.read_text(encoding="utf-8"))
+DATA["review"]["scenario_content_sha256"] = hashlib.sha256(
+    json.dumps(DATA["scenarios"], sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+).hexdigest()
+SOURCE_FILE.write_text(json.dumps(DATA, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+DOCX = BUYER_OUT / "product-editable.docx"
 
 NAVY = "102A43"; TEAL = "007C83"; PALE = "EAF7F7"; GOLD = "F2C14E"; RED = "C44536"; GRAY = "E8EEF2"; WHITE = "FFFFFF"
 
@@ -33,6 +42,15 @@ def footer(section):
     r.font.name = "Aptos"; r.font.size = Pt(8); r.font.color.rgb = RGBColor.from_string("66788A")
     fld = OxmlElement("w:fldSimple"); fld.set(qn("w:instr"), "PAGE")
     p._p.append(fld)
+
+def mark_first_rows_as_headers(doc):
+    """Expose the first row of each structured/layout table to screen readers."""
+    for table in doc.tables:
+        row_properties = table.rows[0]._tr.get_or_add_trPr()
+        if row_properties.find(qn("w:tblHeader")) is None:
+            header = OxmlElement("w:tblHeader")
+            header.set(qn("w:val"), "true")
+            row_properties.append(header)
 
 def text(p, s, size=10, bold=False, color=NAVY):
     r = p.add_run(s); r.font.name = "Aptos"; r.font.size = Pt(size); r.bold = bold; r.font.color.rgb = RGBColor.from_string(color); return r
@@ -91,7 +109,7 @@ doc.core_properties.title=DATA["title"]
 doc.core_properties.author="CurioNest"
 doc.core_properties.subject="Lab safety reasoning for grades 9-11 chemistry"
 doc.core_properties.keywords="lab safety, chemistry, scenario analysis, grades 9-11"
-doc.core_properties.comments="Original classroom resource generated from products/lab-safety-scenario-analysis/source.json"
+doc.core_properties.comments="Original classroom resource generated from products/lab-safety-scenario-analysis/source/source.json"
 doc.core_properties.created=datetime(2026,8,11)
 doc.core_properties.modified=datetime(2026,8,11)
 styles=doc.styles
@@ -185,7 +203,10 @@ for s in doc.sections:
     margins(s)
 # Section footers remain linked to the first section, so adding the footer to
 # every section would duplicate the line once per section in Microsoft Word.
-OUT.mkdir(parents=True,exist_ok=True); doc.save(DOCX)
+for directory in [SOURCE_DIR, BUYER_OUT, LISTING_OUT]:
+    directory.mkdir(parents=True, exist_ok=True)
+mark_first_rows_as_headers(doc)
+doc.save(DOCX)
 print(DOCX)
 
 # A stable print PDF is built directly so the product does not depend on a local
@@ -200,12 +221,12 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas as pdfcanvas
 
-PDF = OUT / "product.pdf"
+PDF = BUYER_OUT / "product.pdf"
 pdfmetrics.registerFont(TTFont("PoppinsEmbedded", str(ROOT/"fonts/Poppins-Regular.ttf")))
 pdfmetrics.registerFont(TTFont("PoppinsEmbedded-Bold", str(ROOT/"fonts/Poppins-Bold.ttf")))
 ss = getSampleStyleSheet()
 P = ParagraphStyle("Body", parent=ss["BodyText"], fontName="PoppinsEmbedded", fontSize=9, leading=11, textColor=colors.HexColor("#102A43"), spaceAfter=5)
-H = ParagraphStyle("Head", parent=ss["Heading1"], fontName="PoppinsEmbedded-Bold", fontSize=20, leading=22, textColor=colors.HexColor("#102A43"), spaceAfter=8)
+H = ParagraphStyle("Head", parent=ss["Heading1"], fontName="PoppinsEmbedded-Bold", fontSize=18, leading=20, textColor=colors.HexColor("#102A43"), spaceAfter=8)
 K = ParagraphStyle("Kick", parent=P, fontName="PoppinsEmbedded-Bold", fontSize=8, textColor=colors.HexColor("#007C83"), spaceAfter=2)
 S = ParagraphStyle("Small", parent=P, fontSize=8.5, leading=10.5)
 C = ParagraphStyle("Center", parent=P, alignment=TA_CENTER)
@@ -333,7 +354,7 @@ roles={
     "sources":role("TEACHER REFERENCE","SOURCES, RIGHTS, AND USE")
 }
 
-STUDENT=OUT/"student-packet.pdf"; PREVIEW=OUT/"preview.pdf"; TEACHER=OUT/"teacher-guide-and-key.pdf"; STUDENT_BW=OUT/"student-packet-bw.pdf"
+STUDENT=BUYER_OUT/"student-packet.pdf"; PREVIEW=LISTING_OUT/"preview.pdf"; TEACHER=BUYER_OUT/"teacher-guide-and-key.pdf"; STUDENT_BW=BUYER_OUT/"student-packet-bw.pdf"
 student_roles=[roles[x] for x in ("student_tool","scenario_1","scenario_2","scenario_3","honors","exit")]
 subset_pdf(student_roles,STUDENT,footer_label="Student")
 subset_pdf([roles["cover"],roles["scenario_1"],roles["key_1"]],PREVIEW,watermark=True)
@@ -370,7 +391,7 @@ d.text((900,1325),"Core + Honors  •  Exit Ticket  •  Full Answer Key",font=f
 d.rectangle((0,1530,1800,1800),fill="#007C83")
 d.text((900,1625),"GRADES 9-11  |  CORE 45-55 MIN",font=font(46,True),fill="white",anchor="mm")
 d.text((900,1715),"Print PDF + Editable DOCX",font=font(42,False),fill="white",anchor="mm")
-cover.resize((1200,1200),Image.Resampling.LANCZOS).save(OUT/"cover.png",quality=95)
+cover.resize((1200,1200),Image.Resampling.LANCZOS).save(LISTING_OUT/"cover.png",quality=95)
 
 pdfdoc=pdfium.PdfDocument(str(PDF))
 page_imgs={name:pdfdoc[index].render(scale=2.0).to_pil().convert("RGB") for name,index in roles.items()}
@@ -386,7 +407,7 @@ close=contain(crop_content(page_imgs["scenario_1"],.82),(1500,1270),"#102A43")
 inside.paste(close,(150,285))
 di.rounded_rectangle((250,1585,1550,1735),22,fill="#007C83")
 di.text((900,1660),"EVIDENCE • RISK • ACTION • WHY",font=font(42,True),fill="white",anchor="mm")
-inside.save(OUT/"listing-02-inside.png",quality=95)
+inside.save(LISTING_OUT/"listing-02-inside.png",quality=95)
 
 ready=Image.new("RGB",(1800,1800),"#F7FAFC"); dr=ImageDraw.Draw(ready)
 dr.text((900,115),"FULL KEY. CLEAR SUPPORT.",font=font(70,True),fill="#102A43",anchor="mm")
@@ -395,7 +416,7 @@ key_close=contain(crop_content(page_imgs["key_1"],.88),(1500,1240),"#F7FAFC")
 ready.paste(key_close,(150,300))
 dr.rounded_rectangle((190,1600,1610,1740),24,fill="#007C83")
 dr.text((900,1670),"LESS PREP • BETTER SAFETY DISCUSSIONS",font=font(43,True),fill="white",anchor="mm")
-ready.save(OUT/"listing-03-teacher-ready.png",quality=95)
-cover.save(OUT/"listing-01-cover.png",quality=95)
+ready.save(LISTING_OUT/"listing-03-teacher-ready.png",quality=95)
+cover.save(LISTING_OUT/"listing-01-cover.png",quality=95)
 
-print(STUDENT); print(STUDENT_BW); print(TEACHER); print(PREVIEW); print(OUT/"cover.png")
+print(STUDENT); print(STUDENT_BW); print(TEACHER); print(PREVIEW); print(LISTING_OUT/"cover.png")

@@ -1,0 +1,16 @@
+{
+  "product_id": "CN-CH01-MATH",
+  "quality_contract_version": "2026-08-11.1",
+  "package": "CurioNest_CH01_Math_and_Measurement_TPT_Package.zip",
+  "sha256": "b0cce3d4b03cb28ccf4cd5fe8c427c4c713c8b76cfb69c93f13e42151717c548",
+  "buyer_files": [
+    "CurioNest_CH01_Math_and_Measurement_Complete.pdf",
+    "CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf",
+    "CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf",
+    "CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf",
+    "CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf",
+    "CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf",
+    "CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf"
+  ],
+  "format": "PDF only; no editable file advertised or delivered"
+}

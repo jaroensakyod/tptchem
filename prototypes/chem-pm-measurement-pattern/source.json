@@ -1,0 +1,61 @@
+{
+  "title": "การวัดในห้องปฏิบัติการ",
+  "subtitle": "เลือกเครื่องมือ อ่านหลักฐาน และคำนวณความหนาแน่น",
+  "brand": "CurioNest",
+  "level": "เคมีพื้นฐาน ม.ปลาย",
+  "learning_targets": [
+    "เลือกเครื่องมือให้ตรงกับปริมาณที่ต้องการวัด",
+    "บันทึกค่าพร้อมหน่วยและระดับความละเอียดที่เหมาะสม",
+    "คำนวณความหนาแน่นและร้อยละความคลาดเคลื่อน"
+  ],
+  "practice": {
+    "instrument_prompt": "จับคู่เครื่องมือกับงานวัดและหน่วยที่เหมาะสม",
+    "choice_prompt": "ต้องการตวงของเหลว 18.6 mL ควรเลือกเครื่องมือใด และเพราะเหตุใด",
+    "density_prompt": "ตัวอย่างมีมวล 36.4 g และปริมาตร 14.0 mL จงหาความหนาแน่น พร้อมเลขนัยสำคัญที่เหมาะสม",
+    "photo_prompt": "จากภาพถ่าย ระบุหลักฐานที่ทำให้ทราบว่าอุปกรณ์นี้ออกแบบมาสำหรับการวัดปริมาตร",
+    "precision_prompt": "ถ้าต้องการรายงานปริมาตรอย่างแม่นยำกว่า ระหว่างบีกเกอร์กับกระบอกตวงควรเลือกอะไร เพราะเหตุใด",
+    "percent_error_prompt": "นักเรียนวัดความหนาแน่นได้ 2.58 g/mL ขณะที่ค่ายอมรับคือ 2.70 g/mL จงหาร้อยละความคลาดเคลื่อน"
+  },
+  "answers": {
+    "instrument": [
+      "เครื่องชั่งอิเล็กทรอนิกส์ - มวล - g",
+      "กระบอกตวง - ปริมาตรของเหลว - mL",
+      "บีกเกอร์ - ใช้บรรจุ/ผสม ไม่ใช่เครื่องมือหลักสำหรับปริมาตรละเอียด"
+    ],
+    "choice": "กระบอกตวง เพราะมีสเกลย่อยและรูปทรงแคบสำหรับอ่านปริมาตรได้ละเอียดกว่าบีกเกอร์",
+    "density": "d = m/V = 36.4 g / 14.0 mL = 2.60 g/mL",
+    "photo": "ภาชนะทรงสูงแคบ มีฐานตั้ง และมีขีดสเกลพร้อมตัวเลขตามแนวตั้ง",
+    "precision": "เลือกกระบอกตวง เพราะช่วงสเกลย่อยเล็กกว่าและออกแบบมาเพื่อวัดปริมาตร",
+    "percent_error": "|2.58 - 2.70| / 2.70 x 100 = 4.44%"
+  },
+  "visual_gate": {
+    "status": "passed",
+    "required_visual_items": [
+      "cover-focal-equipment-photo",
+      "summary-instrument-comparison",
+      "practice-instrument-identification",
+      "photo-evidence-analysis"
+    ],
+    "completed_visual_items": [
+      "cover-focal-equipment-photo",
+      "summary-instrument-comparison",
+      "practice-instrument-identification",
+      "photo-evidence-analysis"
+    ],
+    "required_count": 4,
+    "completed_count": 4,
+    "decision": "PASS"
+  },
+  "references": [
+    {
+      "name": "OpenStax Chemistry 2e",
+      "use": "Content scope benchmark: Chapter 1, sections 1.4 Measurements and 1.5 Measurement Uncertainty, Accuracy, and Precision",
+      "path": "C:/Users/ASUS/Desktop/makemoney/chemistry2e.pdf"
+    },
+    {
+      "name": "Chem Pride Unit 1 Math & Measurement",
+      "use": "Workflow benchmark only: short explanation, guided example, try-it prompts, and writing space; no text or layout copied",
+      "url": "https://chempride.weebly.com/unit-1-math--measurement.html"
+    }
+  ]
+}

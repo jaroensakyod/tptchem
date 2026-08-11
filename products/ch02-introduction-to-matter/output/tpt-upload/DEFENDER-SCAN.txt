@@ -1,0 +1,10 @@
+Microsoft Defender final buyer-ZIP scan
+Product: CN-CH02-MATTER
+Date: 2026-08-11
+File: CurioNest_CH02_Introduction_to_Matter_TPT_Package.zip
+SHA-256: 3339c8f2b932fa39be1126c30f462a38b6dfab20add25af3a52666ff0f951a24
+Scanner: Microsoft Defender MpCmdRun 4.18.26070.9-0
+Mode: Custom file scan; remediation disabled
+Result: PASS - no threats found
+
+This result applies only to the exact ZIP hash above. Rebuilds require a new scan and record.

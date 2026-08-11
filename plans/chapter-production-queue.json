@@ -1,0 +1,24 @@
+{
+  "updated": "2026-08-11",
+  "brand": "CurioNest",
+  "quality_contract_version": "2026-08-11.1",
+  "model_entrypoint": ".agents/skills/curionest-complete-unit/SKILL.md",
+  "rule": "Complete one chapter package and its evidence before authoring the next. Automated completion never overrides the three human release gates.",
+  "chapters": [
+    {"chapter": 1, "topic": "Math and Measurement", "product_id": "CN-CH01-MATH", "status": "automated_complete_human_review_pending", "next_action": "native English review, U.S. chemistry teacher review, classroom dry run"},
+    {"chapter": 2, "topic": "Introduction to Matter", "product_id": "CN-CH02-MATTER", "status": "automated_complete_human_review_pending", "next_action": "native English review, U.S. chemistry teacher review, classroom dry run"},
+    {"chapter": 3, "topic": "Phase Changes and Heat", "status": "queued_after_ch01_ch02_human_gates", "next_action": "start research only after the Chapter 1 and Chapter 2 native-English, U.S. chemistry-teacher, and classroom dry-run gates are recorded"},
+    {"chapter": 4, "topic": "Atomic Structure", "status": "queued"},
+    {"chapter": 5, "topic": "Periodic Table", "status": "queued"},
+    {"chapter": 6, "topic": "Chemical Bonding", "status": "queued"},
+    {"chapter": 7, "topic": "Moles and Stoichiometry", "status": "queued"},
+    {"chapter": 8, "topic": "Gas Laws", "status": "queued"},
+    {"chapter": 9, "topic": "Solutions", "status": "queued"},
+    {"chapter": 10, "topic": "Acids and Bases", "status": "queued"},
+    {"chapter": 11, "topic": "Kinetics and Equilibrium", "status": "queued"},
+    {"chapter": 12, "topic": "Electrochemistry", "status": "queued"},
+    {"chapter": 13, "topic": "Nuclear Chemistry", "status": "queued"},
+    {"chapter": 14, "topic": "Organic Chemistry", "status": "queued"}
+  ],
+  "separate_product_line": {"topic": "Labs and Safety", "status": "separate_from_chapter_sequence"}
+}

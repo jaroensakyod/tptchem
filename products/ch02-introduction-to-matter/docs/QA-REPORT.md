@@ -1,0 +1,280 @@
+# Automated QA Report - CN-CH02-MATTER
+
+**Result:** PASS (271/271)
+
+> Automated PASS does not authorize publication. Native-English, U.S. chemistry-teacher, and classroom dry-run gates remain mandatory.
+
+Source SHA-256: `563db5676479f31bf337f04b8f1c53a1874b6ed0d00e4f7a02af1a34e64bcd13`
+Quality contract: `curionest-complete-unit 2026-08-11.1`
+
+- [x] Quality contract is locked - `True`
+- [x] Active quality-contract version - `2026-08-11.1`
+- [x] Exact product brand - `CurioNest`
+- [x] Exact copyright source line - `© 2026 CurioNest · For classroom use only`
+- [x] U.S. target is explicit - `U.S. Grades 9-10 / General Chemistry`
+- [x] Five-lesson instructional sequence - `5`
+- [x] American-English source contains no Thai script - `clear`
+- [x] Source contains no Unicode replacement characters - `clear`
+- [x] Lesson 1: target, engage, and big idea - `present`
+- [x] Lesson 1: essential vocabulary - `4`
+- [x] Lesson 1: explicit teaching points - `4`
+- [x] Lesson 1: complete worked example - `3`
+- [x] Lesson 1: check for understanding - `present`
+- [x] Lesson 1: guided, independent, and exit sequence - `5`
+- [x] Lesson 1: guided scaffold - `Apply both parts of the definition: mass and occupied space.`
+- [x] Lesson 1: every practice item keyed - `5`
+- [x] Lesson 1: misconception and repair move - `present`
+- [x] Lesson 2: target, engage, and big idea - `present`
+- [x] Lesson 2: essential vocabulary - `4`
+- [x] Lesson 2: explicit teaching points - `4`
+- [x] Lesson 2: complete worked example - `3`
+- [x] Lesson 2: check for understanding - `present`
+- [x] Lesson 2: guided, independent, and exit sequence - `5`
+- [x] Lesson 2: guided scaffold - `Ask whether the sample contains one element type or more than one substance.`
+- [x] Lesson 2: every practice item keyed - `5`
+- [x] Lesson 2: misconception and repair move - `present`
+- [x] Lesson 3: target, engage, and big idea - `present`
+- [x] Lesson 3: essential vocabulary - `4`
+- [x] Lesson 3: explicit teaching points - `4`
+- [x] Lesson 3: complete worked example - `3`
+- [x] Lesson 3: check for understanding - `present`
+- [x] Lesson 3: guided, independent, and exit sequence - `5`
+- [x] Lesson 3: guided scaffold - `Ask whether identity changes during measurement and whether the value depends on sample amount.`
+- [x] Lesson 3: every practice item keyed - `5`
+- [x] Lesson 3: misconception and repair move - `present`
+- [x] Lesson 4: target, engage, and big idea - `present`
+- [x] Lesson 4: essential vocabulary - `4`
+- [x] Lesson 4: explicit teaching points - `4`
+- [x] Lesson 4: complete worked example - `3`
+- [x] Lesson 4: check for understanding - `present`
+- [x] Lesson 4: guided, independent, and exit sequence - `5`
+- [x] Lesson 4: guided scaffold - `Ask whether the substance's chemical identity changes.`
+- [x] Lesson 4: every practice item keyed - `5`
+- [x] Lesson 4: misconception and repair move - `present`
+- [x] Lesson 5: target, engage, and big idea - `present`
+- [x] Lesson 5: essential vocabulary - `4`
+- [x] Lesson 5: explicit teaching points - `4`
+- [x] Lesson 5: complete worked example - `3`
+- [x] Lesson 5: check for understanding - `present`
+- [x] Lesson 5: guided, independent, and exit sequence - `5`
+- [x] Lesson 5: guided scaffold - `Decide whether the solid is dissolved and whether its particles can be retained.`
+- [x] Lesson 5: every practice item keyed - `5`
+- [x] Lesson 5: misconception and repair move - `present`
+- [x] Ten-item cumulative mixed review - `10`
+- [x] Every review item keyed - `10`
+- [x] Test A: 20 items - `20`
+- [x] Test A: 20-item blueprint - `20`
+- [x] Test A: every lesson assessed at least three times - `{1: 3, 2: 5, 3: 3, 4: 4, 5: 5}`
+- [x] Test A: exactly four choices per item - `20/20`
+- [x] Test A: exactly one keyed index per item - `20/20`
+- [x] Test A: rationale for every item - `20/20`
+- [x] Test A: rationales are substantive - `20/20`
+- [x] Test A: no answer-position run longer than three - `1`
+- [x] Test A: balanced answer positions - `{2: 5, 3: 6, 0: 5, 1: 4}`
+- [x] Test A: unique stems - `20`
+- [x] Test A: unique choices within each item - `20/20`
+- [x] Test B: 20 items - `20`
+- [x] Test B: 20-item blueprint - `20`
+- [x] Test B: every lesson assessed at least three times - `{1: 3, 2: 5, 3: 3, 4: 4, 5: 5}`
+- [x] Test B: exactly four choices per item - `20/20`
+- [x] Test B: exactly one keyed index per item - `20/20`
+- [x] Test B: rationale for every item - `20/20`
+- [x] Test B: rationales are substantive - `20/20`
+- [x] Test B: no answer-position run longer than three - `1`
+- [x] Test B: balanced answer positions - `{3: 4, 0: 6, 2: 5, 1: 5}`
+- [x] Test B: unique stems - `20`
+- [x] Test B: unique choices within each item - `20/20`
+- [x] No verbatim stem reuse between Forms A and B - `0`
+- [x] No exact scored-prompt duplication inside product - `0`
+- [x] Science audit: percent recovery - `99.666667%`
+- [x] Assessment concept audit A: Which sample is matter - `Air in a sealed syringe`
+- [x] Assessment concept audit A: evenly distributed - `Homogeneous mixture`
+- [x] Assessment concept audit A: clean copper wire - `Element`
+- [x] Assessment concept audit A: pure water - `Compound`
+- [x] Assessment concept audit A: physical and intensive - `Density`
+- [x] Assessment concept audit A: decisive evidence - `New substances with different compositions form.`
+- [x] Assessment concept audit A: insoluble sand - `Filtration`
+- [x] Assessment concept audit A: 120.0 g sample - `99.7%`
+- [x] Assessment concept audit B: not evidence that something is matter - `It is visible.`
+- [x] Assessment concept audit B: identical particles made of two different atom types - `Compound`
+- [x] Assessment concept audit B: two physical properties - `Density and conductivity`
+- [x] Assessment concept audit B: Which property is extensive - `Volume`
+- [x] Assessment concept audit B: observation alone is insufficient - `Bubbles appear.`
+- [x] Assessment concept audit B: immiscible liquid layers - `Decantation or a separatory funnel`
+- [x] Assessment concept audit B: central to distillation - `Volatility or boiling behavior`
+- [x] Assessment concept audit B: correctly applies conservation - `Gas products count even if they leave an open container.`
+- [x] Quality baseline: minimum documented instructional visuals - `8`
+- [x] Quality baseline: lessons with instructional visuals - `5`
+- [x] Every placed or cover visual is documented in the manifest - `complete`
+- [x] Every manifest visual has a product placement - `complete`
+- [x] Visual exists: matter-classification-ccby4.png - `316868`
+- [x] Commercial-use-compatible visual license: matter-classification-ccby4.png - `CC BY 4.0 International`
+- [x] HTTPS visual provenance: matter-classification-ccby4.png - `https://commons.wikimedia.org/wiki/File:Mixtures_and_Pure_Substances_2x2.svg`
+- [x] Visual credit recorded: matter-classification-ccby4.png - `Particle classification visual: John Trombley`
+- [x] Visual exists: filtration-public-domain.png - `154656`
+- [x] Commercial-use-compatible visual license: filtration-public-domain.png - `Public Domain`
+- [x] HTTPS visual provenance: filtration-public-domain.png - `https://commons.wikimedia.org/wiki/File:Filtration_diagram.svg`
+- [x] Visual credit recorded: filtration-public-domain.png - `Filtration diagram: LadyofHats / Mariana Ruiz`
+- [x] Visual exists: burning-candle-cc0.jpg - `123501`
+- [x] Commercial-use-compatible visual license: burning-candle-cc0.jpg - `CC0 1.0 Universal`
+- [x] HTTPS visual provenance: burning-candle-cc0.jpg - `https://commons.wikimedia.org/wiki/File:Burning-candle.jpg`
+- [x] Visual credit recorded: burning-candle-cc0.jpg - `Burning-candle photograph: USER-62114`
+- [x] Visual exists: simple-distillation-public-domain.png - `33518`
+- [x] Commercial-use-compatible visual license: simple-distillation-public-domain.png - `Public Domain`
+- [x] HTTPS visual provenance: simple-distillation-public-domain.png - `https://commons.wikimedia.org/wiki/File:Simple_distillation_apparatus.png`
+- [x] Visual credit recorded: simple-distillation-public-domain.png - `Simple-distillation apparatus diagram: Quantockgoblin`
+- [x] Visual exists: granite-slab-cc0.jpg - `482015`
+- [x] Commercial-use-compatible visual license: granite-slab-cc0.jpg - `CC0 1.0 Universal`
+- [x] HTTPS visual provenance: granite-slab-cc0.jpg - `https://commons.wikimedia.org/wiki/File:Granite_slab_up_close.jpg`
+- [x] Visual credit recorded: granite-slab-cc0.jpg - `Granite slab photograph: Tomwsulcer`
+- [x] Visual exists: native-copper-public-domain.jpg - `47054`
+- [x] Commercial-use-compatible visual license: native-copper-public-domain.jpg - `Public Domain`
+- [x] HTTPS visual provenance: native-copper-public-domain.jpg - `https://commons.wikimedia.org/wiki/File:Native_copper.jpg`
+- [x] Visual credit recorded: native-copper-public-domain.jpg - `Native-copper photograph: Aram Dulyan (Aramgutang)`
+- [x] Visual exists: melting-ice-public-domain.jpg - `87442`
+- [x] Commercial-use-compatible visual license: melting-ice-public-domain.jpg - `Public Domain`
+- [x] HTTPS visual provenance: melting-ice-public-domain.jpg - `https://commons.wikimedia.org/wiki/File:Melting_ice.jpg`
+- [x] Visual credit recorded: melting-ice-public-domain.jpg - `Melting-ice photograph: Rosendahl / Fæ`
+- [x] Visual exists: separatory-funnel-public-domain.jpg - `244905`
+- [x] Commercial-use-compatible visual license: separatory-funnel-public-domain.jpg - `Public Domain`
+- [x] HTTPS visual provenance: separatory-funnel-public-domain.jpg - `https://commons.wikimedia.org/wiki/File:Separatory_funnel.jpg`
+- [x] Visual credit recorded: separatory-funnel-public-domain.jpg - `Separatory-funnel photograph: Rifleman 82`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Complete.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `51`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `4300280`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `7.2`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `[(612, 792), (792, 612)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Complete.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `15`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `1899017`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `7.2`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `[(792, 612)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `12`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `1589468`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `7.2`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `4`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `81146`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `4`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `81524`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `13`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `175369`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf - `clear`
+- [x] Buyer file exists: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\buyer-files\CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf`
+- [x] Page count: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `2`
+- [x] Nontrivial PDF size: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `78697`
+- [x] No nonfooter text below 7.2 pt: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `7.4`
+- [x] Author metadata: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `CurioNest`
+- [x] Exact copyright in: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `© 2026 CurioNest · For classroom use only`
+- [x] US Letter portrait/landscape only: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `[(612, 792)]`
+- [x] No retired brand/publisher in: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `clear`
+- [x] No blocked authoring source named in: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `clear`
+- [x] American-English buyer PDF contains no Thai script: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `clear`
+- [x] Buyer PDF contains no Unicode replacement character: CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf - `clear`
+- [x] Buyer folder contains exactly seven current PDFs - `['CurioNest_CH02_Introduction_to_Matter_Complete.pdf', 'CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf', 'CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf', 'CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf', 'CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf', 'CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf', 'CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf']`
+- [x] Student sequence includes: TARGET - `present`
+- [x] Student sequence includes: ENGAGE - `present`
+- [x] Student sequence includes: TEACH - `present`
+- [x] Student sequence includes: WORKED EXAMPLE - `present`
+- [x] Student sequence includes: GUIDED PRACTICE - `present`
+- [x] Student sequence includes: INDEPENDENT - `present`
+- [x] Student sequence includes: EXIT TICKET - `present`
+- [x] Student sequence includes: CUMULATIVE MIXED REVIEW - `present`
+- [x] Slides include: ENGAGE - `present`
+- [x] Slides include: TEACH - `present`
+- [x] Slides include: MODEL - `present`
+- [x] Slides include: WORKED EXAMPLE - `present`
+- [x] Slides include: CHECK: - `present`
+- [x] Student lesson file contains no answer labels - `clear`
+- [x] Student tests contain no answer labels - `clear`
+- [x] Teacher key contains 25 practice and 10 review answers - `35`
+- [x] Teacher key includes misconception repair - `present`
+- [x] Teacher file includes both rationale keys - `present`
+- [x] Six-page truthful preview - `6`
+- [x] Preview demonstrates teaching, practice, and answer support - `present`
+- [x] Preview author metadata - `CurioNest`
+- [x] American-English preview text is clean - `clear`
+- [x] Quality baseline: listing-image count - `3`
+- [x] Listing image exists: listing-01-cover.png - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\tpt-upload\listing-01-cover.png`
+- [x] Listing image size: listing-01-cover.png - `(1600, 1600)`
+- [x] Listing image is not blank: listing-01-cover.png - `13604.0`
+- [x] Listing image exists: listing-02-teach-practice.png - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\tpt-upload\listing-02-teach-practice.png`
+- [x] Listing image size: listing-02-teach-practice.png - `(1600, 1600)`
+- [x] Listing image is not blank: listing-02-teach-practice.png - `6902.1`
+- [x] Listing image exists: listing-03-assessment-key.png - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\tpt-upload\listing-03-assessment-key.png`
+- [x] Listing image size: listing-03-assessment-key.png - `(1600, 1600)`
+- [x] Listing image is not blank: listing-03-assessment-key.png - `9993.1`
+- [x] Listing exact claim: 15 projectable lesson slides - `present`
+- [x] Listing exact claim: 12 student lesson, practice, and review pages - `present`
+- [x] Listing exact claim: Unit Test A - `present`
+- [x] Listing exact claim: Unit Test B - `present`
+- [x] Listing exact claim: 20 multiple-choice items per form - `present`
+- [x] Listing exact claim: PDF only - `present`
+- [x] Listing exact claim: US Letter - `present`
+- [x] Listing exact claim: American English - `present`
+- [x] Listing avoids unverified NGSS alignment - `present`
+- [x] Listing does not advertise an editable file - `clear`
+- [x] Listing contains no blocked-source or retired-brand name - `clear`
+- [x] American-English listing text is clean - `clear`
+- [x] Buyer ZIP exists - `C:\Users\ASUS\Desktop\makemoney\tpt-pilot\products\ch02-introduction-to-matter\output\tpt-upload\CurioNest_CH02_Introduction_to_Matter_TPT_Package.zip`
+- [x] ZIP contains exactly seven verified buyer PDFs - `['CurioNest_CH02_Introduction_to_Matter_Complete.pdf', 'CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf', 'CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf', 'CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf', 'CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf', 'CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf', 'CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf']`
+- [x] ZIP integrity - `PASS`
+- [x] Manifest SHA-256 matches buyer ZIP - `3339c8f2b932fa39be1126c30f462a38b6dfab20add25af3a52666ff0f951a24`
+- [x] Manifest quality-contract version - `2026-08-11.1`
+- [x] Manifest inventory matches buyer files - `['CurioNest_CH02_Introduction_to_Matter_Complete.pdf', 'CurioNest_CH02_Introduction_to_Matter_Lesson_Slides.pdf', 'CurioNest_CH02_Introduction_to_Matter_Student_Guided_Notes_and_Practice.pdf', 'CurioNest_CH02_Introduction_to_Matter_Unit_Test_A.pdf', 'CurioNest_CH02_Introduction_to_Matter_Unit_Test_B.pdf', 'CurioNest_CH02_Introduction_to_Matter_Teacher_Guide_and_Answer_Key.pdf', 'CurioNest_CH02_Introduction_to_Matter_Rights_and_Sources.pdf']`
+- [x] Buyer ZIP is below 50 MB - `6783518`
+- [x] Rights record excludes generated/drawn instructional images - `present`
+- [x] Three human gates block publication - `blocked`
+- [x] Exact final ZIP has a recorded no-threat result - `present`
+- [x] Defender record names the exact final ZIP SHA-256 - `3339c8f2b932fa39be1126c30f462a38b6dfab20add25af3a52666ff0f951a24`
+- [x] Release evidence names the exact final ZIP SHA-256 - `3339c8f2b932fa39be1126c30f462a38b6dfab20add25af3a52666ff0f951a24`
+- [x] Render manifest quality-contract version - `2026-08-11.1`
+- [x] Every final PDF has a completed render manifest - `PASS`
+- [x] All 107 final PDF pages rendered - `107`
+- [x] All six component PDFs match the complete unit - `6`
+- [x] Obsolete upload artifacts removed - `clear`

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CurioNest Complete Unit"
+  short_description: "Build and release consistent U.S. chemistry units"
+  default_prompt: "Use $curionest-complete-unit to build or revise a CurioNest chemistry unit without lowering the established quality baseline."

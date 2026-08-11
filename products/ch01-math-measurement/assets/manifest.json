@@ -1,0 +1,61 @@
+{
+  "policy": "Only externally sourced visuals with documented commercial-use-compatible rights are used. No AI-generated or code-drawn instructional image is included.",
+  "accessed": "2026-08-11",
+  "assets": [
+    {
+      "file": "graduated-cylinder-public-domain.jpg",
+      "creator": "Darrien; Wikimedia Commons upload by Haltopub",
+      "credit": "Graduated-cylinder photograph: Darrien / Haltopub",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Graduated_cylinder.jpg",
+      "use": "Cover and authentic measurement context"
+    },
+    {
+      "file": "electronic-balance-ccby3.png",
+      "creator": "Servier via Bioicons",
+      "credit": "Electronic balance icon: Servier via Bioicons",
+      "license": "CC BY 3.0 Unported",
+      "source": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Lab_apparatus/Servier/scale.svg",
+      "use": "Instrument identification evidence"
+    },
+    {
+      "file": "graduated-cylinder-ccby3.png",
+      "creator": "Servier via Bioicons",
+      "credit": "Graduated cylinder icon: Servier via Bioicons",
+      "license": "CC BY 3.0 Unported",
+      "source": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/measuringcylinder-empty.svg",
+      "use": "Instrument identification evidence"
+    },
+    {
+      "file": "beaker-ccby3.png",
+      "creator": "Servier via Bioicons",
+      "credit": "Beaker icon: Servier via Bioicons",
+      "license": "CC BY 3.0 Unported",
+      "source": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Chemistry/Servier/beaker-empty.svg",
+      "use": "Instrument identification evidence"
+    },
+    {
+      "file": "speedometer-kmh-public-domain.jpg",
+      "creator": "Bluescan sv.wiki",
+      "credit": "Kilometers-per-hour speedometer photograph: Bluescan sv.wiki",
+      "license": "Public Domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Speedometer_(kmh).JPG",
+      "direct_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Speedometer_(kmh).JPG?width=1280",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modification": "Placed without content alteration",
+      "use": "Real-world rate context for dimensional analysis"
+    },
+    {
+      "file": "trueness-precision-ccby-sa3.png",
+      "creator": "Bernhard Thiery",
+      "credit": "Trueness and precision target diagram: Bernhard Thiery",
+      "license": "CC BY-SA 3.0 Unported",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Trueness_precision.png",
+      "direct_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Trueness_precision.png?width=1280",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modification": "Placed without content alteration",
+      "use": "Visual comparison of center agreement and trial spread"
+    }
+  ],
+  "evidence_folder": "assets/license-evidence"
+}

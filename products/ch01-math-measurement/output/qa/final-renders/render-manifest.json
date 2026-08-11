@@ -1,0 +1,73 @@
+{
+  "product_id": "CN-CH01-MATH",
+  "quality_contract_version": "2026-08-11.1",
+  "dpi": 120,
+  "files": {
+    "CurioNest_CH01_Math_and_Measurement_Complete.pdf": {
+      "pdf_pages": 51,
+      "rendered_pages": 51
+    },
+    "CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf": {
+      "pdf_pages": 15,
+      "rendered_pages": 15
+    },
+    "CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf": {
+      "pdf_pages": 12,
+      "rendered_pages": 12
+    },
+    "CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf": {
+      "pdf_pages": 4,
+      "rendered_pages": 4
+    },
+    "CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf": {
+      "pdf_pages": 4,
+      "rendered_pages": 4
+    },
+    "CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf": {
+      "pdf_pages": 13,
+      "rendered_pages": 13
+    },
+    "CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf": {
+      "pdf_pages": 2,
+      "rendered_pages": 2
+    },
+    "CurioNest_CH01_Math_and_Measurement_Preview.pdf": {
+      "pdf_pages": 6,
+      "rendered_pages": 6
+    }
+  },
+  "total_pdf_pages_rendered": 107,
+  "component_to_complete_comparison": {
+    "CurioNest_CH01_Math_and_Measurement_Lesson_Slides.pdf": {
+      "compared_pages": 15,
+      "maximum_mean_pixel_difference": 0.0,
+      "result": "PASS"
+    },
+    "CurioNest_CH01_Math_and_Measurement_Student_Guided_Notes_and_Practice.pdf": {
+      "compared_pages": 12,
+      "maximum_mean_pixel_difference": 0.0,
+      "result": "PASS"
+    },
+    "CurioNest_CH01_Math_and_Measurement_Unit_Test_A.pdf": {
+      "compared_pages": 4,
+      "maximum_mean_pixel_difference": 0.0,
+      "result": "PASS"
+    },
+    "CurioNest_CH01_Math_and_Measurement_Unit_Test_B.pdf": {
+      "compared_pages": 4,
+      "maximum_mean_pixel_difference": 0.0,
+      "result": "PASS"
+    },
+    "CurioNest_CH01_Math_and_Measurement_Teacher_Guide_and_Answer_Key.pdf": {
+      "compared_pages": 13,
+      "maximum_mean_pixel_difference": 0.0,
+      "result": "PASS"
+    },
+    "CurioNest_CH01_Math_and_Measurement_Rights_and_Sources.pdf": {
+      "compared_pages": 2,
+      "maximum_mean_pixel_difference": 0.0,
+      "result": "PASS"
+    }
+  },
+  "result": "PASS"
+}
